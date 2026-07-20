@@ -226,6 +226,7 @@ raw data into SQLite, compiling structured Markdown articles with backlinks, aut
 - [sametbrr/llm-wiki-manager](https://github.com/sametbrr/llm-wiki-manager) - A production-grade implementation of the Karpathy LLM Wiki pattern packaged as a native Claude Code and agentskills.io skill. Bundles a suite of dependency-free, idempotent Python scripts for automated workspace scaffolding, index catalog synchronization, transaction ledger logging, and semantic linting capable of parsing standard markdown links and Obsidian double-bracket nodes.
 - [The PM Wiki (AliMahmoud15486)](https://github.com/AliMahmoud15486/pm-llm-wiki) - A system schema and ruleset template that teaches coding agents how to compile and maintain product management wikis.
 - [Wiki Builder (DAIR.AI)](https://github.com/dair-ai/dair-academy-plugins/tree/main/plugins/wiki-builder) - An open-source Claude Code plugin path that automates directory scaffolding, handles multi-flavor workspace indexing, and leverages localized markdown configuration files to govern agent compilation boundaries.
+- [XBlueSky/cortexes](https://github.com/XBlueSky/cortexes) ([Website](https://cortexes.pages.dev/)) - A personal knowledge vault plugin for Claude Code featuring session capturing, memory distillation, and hybrid search.
 
 ## Live Implementations and Reference Vaults
 
