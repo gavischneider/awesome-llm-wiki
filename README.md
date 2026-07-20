@@ -96,6 +96,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 
 *Code-first SDKs, programmatic pipelines, and developer libraries used to orchestrate or validate local context vaults.*
 
+- [axoviq-ai/synthadoc](https://github.com/axoviq-ai/synthadoc) ([Demo Video](https://www.youtube.com/watch?v=rIGO6zi9XQE)) - A local-first knowledge engine compiling multi-format sources into OKF markdown wikis, with a web UI and MCP server.
 - [codejunkie99/agentic-stack](https://github.com/codejunkie99/agentic-stack) - A framework providing a unified, portable `.agent/` directory structure to standardize local memory, skills, and protocols across multiple environments (such as Claude Code, Cursor, and Windsurf). Features a multi-layered local file storage engine, an automated configuration syncing CLI, and self-improving pattern-clustering workflows that keep knowledge persistent across different development tools.
 - [EverMind-AI/EverOS](https://github.com/EverMind-AI/EverOS) ([Website](https://evermind.ai/)) - A local-first agent memory runtime that compiles conversations and files into Git-versioned Markdown.
 - [Graphify](https://github.com/safishamsi/graphify) - A multi-modal knowledge graph compilation engine that handles codebase AST parsing via tree-sitter alongside media transcription, producing localized agentic subgraphs to yield up to a 71.5x token efficiency gain.
