@@ -103,6 +103,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [memory-arena](https://pypi.org/project/memory-arena/) - An open-source benchmarking suite and evaluation harness designed to test long-term agent memory strategies across interdependent, multi-session tasks. It establishes a standardized empirical testing framework comparing classical vector storage, graph-based abstractions, and flat-file architectures like the Karpathy LLM Wiki pattern—measuring recall accuracy, context degradation, and token overhead.
 - [OpenKB](https://github.com/VectifyAI/OpenKB) ([Website](https://pageindex.ai/)) - An open-source Python CLI knowledge base framework that compiles multi-format documents into interlinked markdown vaults using a specialized tree-based index for vectorless long-document retrieval.
 - [SenolIsci/mykg](https://github.com/SenolIsci/mykg) - An open-source neuro-symbolic knowledge graph extraction library that converts mixed-format document folders (`.pdf`, `.docx`, `.md`) into confidence-scored, ontology-grounded Obsidian vaults. Features a two-pass pipeline separating RDFS/OWL schema induction from instance extraction, built-in disk-state checkpoint recovery, and a deterministic code-based validation layer to completely eradicate link hallucination.
+- [sturlese/hippocampus](https://github.com/sturlese/hippocampus) - A zero-dependency personal knowledge base template built for Claude Code using the Open Knowledge Format (OKF).
 
 ### Applications and Desktop Clients
 
