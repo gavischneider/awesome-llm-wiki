@@ -78,6 +78,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [What is LLM Wiki Pattern? Persistent Knowledge with LLM Wikis](https://medium.com/@tahirbalarabe2/what-is-llm-wiki-pattern-persistent-knowledge-with-llm-wikis-3227f561abc1) - A structural guide defining the core filesystem architecture and ingestion loops of the LLM Wiki pattern. Outlines the read/write boundaries between raw source directories and compiled wiki spaces, detailing a 5-step compilation pipeline and contrasting the pre-compiled text routing method against traditional single-pass vector RAG pipelines.
 - [What Karpathy's LLM Wiki is Missing (And How to Fix It)](https://dev.to/penfieldlabs/what-karpathys-llm-wiki-is-missing-and-how-to-fix-it-1988) (Penfield Labs) - A deep architectural critique outlining solutions for token scaling limits in file-based context stores, featuring code patterns for semantic deduplication and pre-commit syntax hooks to protect structural integrity.
 - [Wiki Memory (LangChain Blog)](https://www.langchain.com/blog/wiki-memory) - An architectural examination of the emerging wiki memory pattern, comparing file-based compilation against RAG loops.
+- [Your Second Brain Is a Graveyard. Make It Agent Memory. (Decoding AI)](https://www.decodingai.com/p/llm-wiki-agent-memory) - A guide on building an AI Research OS memory layer to compile notes and web sources into a queryable wiki for agents.
 
 ## Specifications and Standards
 
