@@ -262,6 +262,7 @@ raw data into SQLite, compiling structured Markdown articles with backlinks, aut
 *Production-deployed examples and open-source markdown templates demonstrating the LLM Wiki pattern in active human-agent workflows.*
 
 - [Andrej Karpathy Wiki](https://andrej-karpathy.com/) - A live, self-growing encyclopedia mapping Karpathy's public work using a markdown-first, Cognee-backed knowledge vault. It acts as an operational reference blueprint for the LLM Wiki pattern, featuring background query-synthesis workflows that autonomously format, link, and compile source inputs back into flat markdown files.
+- [LLM Wiki (Pratiyush)](https://pratiyush.github.io/llm-wiki/) ([GitHub](https://github.com/Pratiyush/llm-wiki)) - A live demo of a local knowledge base compiled from agent sessions, showcasing heatmaps, comparisons, and tool charts.
 
 ## Research and Papers
 
