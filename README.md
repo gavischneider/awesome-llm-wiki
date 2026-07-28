@@ -253,6 +253,7 @@ raw data into SQLite, compiling structured Markdown articles with backlinks, aut
 - [Wiki Builder (DAIR.AI)](https://github.com/dair-ai/dair-academy-plugins/tree/main/plugins/wiki-builder) - An open-source Claude Code plugin path that automates directory scaffolding, handles multi-flavor workspace indexing, and leverages localized markdown configuration files to govern agent compilation boundaries.
 - [wiki-builder (Hyperagent Skill)](https://hyperagent.com/marketplace/s/ccs01KXE6517H_XZ5CR1ZSYW20X9WQ) - A reusable agentic skill for the HyperAgent platform designed to initialize, query, and maintain structured research wikis.
 - [XBlueSky/cortexes](https://github.com/XBlueSky/cortexes) ([Website](https://cortexes.pages.dev/)) - A personal knowledge vault plugin for Claude Code featuring session capturing, memory distillation, and hybrid search.
+- [Zissa Wiki (MetamusicX)](https://github.com/MetamusicX/zissa-wiki) - A Claude Code research wiki template. Implements a three-layer navigation cascade and a deterministic Python linter.
 
 ## Live Implementations and Reference Vaults
 
