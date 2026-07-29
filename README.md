@@ -98,6 +98,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [When is the Karpathy Wiki Better than RAG (Learning Aloud Blog)](https://learningaloud.com/blog/2026/07/27/when-is-the-karpathy-wiki-better-than-rag/) - A follow-up case study comparing pre-compiled local wiki query outputs against direct cloud RAG query results.
 - [Why Karpathy is Right: RAG is Dead, Long Live the Agentic Wiki (Epsilla Blog)](https://www.epsilla.com/blogs/karpathy-agentic-wiki-beyond-rag-enterprise-memory) - An enterprise analysis comparing flat-file Markdown wikis against database semantic graphs for corporate memory.
 - [Wiki Memory (LangChain Blog)](https://www.langchain.com/blog/wiki-memory) - An architectural examination of the emerging wiki memory pattern, comparing file-based compilation against RAG loops.
+- [Your Personal Brain: A Practical Guide for Leaders, Practitioners, and Enthusiasts (Nufar Gaspar LinkedIn)](https://www.linkedin.com/pulse/your-personal-brain-practical-guide-leaders-nufar-gaspar-8oajf/) - A management playbook exploring how to establish a "dump-and-housekeep" maintenance cycle for agent memory.
 - [Your Second Brain Is a Graveyard. Make It Agent Memory. (Decoding AI)](https://www.decodingai.com/p/llm-wiki-agent-memory) - A guide on building an AI Research OS memory layer to compile notes and web sources into a queryable wiki for agents.
 
 ## Specifications and Standards
