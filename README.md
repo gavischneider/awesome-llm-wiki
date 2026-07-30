@@ -29,6 +29,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [Research and Papers](#research-and-papers)
 - [Videos](#videos)
 - [Podcasts](#podcasts)
+- [Forums and Discussions](#forums-and-discussions)
 
 ## Foundations
 
@@ -339,6 +340,12 @@ Inspired by a paradigm shift in software development engineering, this architect
 *Audio-first breakdowns, developer interviews, and strategic discussions exploring the design, implementation, and everyday use of LLM Wiki architectures.*
 
 - [Episode 429: Getting started with LLM Wikis (Microsoft Cloud IT Pro Podcast)](https://www.msclouditpropodcast.com/episode429/) - An operational teardown of the LLM Wiki architecture tailored for enterprise environments. Explores how to wire up Obsidian Web Clipper and automated RSS monitors to create active collection channels, utilizes Copilot Cowork background loops to handle daily inbox synthesis, and provides an analysis of the compliance risks of decoupling text assets from corporate Data Loss Prevention (DLP) and sensitivity governance.
+
+## Forums and Discussions
+
+*Community message boards, discussion threads, and collaborative critiques discussing pattern design and tradeoffs.*
+
+- [LLM Wiki – example of an "idea file" (Hacker News Thread)](https://news.ycombinator.com/item?id=47640875) - A viral community discussion thread containing developer critiques, architecture comparisons (RAG vs. compiled markdown files), context limits debate, and links to several open-source community implementations.
 
 ---
 
