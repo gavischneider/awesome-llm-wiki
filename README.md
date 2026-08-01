@@ -229,6 +229,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [Tome (chicken-noodle-chris)](https://github.com/chicken-noodle-chris/tome) - A Claude Code plugin and CLI utility that enforces vault directory contracts, runs linting, and serves Quartz views.
 - [Understand Anything](https://github.com/Egonex-AI/Understand-Anything) - A highly advanced, cross-platform multi-agent compilation engine and plugin suite for Claude Code, Cursor, and Gemini CLI. Uses a deterministic Tree-sitter and LLM hybrid pipeline to synthesize directories into local, versionable knowledge-graph topologies, featuring a dedicated `/understand-knowledge` framework for parsing and visualizing community clusters within Karpathy-pattern markdown wikis.
 - [vault-curator](https://github.com/ClaudioDrews/vault-curator) - A local, Python-based knowledge system compiler that transforms massive Markdown vaults into self-organizing environments for AI agents. It processes flat-file directories to automatically inject structural frontmatter metadata, compute semantic connection links, and compile persistent Maps of Content (MOCs) to optimize downstream agent retrieval.
+- [Wenlan](https://github.com/7xuanlu/wenlan) - A local-first Rust CLI and daemon that turns source-backed captures into maintained Markdown wiki pages, with citation-gated refresh, MCP access, agent plugins, and inspectable local Git history.
 
 ### Ingestion and Synchronization Utilities
 
