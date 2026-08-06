@@ -327,6 +327,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [Karpathy Wiki](https://karpathy-wiki.lol/en) - A live reference portal explaining and illustrating the Karpathy LLM Wiki pattern, featuring structured documentation directories, RAG-vs-wiki comparison matrices, and detailed tool guides.
 - [LLM Wiki (Ian Forster)](https://blog.imfsoftware.com/llm-wiki/docs/) - A live, self-compiling implementation of the LLM Wiki pattern focused on mapping the agentic AI landscape, containing synthesized concepts, framework comparisons, cost optimization guides, and multi-agent orchestration analyses.
 - [LLM Wiki (Pratiyush)](https://pratiyush.github.io/llm-wiki/) ([GitHub](https://github.com/Pratiyush/llm-wiki)) - A live demo of a local knowledge base compiled from agent sessions, showcasing heatmaps, comparisons, and tool charts.
+- [LlmWikis.org](https://llmwikis.org/) - A public handbook and interactive toolkit for building and governing LLM Wikis, featuring a step-by-step setup wizard, starter template bundles, schema definitions, and trust-label specifications.
 
 ## Research and Papers
 
