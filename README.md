@@ -324,6 +324,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 *Production-deployed examples and open-source markdown templates demonstrating the LLM Wiki pattern in active human-agent workflows.*
 
 - [Andrej Karpathy Wiki](https://andrej-karpathy.com/) - A live, self-growing encyclopedia mapping Karpathy's public work using a markdown-first, Cognee-backed knowledge vault. It acts as an operational reference blueprint for the LLM Wiki pattern, featuring background query-synthesis workflows that autonomously format, link, and compile source inputs back into flat markdown files.
+- [Karpathy Wiki](https://karpathy-wiki.lol/en) - A live reference portal explaining and illustrating the Karpathy LLM Wiki pattern, featuring structured documentation directories, RAG-vs-wiki comparison matrices, and detailed tool guides.
 - [LLM Wiki (Ian Forster)](https://blog.imfsoftware.com/llm-wiki/docs/) - A live, self-compiling implementation of the LLM Wiki pattern focused on mapping the agentic AI landscape, containing synthesized concepts, framework comparisons, cost optimization guides, and multi-agent orchestration analyses.
 - [LLM Wiki (Pratiyush)](https://pratiyush.github.io/llm-wiki/) ([GitHub](https://github.com/Pratiyush/llm-wiki)) - A live demo of a local knowledge base compiled from agent sessions, showcasing heatmaps, comparisons, and tool charts.
 
