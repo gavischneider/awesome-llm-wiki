@@ -263,6 +263,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [Pieces](https://pieces.app/) - A local-first developer context and snippet manager driven by an on-device Long-Term Memory (LTM) engine, exposing workflow history, auto-tagged codebases, and structural metadata to external agents via an integrated MCP server.
 - [plasma-ai/wiki](https://github.com/plasma-ai/wiki) ([Docs](https://docs.plasma.ai/wiki)) - A Python CLI and Claude Code plugin that automates directory indexing, link validation, and frontmatter curation.
 - [ptonlix/beeweave](https://github.com/ptonlix/beeweave) ([Docs](https://ptonlix.github.io/beeweave/)) - A CLI workbench and agent skill suite designed to compile and manage captures, drafts, and markdown knowledge vaults.
+- [Trove (Lowside-Labs)](https://github.com/Lowside-Labs/Trove) - A local-first macOS desktop application and CLI sync utility that aggregates digital bookmarks, likes, and stars from X, Instagram, Substack, GitHub, Hacker News, Claude, and ChatGPT into a unified local workspace directory. Generates default agent instructions (CLAUDE.md, AGENTS.md, INDEX.md) for direct querying by terminal coding models.
 
 ### MCP Servers and Integrations
 
