@@ -316,6 +316,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 
 *Procedural instructions, system schemas, and behavioral configuration definitions engineered to teach autonomous terminal models how to natively compile, link, and maintain flat-file knowledge bases.*
 
+- [copilot-llm-wiki (SriSatyaLokesh)](https://github.com/SriSatyaLokesh/copilot-llm-wiki) ([Website](https://srisatyalokesh.is-a.dev/copilot-llm-wiki/)) - A forkable template and prompt suite configuring GitHub Copilot Chat in VS Code to build and maintain Karpathy-style markdown wikis. Utilizes dedicated VS Code prompt files (.github/prompts/) and repository instructions to orchestrate batch ingestion, progressive concept linking, and automated vault linting.
 - [Engram Skill (NoobAIDeveloper)](https://github.com/NoobAIDeveloper/engram) - An open-source Claude Code skill suite that captures digital touchpoints and social threads, automatically parsing and compiling them into an interlinked, structured Obsidian knowledge vault.
 - [hstack](https://github.com/kamens/hstack) - A suite of Claude Code skills and agents that compile raw medical records and research into a personal disease wiki.
 - [karpathy-llm-wiki (Astro-Han)](https://github.com/Astro-Han/karpathy-llm-wiki) - An installable agent skill packaging the Karpathy LLM Wiki pattern for agentskills.io-compatible clients.
