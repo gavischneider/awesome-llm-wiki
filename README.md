@@ -189,6 +189,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 
 *Dedicated graphical user interfaces, standalone desktop environments, and visual editor shells.*
 
+- [BYO-LLM-WIKI (Lyra-stellAI)](https://github.com/Lyra-stellAI/BYO-LLM-WIKI) ([Live Demo](https://byo-wiki-demo.vercel.app/)) - A local-first Flask web application, JSON API, and CLI utility that implements the Karpathy LLM Wiki pattern using deepagents. Features an 8-layer on-disk knowledge graph (entities, topics, synthesis), contextual HNSW retrieval, cross-session memory, bi-directional MCP server capabilities, and human-gated LangGraph skill synthesis.
 - [Cabinet](https://runcabinet.com/) - A free, open-source, file-based AI knowledge workspace that implements Karpathy's compilation loop, featuring git-backed auto-commits, scheduled agent automation cron-jobs, an integrated browser terminal, and embedded HTML application injection.
 - [DeepWiki-Open (Grok-Wiki)](https://github.com/AsyncFuncAI/deepwiki-open) ([Website](https://grok-wiki.com/)) - An open-source documentation engine and desktop client compiling codebases into
   interactive Markdown wikis, generating Mermaid diagrams and Q&amp;A indexes with local/remote LLM support.
