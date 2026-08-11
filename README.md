@@ -11,6 +11,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 ## Contents
 
 - [Foundations](#foundations)
+- [GitHub Gists](#github-gists)
 - [Articles and Guides](#articles-and-guides)
   - [Conceptual Primers and Comparisons](#conceptual-primers-and-comparisons)
   - [Tutorials and Setup Guides](#tutorials-and-setup-guides)
@@ -33,9 +34,16 @@ Inspired by a paradigm shift in software development engineering, this architect
 
 ## Foundations
 
-*Foundational whitepapers, conceptual architectures, and structural blueprints outlining static agentic compilation.*
+*Foundational material from Andrej Karpathy that introduced and defined the LLM Wiki architecture.*
 
+- [Andrej Karpathy's First Post on LLM Knowledge Bases](https://x.com/karpathy/status/2039805659525644595) - The original post by Andrej Karpathy introducing the concept of using LLMs to compile and maintain persistent, file-based knowledge bases over traditional RAG.
+- [Andrej Karpathy's Follow-up Post on the LLM Wiki Idea File](https://x.com/karpathy/status/2040470801506541998) - The follow-up post by Andrej Karpathy publishing the formal LLM Wiki gist and conceptual framework for autonomous knowledge compilation.
 - [Andrej Karpathy's LLM Wiki Gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) - The foundational idea file laying out the core pattern, operations, and architecture for compounding AI knowledge bases.
+
+## GitHub Gists
+
+*Community blueprints, proof-of-concept system schemas, and architectural experiments published as GitHub Gists.*
+
 - [Farza's Personal Wiki Skill](https://gist.github.com/farzaa/c35ac0cfbeb957788650e36aabea836d) - A functional blueprint for implementing an LLM wiki compiler using Claude Code skills, including commands for ingestion, absorption, and automated cleanup.
 - [graphwiki: an LLM Wiki pattern for graph databases](https://gist.github.com/lucianfialho/44034e0d02a2bfccca2ad6358bde1dff) - A conceptual blueprint mapping the LLM Wiki pattern to a property graph (Neo4j) with entity resolution benchmarks.
 - [LLM Wiki v2](https://gist.github.com/rohitg00/2067ab416f7bbe447c1977edaaa681e2) - An architectural extension of Karpathy's blueprint focused on scale, memory lifecycles, confidence decay, and typed knowledge graphs.
