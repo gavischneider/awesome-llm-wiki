@@ -188,6 +188,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 
 *Code-first SDKs, programmatic pipelines, and developer libraries used to orchestrate or validate local context vaults.*
 
+- [agent-swarm.dev (desplega-ai)](https://www.agent-swarm.dev/) ([GitHub](https://github.com/desplega-ai/agent-swarm)) - An open-source multi-agent execution framework and runtime engine. Coordinates lead and worker agents (Claude Code, Codex) inside isolated Docker containers, capturing tasks from Slack, GitHub, Linear, and Jira while maintaining a shared, compounding persistent memory substrate with hybrid graph-linked recall and human-in-the-loop review gates.
 - [axoviq-ai/synthadoc](https://github.com/axoviq-ai/synthadoc) ([Demo Video](https://www.youtube.com/watch?v=rIGO6zi9XQE)) - A local-first knowledge engine compiling multi-format sources into OKF markdown wikis, with a web UI and MCP server.
 - [codejunkie99/agentic-stack](https://github.com/codejunkie99/agentic-stack) - A framework providing a unified, portable `.agent/` directory structure to standardize local memory, skills, and protocols across multiple environments (such as Claude Code, Cursor, and Windsurf). Features a multi-layered local file storage engine, an automated configuration syncing CLI, and self-improving pattern-clustering workflows that keep knowledge persistent across different development tools.
 - [EverMind-AI/EverOS](https://github.com/EverMind-AI/EverOS) ([Website](https://evermind.ai/)) - A local-first agent memory runtime that compiles conversations and files into Git-versioned Markdown.
@@ -322,7 +323,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 
 ### Hosting and Infrastructure Platforms
 
-*Remote publishing layers, deployment environments, and multi-agent access infrastructure for file-based knowledge vaults.*
+*Cloud hosting platforms, remote publishing layers, and managed infrastructure services for deploying and serving file-based knowledge vaults.*
 
 - [Agent Wikis](https://agentwikis.com/) - A production-deployed knowledge platform built around the "Git as a database" flat-file pattern. It hosts public, human-readable wikis that anyone can browse for free to learn from, while serving the underlying raw markdown via MCP for autonomous agent ingestion. Features a closed-loop engine that tracks missed agent queries to fuel automated research and patching workflows behind human-gated commit approvals.
 - [AutoWiki (Factory)](https://factory.ai/news/wiki) - An enterprise-grade codebase wiki compilation platform that automatically generates structured Markdown wikis from repositories and syncs them to Git-backed wikis.
