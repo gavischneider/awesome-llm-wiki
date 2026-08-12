@@ -48,6 +48,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [graphwiki: an LLM Wiki pattern for graph databases](https://gist.github.com/lucianfialho/44034e0d02a2bfccca2ad6358bde1dff) - A conceptual blueprint mapping the LLM Wiki pattern to a property graph (Neo4j) with entity resolution benchmarks.
 - [LLM Wiki v2](https://gist.github.com/rohitg00/2067ab416f7bbe447c1977edaaa681e2) - An architectural extension of Karpathy's blueprint focused on scale, memory lifecycles, confidence decay, and typed knowledge graphs.
 - [LLM Wiki v3: A State-Space Knowledge System](https://gist.github.com/HousamKak/ba96124547d1b7c68d270c293106fe53) - An architectural specification extending the LLM Wiki pattern into a probabilistic state-space model where the LLM extracts structured observations, a belief engine updates evidence states, and markdown wiki pages are rendered as deterministic views of underlying truth graphs.
+- [LLM Wiki V3: Segmentation](https://gist.github.com/ahumanft/6c96385be6ca4af578cc9b20e0f79e66) - A scaling specification addressing context drift and schema overload in LLM Wikis. Proposes segmenting systems into specialized roles (Ingestor, Librarian, Linter), dual ingestion modes ('restricted section' deep curation vs. 'open stacks' shallow indexing), explicit schema triggers to minimize drifting implicit instructions, and cache rewarming to prevent multi-agent navigation bias.
 
 ## Articles and Guides
 
