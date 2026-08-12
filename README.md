@@ -324,6 +324,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [Stash](https://www.joinstash.ai/) ([GitHub](https://github.com/Fergana-Labs/stash)) - A self-hostable shared memory platform for coding agents. Exposes vault files and session logs via MCP or VFS.
 - [trip2g](https://github.com/trip2g/trip2g) ([Website](https://trip2g.com/)) - An open-source, self-hosted web server and Obsidian plugin that publishes vaults as websites and exposes them via MCP.
 - [vercel-labs/openwiki](https://github.com/vercel-labs/openwiki) ([Website](https://openwiki.sh/)) - A web application and deployment platform that generates, hosts, and schedules updates for source-grounded codebase wikis.
+- [wikidesk (ilya-epifanov)](https://github.com/ilya-epifanov/wikidesk) - A companion server and infrastructure daemon for LLM Wikis written in Rust. Turns named wiki repositories into shared, multi-agent knowledge services where coding agents read local mirrors, dispatch background sandboxed research agents via MCP and REST APIs, and automatically synchronize wiki updates across session lifecycle hooks.
 - [wikihub.md](https://wikihub.md) - A specialized hosting and collaboration platform designed specifically for flat-file LLM wikis. Features instant markdown publishing via Git or drag-and-drop, a robust per-file access control system using a `.wikihub/acl` (CODEOWNERS-pattern) schema, and an agent-native REST API that allows autonomous systems to dynamically read, query, and modify deployed knowledge vaults securely.
 
 ### Agent Skills and System Rules
