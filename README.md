@@ -185,7 +185,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 ### Open Knowledge Format (OKF)
 
 - [How the Open Knowledge Format Can Improve Data Sharing (Google Cloud Blog)](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/) - The official announcement and contextual release brief introducing OKF v0.1. Outlines the industry-wide problem of fragmented AI context landscapes and formalizes the Karpathy LLM-wiki pattern into an enterprise-accepted format for decoupling knowledge generation from proprietary database frameworks.
-- [Open Knowledge Format (OKF) v0.1 Specification](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) - The official technical blueprint by Google Cloud defining an open, vendor-neutral standard for human- and agent-friendly knowledge bundles. Outlines the exact structural contracts for a file-based layout: directories of raw Markdown documents, mandatory `type` definitions in YAML frontmatter, standard horizontally linked graph paths, and reserved structural control protocols like `index.md` and `log.md`.
+- [Open Knowledge Format (OKF) Specification (Version 0.2)](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) - The official technical blueprint by Google Cloud defining an open, vendor-neutral standard for human- and agent-friendly knowledge bundles. Outlines the exact structural contracts for a file-based layout: directories of raw Markdown documents, YAML frontmatter configurations (featuring provenance, trust status, and lifecycle tags), standard horizontally linked graphs, and attested computations.
 
 ## Tools and Plugins
 
