@@ -480,7 +480,8 @@ Inspired by a paradigm shift in software development engineering, this architect
 
 ### Build With AI
 
-- [Build Karpathy's Second Brain With Obsidian + Claude Code](https://share.transistor.fm/s/d0fe7c2a) - A podcast episode featuring Nicholas Spisak walking through a live, 20-minute setup of an Obsidian second brain using Claude Code. Covers directory structures (raw, wiki, sessions), the automatic session transcript index, and setting up automated ingestion scripts.
+- [Episode 156: Build Karpathy's Second Brain With Obsidian + Claude Code](https://share.transistor.fm/s/d0fe7c2a) - A podcast episode featuring Nicholas Spisak walking through a live, 20-minute setup of an Obsidian second brain using Claude Code. Covers directory structures (raw, wiki, sessions), the automatic session transcript index, and setting up automated ingestion scripts.
+- [Episode 163: I Built the ULTIMATE AI Second Brain (Karpathy's LLM Wiki Setup Guide)](https://share.transistor.fm/s/3e92bab2) - A solo podcast episode outlining the deployment of an Obsidian-compatible second brain using Hermes and its native LLM Wiki skill. Breaks down the three-layer knowledge base layout (raw, wiki, schema), VPS deployment on Hostinger, Telegram bot connection, and using the Markdownload Chrome extension to feed sources.
 
 ### Microsoft Cloud IT Pro Podcast
 
