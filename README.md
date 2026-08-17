@@ -33,6 +33,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [Podcasts](#podcasts)
   - [Build With AI](#build-with-ai)
   - [Microsoft Cloud IT Pro Podcast](#microsoft-cloud-it-pro-podcast)
+  - [Working Code Podcast](#working-code-podcast)
 - [Forums and Discussions](#forums-and-discussions)
 
 ## Foundations
@@ -486,6 +487,10 @@ Inspired by a paradigm shift in software development engineering, this architect
 ### Microsoft Cloud IT Pro Podcast
 
 - [Episode 429: Getting started with LLM Wikis](https://www.msclouditpropodcast.com/episode429/) - An operational teardown of the LLM Wiki architecture tailored for enterprise environments. Explores how to wire up Obsidian Web Clipper and automated RSS monitors to create active collection channels, utilizes Copilot Cowork background loops to handle daily inbox synthesis, and provides an analysis of the compliance risks of decoupling text assets from corporate Data Loss Prevention (DLP) and sensitivity governance.
+
+### Working Code Podcast
+
+- [Episode 260: Reinventing the Wiki](https://workingcode.dev/episodes/260-reinventing-the-wiki/) - A discussion analyzing the utility of personal LLM Wikis when models already ingest the web. Covers patterns for co-maintaining markdown vaults with agents, running private offline diaries with local models (Qwen), and compiling product Q&A/support tickets into custom wikis.
 
 ## Forums and Discussions
 
