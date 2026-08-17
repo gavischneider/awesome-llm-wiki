@@ -31,6 +31,8 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [Research and Papers](#research-and-papers)
 - [Videos](#videos)
 - [Podcasts](#podcasts)
+  - [Build With AI](#build-with-ai)
+  - [Microsoft Cloud IT Pro Podcast](#microsoft-cloud-it-pro-podcast)
 - [Forums and Discussions](#forums-and-discussions)
 
 ## Foundations
@@ -476,7 +478,13 @@ Inspired by a paradigm shift in software development engineering, this architect
 
 *Audio-first breakdowns, developer interviews, and strategic discussions exploring the design, implementation, and everyday use of LLM Wiki architectures.*
 
-- [Episode 429: Getting started with LLM Wikis (Microsoft Cloud IT Pro Podcast)](https://www.msclouditpropodcast.com/episode429/) - An operational teardown of the LLM Wiki architecture tailored for enterprise environments. Explores how to wire up Obsidian Web Clipper and automated RSS monitors to create active collection channels, utilizes Copilot Cowork background loops to handle daily inbox synthesis, and provides an analysis of the compliance risks of decoupling text assets from corporate Data Loss Prevention (DLP) and sensitivity governance.
+### Build With AI
+
+- [Build Karpathy's Second Brain With Obsidian + Claude Code](https://share.transistor.fm/s/d0fe7c2a) - A podcast episode featuring Nicholas Spisak walking through a live, 20-minute setup of an Obsidian second brain using Claude Code. Covers directory structures (raw, wiki, sessions), the automatic session transcript index, and setting up automated ingestion scripts.
+
+### Microsoft Cloud IT Pro Podcast
+
+- [Episode 429: Getting started with LLM Wikis](https://www.msclouditpropodcast.com/episode429/) - An operational teardown of the LLM Wiki architecture tailored for enterprise environments. Explores how to wire up Obsidian Web Clipper and automated RSS monitors to create active collection channels, utilizes Copilot Cowork background loops to handle daily inbox synthesis, and provides an analysis of the compliance risks of decoupling text assets from corporate Data Loss Prevention (DLP) and sensitivity governance.
 
 ## Forums and Discussions
 
