@@ -191,6 +191,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [We gave our agent a memory: building an LLM Wiki over sources that never sit still (Taktile Blog)](https://engineering.taktile.com/blog/llm-wiki-agent-memory/) - A case study on transitioning an agent from runtime RAG to an LLM Wiki structure to reduce latency and cost.
 - [What My Personal Knowledge Base Made Visible That I Couldn’t See (Robin Good Substack)](https://robingood.substack.com/p/what-my-llm-wiki-personal-knowledge-base-made-visible) - An essay exploring how converting personal writings into a local LLM Wiki exposes hidden cognitive patterns, expert positioning, and missing research areas.
 - [When is the Karpathy Wiki Better than RAG (Learning Aloud Blog)](https://learningaloud.com/blog/2026/07/27/when-is-the-karpathy-wiki-better-than-rag/) - A follow-up case study comparing pre-compiled local wiki query outputs against direct cloud RAG query results.
+- [WikiMind: Building an AI Knowledge Platform Inspired by Wiki LLM (Jayashan Manodya on Medium)](https://medium.com/@jayashanmanodya/wikimind-building-an-ai-knowledge-platform-inspired-by-wiki-llm-cb58d3470f2a) - A case study on building a full-stack, AI-powered knowledge platform centered on the LLM Wiki pattern. Outlines utilizing LangGraph StateGraph to orchestrate stateful agentic ingestion workflows, LangSmith for QA validation, Turso Cloud Database for cross-device context pooling, and an interactive 2D physics-based knowledge graph to visualize concept nodes.
 
 ## Specifications and Standards
 
