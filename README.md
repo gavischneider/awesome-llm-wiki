@@ -29,6 +29,7 @@ Inspired by a paradigm shift in software development engineering, this architect
   - [Starter Templates and Boilerplates](#starter-templates-and-boilerplates)
 - [Live Implementations and Reference Vaults](#live-implementations-and-reference-vaults)
 - [Research and Papers](#research-and-papers)
+- [Academic Courses and Lectures](#academic-courses-and-lectures)
 - [Videos](#videos)
 - [Podcasts](#podcasts)
   - [Build With AI](#build-with-ai)
@@ -450,6 +451,12 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [WiCER: Wiki-memory Compile, Evaluate, Refine Iterative Knowledge Compilation for LLM Wiki Systems](https://arxiv.org/abs/2605.07068) - A foundational paper characterizing the "compilation gap" and attention dilution in long-context KV cache LLM Wiki deployments. Proposes an iterative, CEGAR-inspired compilation loop that automatically evaluates workspaces against diagnostic probes, isolates dropped facts, and injects them as cumulative structural preservation constraints, reducing catastrophic failure rates by 55%.
 - [WikiKV: Schema-Evolving Path-Indexed Storage for Hierarchical Knowledge Navigation](https://arxiv.org/abs/2606.14275) (Tencent/WeChat) - A foundational database-tier paper formalizing the storage, optimization, and evolution constraints of LLM-curated hierarchical wikis. It introduces a path-as-key encoding model to achieve single-round-trip lookups, details automated continuous structural evolution through programmatic split and merge operators, and demonstrates production validation backing the WeChat Assistant framework.
 - [WikiLoop: Jointly Learning to Build and Navigate Agent-Native Wikis with Downstream Feedback](https://arxiv.org/abs/2607.26604) - A research paper introducing a feedback-coupled framework that jointly trains a dual-role policy (Builder and Navigator) to construct and query agent-native linked-page wikis. Uses utility difference rewards and downstream navigation signals to evaluate candidate wiki edits, demonstrating substantial accuracy gains across AuthTrace, HotpotQA, and MuSiQue without external databases.
+
+## Academic Courses and Lectures
+
+*Syllabi, lecture slides, notes, and academic materials from university-level courses exploring generative AI workflows, agent memory, and knowledge organization.*
+
+- [MAE-6291: Generative AI for Engineering Research (Lorena A. Barba at George Washington University)](https://barbagroup.github.io/mae6291-genai/) ([Lecture Video](https://www.youtube.com/watch?v=TC_d_0CR07A)) ([Lecture Notes PDF](https://figshare.com/articles/presentation/Organizing_Knowledge_with_AI_from_the_LLM_Wiki_to_Using_AI_as_a_Tool_for_Thought/32882258/2?file=66260606)) - A graduate-level course teaching engineering PhD students to utilize generative AI as a research accelerator. The final session focuses on the LLM Wiki pattern as compiled semantic memory, comparing it with standard RAG, defining the raw/wiki/schema layers, and discussing how personal wikis scaffold metacognition.
 
 ## Videos
 
