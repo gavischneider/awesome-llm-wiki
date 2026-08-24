@@ -432,6 +432,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [sturlese/hippocampus](https://github.com/sturlese/hippocampus) - A zero-dependency personal knowledge base template built for Claude Code using the Open Knowledge Format (OKF).
 - [The PM Wiki (AliMahmoud15486)](https://github.com/AliMahmoud15486/pm-llm-wiki) - A system schema and ruleset template that teaches coding agents how to compile and maintain product management wikis.
 - [Zissa Wiki (MetamusicX)](https://github.com/MetamusicX/zissa-wiki) - A Claude Code research wiki template. Implements a three-layer navigation cascade and a deterministic Python linter.
+- [Verified Memory Vault (secondbrainstarter)](https://github.com/secondbrainstarter/verified-memory-vault) - A self-checking Obsidian vault for AI coding agents. Persistent memory (CLAUDE.md boot file, append-only MEMORY.md, daily notes) with two dependency-free Python tools: `memory_check.py` scores memory health (dated entries, duplicates, dead wikilinks, context-window bloat, inbox pressure) and an optional git pre-commit hook refuses mass deletions or MEMORY.md history rewrites — protecting the wiki from accidental destruction by the agent itself.
 
 ## Live Implementations and Reference Vaults
 
