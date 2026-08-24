@@ -431,8 +431,8 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [llm-wiki-karpathy (balukosuri)](https://github.com/balukosuri/llm-wiki-karpathy) ([Companion Article](https://medium.com/@k.balu124/i-used-karpathys-llm-wiki-to-build-a-knowledge-base-that-maintains-itself-with-ai-df968e4f5ea0)) - A self-maintaining personal knowledge base template and schema configured for Cursor and Obsidian. Uses a custom operating manual (`CLAUDE.md`) to guide autonomous agents through ingest, query, and lint operations side-by-side with live visual graph previews.
 - [sturlese/hippocampus](https://github.com/sturlese/hippocampus) - A zero-dependency personal knowledge base template built for Claude Code using the Open Knowledge Format (OKF).
 - [The PM Wiki (AliMahmoud15486)](https://github.com/AliMahmoud15486/pm-llm-wiki) - A system schema and ruleset template that teaches coding agents how to compile and maintain product management wikis.
-- [Zissa Wiki (MetamusicX)](https://github.com/MetamusicX/zissa-wiki) - A Claude Code research wiki template. Implements a three-layer navigation cascade and a deterministic Python linter.
 - [Verified Memory Vault (secondbrainstarter)](https://github.com/secondbrainstarter/verified-memory-vault) - A self-checking Obsidian vault for AI coding agents. Persistent memory (CLAUDE.md boot file, append-only MEMORY.md, daily notes) with two dependency-free Python tools: `memory_check.py` scores memory health (dated entries, duplicates, dead wikilinks, context-window bloat, inbox pressure) and an optional git pre-commit hook refuses mass deletions or MEMORY.md history rewrites — protecting the wiki from accidental destruction by the agent itself.
+- [Zissa Wiki (MetamusicX)](https://github.com/MetamusicX/zissa-wiki) - A Claude Code research wiki template. Implements a three-layer navigation cascade and a deterministic Python linter.
 
 ## Live Implementations and Reference Vaults
 
