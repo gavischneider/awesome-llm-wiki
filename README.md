@@ -299,6 +299,9 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [llm-knowledge-bases (rvk7895)](https://github.com/rvk7895/llm-knowledge-bases) - An open-source Claude Code plugin and skill suite that compiles raw multi-modal source documents (papers, YouTube transcripts, images, datasets) into an interlinked Obsidian wiki. Features three query depth levels (Quick, Standard, and Deep multi-agent research), artifact export for Marp slides and charts, and automated vault health linters.
 - [Matryca Plumber](https://github.com/MarcoPorcellato/matryca-plumber) - An enterprise-grade, local-first background AI maintenance daemon and native FastMCP server for Logseq graphs. Directly handles direct Markdown AST block mutations with integrated Optimistic Concurrency Control, featuring background dangling link healing, zero-LLM link rot lints, a local cockpit UI, and deep developer optimization for Claude Code.
 - [twillm](https://github.com/Jermolene/twillm) - A TiddlyWiki-powered local knowledge management wrapper explicitly built around the Karpathy LLM Wiki pattern. It watches an Obsidian-compatible directory of flat-file Markdown nodes to dynamically compile live query filters and interactive dashboards, eliminating index file staleness across parallel human and AI agent editing loops.
+- [vault-operator (pssah4)](https://github.com/pssah4/vault-operator) ([Website](https://pssah4.github.io/vault-operator/)) - An agentic
+  AI operating layer and Obsidian plugin that serves as a thinking partner. Reads vault notes, manages long-term
+  memory, and coordinates local workflows using native tools, skills, and Model Context Protocol (MCP) integrations.
 
 ### General-Purpose Wiki Compilers
 
