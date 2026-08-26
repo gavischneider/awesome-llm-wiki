@@ -16,6 +16,7 @@ Inspired by a paradigm shift in software development engineering, this architect
   - [Conceptual Primers and Foundations](#conceptual-primers-and-foundations)
   - [Comparative Analyses (Wiki vs. RAG)](#comparative-analyses-wiki-vs-rag)
   - [Codebase and Developer Context](#codebase-and-developer-context)
+  - [Digital Gardens and Public Notes](#digital-gardens-and-public-notes)
   - [Scaling and Enterprise Systems](#scaling-and-enterprise-systems)
   - [Tutorials and Setup Guides](#tutorials-and-setup-guides)
   - [Case Studies and Retrospectives](#case-studies-and-retrospectives)
@@ -83,7 +84,6 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [Karpathy's LLM Wiki: A Knowledge Base That Compounds (AI Builder Club)](https://www.aibuilderclub.com/blog/karpathy-llm-wiki) - An architectural breakdown of the LLM Wiki pattern contrasting it with standard RAG pipelines, defining the three-layer structure and three operations.
 - [Karpathy's LLM Wiki: The Complete Guide (Agentpedia Codes)](https://antigravity.codes/blog/karpathy-llm-wiki-idea-file) - An exhaustive breakdown analyzing the three-layer architecture, comparing static compilation vs. traditional RAG, and detailing prompt configurations.
 - [LLM Markdown Wiki: A Personal Second Brain Without the Maintenance (Kiryl Bahdanovich on WAVEPILLARS)](https://wavepillars.com/learn/ai/llm-markdown-wiki-knowledge-base/) - A conceptual guide detailing how an LLM-maintained markdown wiki cuts knowledge maintenance overhead. Explores the raw/wiki/schema architecture, Obsidian graph-based hierarchy reviews, Cursor agent sync workflows, and utilizing frontmatter-first agent searches to optimize token usage.
-- [LLM Wiki (Kamenik Solutions)](https://kameniksolutions.com/garden/llm-wiki/) - A digital garden note summarizing the LLM Wiki pattern. Explains when to use compiled vaults over dynamic vector RAG, outlines the three core layers (raw sources, structured wiki, instruction schemas), and notes its trial as an organizational technique for agent-curated vaults.
 - [LLM Wiki: Karpathy's Idea for AI Knowledge Bases (Denser.ai)](https://denser.ai/blog/llm-wiki-karpathy-knowledge-base/) - An analysis of Karpathy's LLM Wiki pattern, reviewing top implementations, product principles, and RAG integration.
 - [LLM Wiki: The Compounding Knowledge Base, Explained (Mikko Lehtimäki on Softlandia Blog)](https://softlandia.com/articles/llm-wiki-the-compounding-knowledge-base-explained) - A conceptual primer explaining how LLM Wikis function as self-updating knowledge bases for AI agents. Compares link-based traversal against vector RAG models, outlining the minimal operational structure (sources/, wiki/, index.md, and system instructions) needed to enable compounding context.
 - [Personal Knowledge Management Is Missing a Step (Scribelet Blog)](https://scribelet.app/blog/personal-knowledge-management) - An article analyzing the lifecycle of personal knowledge management systems (Zettelkasten, PARA, digital gardens).
@@ -136,6 +136,15 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [LLM Wiki vs RAG for Internal Codebase Memory: Which Approach Should You Use? (MindStudio Blog)](https://www.mindstudio.ai/blog/llm-wiki-vs-rag-internal-codebase-memory) - A comparative guide analyzing the tradeoffs between RAG and flat-file LLM Wikis for codebase memory and agent context routing.
 - [OpenWiki 0.2 brings OKF to codebase documentation (LangChain Blog)](https://www.langchain.com/blog/openwiki-0-2-adds-okf-support) - The official announcement of OpenWiki 0.2, detailing its integration of the Open Knowledge Format (OKF) specification.
 - [Your AI Agent Needs a Map: LLM Wiki vs README-Driven Documentation (Roman Dykyi on Medium)](https://medium.com/@dykyi.roman/your-ai-agent-needs-a-map-llm-wiki-vs-readme-driven-documentation-747e683c9ab4) - A comparative analysis examining how developers feed context to AI coding agents, contrasting project-mapping files (like README.md and CLAUDE.md) with compounding knowledge layers (LLM Wikis), and exploring token management, drift risks, and file-linking topologies.
+
+### Digital Gardens and Public Notes
+
+*Notes, digital gardens, and public wiki entries from personal knowledge bases detailing real-world implementations and critiques of the LLM Wiki pattern.*
+
+- [LLM Wiki (DeveloPassion Digital Garden)](https://notes.dsebastien.net/30+Areas/33+Permanent+notes/33.02+Content/LLM+Wiki) - A digital garden
+  note summarizing the LLM Wiki pattern. Covers the three-layer architecture, core operations (Ingest, Query, Lint),
+  and outlines Steven Thompson's critique on compilation versus curation.
+- [LLM Wiki (Kamenik Solutions)](https://kameniksolutions.com/garden/llm-wiki/) - A digital garden note summarizing the LLM Wiki pattern. Explains when to use compiled vaults over dynamic vector RAG, outlines the three core layers (raw sources, structured wiki, instruction schemas), and notes its trial as an organizational technique for agent-curated vaults.
 
 ### Scaling and Enterprise Systems
 
