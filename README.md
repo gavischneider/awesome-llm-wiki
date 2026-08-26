@@ -123,6 +123,9 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [RAG, LLM Wiki, or Gbrain? How Your Agent Remembers Changes Everything (Yanli Liu on GOPUBBY)](https://ai.gopubby.com/rag-llm-wiki-or-gbrain-how-your-agent-remembers-changes-everything-56829e66725c) - A comparative architecture analysis contrasting traditional runtime RAG, compiled LLM Wikis, and Garry Tan's workflow-centric Gbrain framework to guide the choice of agent-optimized knowledge substrates.
 - [Why Karpathy is Right: RAG is Dead, Long Live the Agentic Wiki (Epsilla Blog)](https://www.epsilla.com/blogs/karpathy-agentic-wiki-beyond-rag-enterprise-memory) - An enterprise analysis comparing flat-file Markdown wikis against database semantic graphs for corporate memory.
 - [Wiki Memory (LangChain Blog)](https://www.langchain.com/blog/wiki-memory) - An architectural examination of the emerging wiki memory pattern, comparing file-based compilation against RAG loops.
+- [Your RAG Has Amnesia — and Another Vector Store Won't Cure It (Roan Brasil Monteiro)](https://medium.com/@roanmonteiro/your-rag-has-amnesia-and-another-vector-store-wont-cure-it-8b1d1eb77470) - An article analyzing why
+  traditional RAG pipelines fail to compile compounding knowledge. Proposes a persistent markdown memory layer
+  inspired by the LLM Wiki pattern to support stateful context and trace provenance.
 
 ### Codebase and Developer Context
 
