@@ -1,6 +1,6 @@
 ![Awesome LLM Wiki](https://github.com/user-attachments/assets/f6e4ba61-06cc-4384-b7c4-dba987b8d6a9)
 
-# Awesome LLM Wiki [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![Last-Commit](https://img.shields.io/github/last-commit/gavischneider/awesome-llm-wiki) [![Join the Discussion](https://img.shields.io/badge/Reddit-r/LLM_Wiki-orange)](https://reddit.com/r/LLM_Wiki) [![Stars](https://img.shields.io/github/stars/gavischneider/awesome-llm-wiki)](https://github.com/gavischneider/awesome-llm-wiki)
+# Awesome LLM Wiki [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![Last-Commit](https://img.shields.io/github/last-commit/gavischneider/awesome-llm-wiki) [![Join the Discussion](https://img.shields.io/badge/Reddit-r/LLM_Wiki-orange)](https://reddit.com/r/LLM_Wiki) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/gavischneider/awesome-llm-wiki) [![Stars](https://img.shields.io/github/stars/gavischneider/awesome-llm-wiki)](https://github.com/gavischneider/awesome-llm-wiki)
 
 > A curated list of foundational blueprints, functional frameworks, and technical guides for building compounding, AI-compiled knowledge bases.
 
