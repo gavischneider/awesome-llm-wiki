@@ -101,6 +101,9 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [Self-Authoring LLM Knowledge Bases](https://www.ricardodecal.com/projects/self-authoring-llm-knowledge-base/) - A technical conceptualization extending the compilation loop to live developer conversations, transforming ephemeral terminal and editor interactions into structured, persistent memory.
 - [The Benefits of Using an LLM Wiki for Your AI Chatbot (Nick Kirtley on 99helpers)](https://99helpers.com/blog/benefits-llm-wiki-for-your-ai-chatbot) - A conceptual breakdown outlining the structural advantages of using compiled Markdown wikis to ground AI chatbots, covering setup simplicity, response speed, contextual consistency, and cost metrics compared to vector RAG setups.
 - [The Designer's LLM Wiki (Fanny on AI Product + Design)](https://medium.com/ai-product-design/the-designers-llm-wiki-fcf499354457) - An essay exploring the value of personal, queryable LLM Wikis for product designers. Highlights the challenge of design insights scattered across Figma, Notion, and Slack, proposing a markdown context layer to let models synthesize design learnings and onboarding flows across multi-product histories.
+- [The Four Pillars of a Company Brain (Femke Plantinga on X)](https://x.com/femke_plantinga/status/2092918452423983363) - A post
+  comparing nine different implementations to extract the four pillars of agent memory: gathering signals,
+  remembering, dreaming & pruning (updating/purging knowledge), and retrieving & speaking.
 - [The Goal is Curation, not Compilation (LLM Wiki) (Steven Thompson)](https://medium.com/a-voice-in-the-conversation/the-goal-is-curation-not-compilation-llm-wiki-6f90f829b15d) - An essay analyzing the tension
   between machine compilation and human curation in LLM Wikis. Argues that a knowledge vault should serve as a
   "biography of understanding" rather than a database, suggesting that humans must retain responsibility for weighing
