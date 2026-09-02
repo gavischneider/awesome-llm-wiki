@@ -20,6 +20,7 @@ Inspired by a paradigm shift in software development engineering, this architect
   - [Scaling and Enterprise Systems](#scaling-and-enterprise-systems)
   - [Tutorials and Setup Guides](#tutorials-and-setup-guides)
   - [Case Studies and Retrospectives](#case-studies-and-retrospectives)
+- [Books and Ebooks](#books-and-ebooks)
 - [Specifications and Standards](#specifications-and-standards)
 - [Tools and Plugins](#tools-and-plugins)
   - [Libraries and Frameworks](#libraries-and-frameworks)
@@ -260,6 +261,12 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [What My Personal Knowledge Base Made Visible That I Couldn’t See (Robin Good Substack)](https://robingood.substack.com/p/what-my-llm-wiki-personal-knowledge-base-made-visible) - An essay exploring how converting personal writings into a local LLM Wiki exposes hidden cognitive patterns, expert positioning, and missing research areas.
 - [When is the Karpathy Wiki Better than RAG (Learning Aloud Blog)](https://learningaloud.com/blog/2026/07/27/when-is-the-karpathy-wiki-better-than-rag/) - A follow-up case study comparing pre-compiled local wiki query outputs against direct cloud RAG query results.
 - [WikiMind: Building an AI Knowledge Platform Inspired by Wiki LLM (Jayashan Manodya on Medium)](https://medium.com/@jayashanmanodya/wikimind-building-an-ai-knowledge-platform-inspired-by-wiki-llm-cb58d3470f2a) - A case study on building a full-stack, AI-powered knowledge platform centered on the LLM Wiki pattern. Outlines utilizing LangGraph StateGraph to orchestrate stateful agentic ingestion workflows, LangSmith for QA validation, Turso Cloud Database for cross-device context pooling, and an interactive 2D physics-based knowledge graph to visualize concept nodes.
+
+## Books and Ebooks
+
+*Long-form books, interactive volumes, and published guides exploring compiled agent memory, knowledge architectures, and enterprise context systems.*
+
+- [The Ontology of the Company Brain (Slite)](https://slite.com/ebooks/company-brain/content) - An interactive ebook synthesizing insights from 149 teams on designing, maintaining, and scaling autonomous company-wide knowledge bases for AI agents, covering core components, governance, and build-versus-buy trade-offs.
 
 ## Specifications and Standards
 
