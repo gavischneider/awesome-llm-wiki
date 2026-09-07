@@ -493,6 +493,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 
 *Procedural instructions, system schemas, and behavioral configuration definitions engineered to teach autonomous terminal models how to natively compile, link, and maintain flat-file knowledge bases.*
 
+- [DeepRefine-Skill (HKUST-KnowComp)](https://github.com/HKUST-KnowComp/DeepRefine-Skill) ([Website](https://hhy-huang.github.io/DeepRefine_page/)) - An installable agent skill suite for Claude Code, Codex, Copilot CLI, Cursor, Gemini CLI, and OpenCode that evolves and refines LLM-Wiki and Graphify knowledge graphs at test time through query reflection and automated graph maintenance.
 - [Engram Skill (NoobAIDeveloper)](https://github.com/NoobAIDeveloper/engram) - An open-source Claude Code skill suite that captures digital touchpoints and social threads, automatically parsing and compiling them into an interlinked, structured Obsidian knowledge vault.
 - [hstack](https://github.com/kamens/hstack) - A suite of Claude Code skills and agents that compile raw medical records and research into a personal disease wiki.
 - [karpathy-llm-wiki (Astro-Han)](https://github.com/Astro-Han/karpathy-llm-wiki) - An installable agent skill packaging the Karpathy LLM Wiki pattern for agentskills.io-compatible clients.
