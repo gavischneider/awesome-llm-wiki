@@ -304,6 +304,7 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [OpenKB](https://github.com/VectifyAI/OpenKB) ([Website](https://pageindex.ai/)) - An open-source Python CLI knowledge base framework that compiles multi-format documents into interlinked markdown vaults using a specialized tree-based index for vectorless long-document retrieval.
 - [SenolIsci/mykg](https://github.com/SenolIsci/mykg) - An open-source neuro-symbolic knowledge graph extraction library that converts mixed-format document folders (`.pdf`, `.docx`, `.md`) into confidence-scored, ontology-grounded Obsidian vaults. Features a two-pass pipeline separating RDFS/OWL schema induction from instance extraction, built-in disk-state checkpoint recovery, and a deterministic code-based validation layer to completely eradicate link hallucination.
 - [smgam29/knowhub](https://github.com/smgam29/knowhub) - A Python library that compiles technical documents into cross-confirmed knowledge graphs, exporting to JSON, Neo4j, or OKF.
+- [wikiskill (ashutoshsinghpr7)](https://github.com/ashutoshsinghpr7/wikiskill) ([PyPI](https://pypi.org/project/wikiskill/)) ([Docs](https://ashutoshsinghpr7.github.io/wikiskill)) - An open-source Python framework and CLI implementing the Google Research WikiSkill architecture. Compiles raw multi-agent execution traces into a persistent, Git-managed Markdown wiki, using an iterative proposal and validation loop to evolve and patch agent skill sets on held-out tasks.
 
 ### Applications and Desktop Clients
 
