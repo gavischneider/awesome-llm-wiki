@@ -142,6 +142,10 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [Your RAG Has Amnesia — and Another Vector Store Won't Cure It (Roan Brasil Monteiro)](https://medium.com/@roanmonteiro/your-rag-has-amnesia-and-another-vector-store-wont-cure-it-8b1d1eb77470) - An article analyzing why
   traditional RAG pipelines fail to compile compounding knowledge. Proposes a persistent markdown memory layer
   inspired by the LLM Wiki pattern to support stateful context and trace provenance.
+- [Your Second Brain Doesn't Need RAG, It Needs a Map (Fabio Yáñez Romero on Towards AI)](https://pub.towardsai.net/your-second-brain-doesnt-need-rag-it-needs-a-map-5feaca01b923) - An architectural essay
+  contrasting chunk-based vector RAG with structured Markdown vaults and wikilink navigation maps. Explains how
+  flat-file topologies and semantic folder paths preserve contextual integrity, enabling LLM agents with large
+  context windows to traverse personal knowledge graphs without fragmented retrieval.
 
 ### Codebase and Developer Context
 
