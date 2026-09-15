@@ -629,6 +629,10 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [I Built Karpathy’s LLM Wiki in Obsidian (Cody Bontecou)](https://www.youtube.com/watch?v=bgXEDymiZCc) - A video guide showcasing how to implement Andrej Karpathy's LLM Wiki pattern in Obsidian using custom scripts.
 - [I Built Self-Evolving Claude Code Memory w/ Karpathy's LLM Knowledge Bases](https://www.youtube.com/watch?v=7huCP6RkcY4) (Cole Medin) - A video guide showing how to build a self-evolving memory engine that compiles Claude Code logs into an Obsidian wiki.
 - [I Trained an AI on Everything I've Ever Said Online](https://m.youtube.com/watch?v=qIB8IvZqsNM) (Semi Autistic Vibe Coder) - A detailed implementation video showing how to ingest personal multimedia histories into a Karpathy-pattern local wiki. Integrates OpenAI's Whisper and Claude Code to parse raw video transcripts and JSON archives, compiling the data into a flat Obsidian folder topology (`concepts/`, `entities/`, `sources/`) utilizing automated meta-logging hooks and structural schema policies.
+- [I Turned GPT-6 Astra Into the Ultimate AI Second Brain (Nate Herk)](https://www.youtube.com/watch?v=yysILVsfLFM) - A practical video tutorial
+  demonstrating how to build an AI second brain and operating system inside Codex using GPT-6 Astra. Explores the
+  "Four Cs" framework (Context, Connections, Capabilities, Cadence), configuring AGENTS.md, compiling linked Markdown
+  wikis, and establishing structured memory routing loops.
 - [Inside DeepWiki: How Cognition Builds Wikis for Devin at Scale](https://www.youtube.com/watch?v=u8Im0l_vwqM) - A video presentation
   by Jacob Teo (Cognition) explaining the scaling architecture of DeepWiki. Discusses codebase graph scaling, path
   compression, and heuristics for compiling developer documentation to ground Devin.
