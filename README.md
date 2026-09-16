@@ -318,10 +318,10 @@ Inspired by a paradigm shift in software development engineering, this architect
 
 *Dedicated graphical user interfaces, standalone desktop environments, and visual editor shells.*
 
-- [Ars Umbris](https://arsumbris.ai/) ([GitHub](https://github.com/arsumbris/arsumbris/)) - An open-source, agent-native
-  IDE and malleable workbench for typed knowledge. Built on a local Rust graph engine and an extensible Electron shell,
-  it compiles plain Markdown and YAML into a validated knowledge graph with diagnostics, custom projections, and
-  native MCP adapters for Claude Code and Codex.
+- [Ars Umbris](https://arsumbris.ai/) ([GitHub](https://github.com/arsumbris/arsumbris/)) ([Companion X Article](https://x.com/arscontexta/status/2099242402259042313)) - An open-source,
+  agent-native IDE and malleable workbench for typed knowledge. Built on a local Rust graph engine and an extensible
+  Electron shell, it compiles plain Markdown and YAML into a validated knowledge graph with diagnostics, custom
+  projections, and native MCP adapters for Claude Code and Codex.
 - [Astucia LLM Wiki](https://astucia.wiki/) ([GitHub](https://github.com/madsrg/astucia-wiki)) - An open-source, flat-file, Git-enabled self-hosted wiki designed for human-agent collaboration. Stores Markdown pages, diagrams, and logs as plain files without a database, featuring automated Git commit tracking, background AI agent cron jobs for page maintenance, interactive knowledge graph visualization, and a built-in Model Context Protocol (MCP) server.
 - [BYO-LLM-WIKI (Lyra-stellAI)](https://github.com/Lyra-stellAI/BYO-LLM-WIKI) ([Live Demo](https://byo-wiki-demo.vercel.app/)) - A local-first Flask web application, JSON API, and CLI utility that implements the Karpathy LLM Wiki pattern using deepagents. Features an 8-layer on-disk knowledge graph (entities, topics, synthesis), contextual HNSW retrieval, cross-session memory, bi-directional MCP server capabilities, and human-gated LangGraph skill synthesis.
 - [Cabinet](https://runcabinet.com/) - A free, open-source, file-based AI knowledge workspace that implements Karpathy's compilation loop, featuring git-backed auto-commits, scheduled agent automation cron-jobs, an integrated browser terminal, and embedded HTML application injection.
