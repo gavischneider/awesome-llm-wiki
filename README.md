@@ -558,6 +558,10 @@ Inspired by a paradigm shift in software development engineering, this architect
   (.github/prompts/) and Claude Code (.claude/system_prompt.md) to manage ingestion and querying natively without
   vector databases or custom Python environments.
 - [llm-wiki-starter (eleven-net-cn)](https://github.com/eleven-net-cn/llm-wiki-starter) - A one-command CLI scaffolding tool and agent skill implementing the Karpathy LLM Wiki pattern. Generates a three-layer directory structure (raw/, wiki/, templates/), pre-configures AGENTS.md and CLAUDE.md guidelines, auto-configures 17 essential Obsidian plugins and themes, and installs companion agent skills.
+- [memwiki (hereisSwapnil)](https://github.com/hereisSwapnil/memwiki) ([npm](https://www.npmjs.com/package/memwiki)) - A zero-dependency CLI
+  scaffolding tool and persistent project memory protocol for AI agents (Claude Code, Cursor, Copilot). Initializes
+  a structured .memory/ directory with raw storage, a hot context cache (hot.md), append-only changelogs (log.md),
+  architecture decision records, and multi-agent root hooks.
 - [obsidian-memory-for-ai (jrcruciani)](https://github.com/jrcruciani/obsidian-memory-for-ai) - An open-source specification and reference vault implementing Transactional Atomic Markdown Memory for Obsidian. Follows a "one fact, one file" architecture, featuring Git-native multi-op transactions with idempotency, a formal proposal/review lifecycle, deterministic lexical/graph indexes, and a schema validation engine.
 - [sturlese/hippocampus](https://github.com/sturlese/hippocampus) - A zero-dependency personal knowledge base template built for Claude Code using the Open Knowledge Format (OKF).
 - [The PM Wiki (AliMahmoud15486)](https://github.com/AliMahmoud15486/pm-llm-wiki) - A system schema and ruleset template that teaches coding agents how to compile and maintain product management wikis.
