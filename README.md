@@ -423,6 +423,10 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [Patina](https://github.com/soyrochus/patina) ([Deep Dive](https://www.linkedin.com/pulse/patina-turning-karpathys-llm-wiki-pattern-rust-cli-van-der-kleijn-hjm4e/)) - A high-performance, single-binary Rust CLI tool explicitly designed around the Karpathy LLM Wiki pattern. It utilizes memory-mapped reads to parse local markdown directories and extract frontmatter metadata, compiling deterministic in-memory connection graphs with zero heavy database sidecars.
 - [quarry-kb](https://pypi.org/project/quarry-kb/) - A configuration-driven knowledge-ingestion harness and compilation tool for Python environments. It enforces rigid structural contracts when translating raw, unstructured documents into organized flat-file notebooks, utilizing declarative schema files to programmatically handle directory sorting, standardize YAML frontmatter metadata layout, and map explicit cross-note link pathways.
 - [quicky-wiki (anzal1)](https://github.com/anzal1/quicky-wiki) - A Node.js-based CLI and dashboard server that compiles document vaults into confidence-scored, self-maintaining LLM wikis. Automatically extracts facts, detects contradictions, structures timelines, and serves an interactive D3 force-directed knowledge graph and Ask Wiki chat interface.
+- [scribe (oliver-kriska)](https://getscribe.dev/) ([GitHub](https://github.com/oliver-kriska/scribe)) - A single-binary
+  Go CLI and daemon that compiles Git repos, coding agent sessions (Claude Code, Codex), and notes into a Markdown
+  wiki. Features two-pass ingestion into `raw/` and `wiki/` directories, rolling hot context, automated cron-driven
+  linting and dream cycles, and semantic search via qmd.
 - [secure-llm-wiki (NicoBleh)](https://github.com/NicoBleh/secure-llm-wiki) - A Python CLI and defense-in-depth
   knowledge compiler implementing Karpathy's LLM Wiki pattern to prevent indirect prompt injection and source
   poisoning. Features a 7-stage pipeline with input sanitization, nonce-delimited extraction, URI trust tiering,
