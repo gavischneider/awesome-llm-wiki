@@ -179,6 +179,10 @@ Inspired by a paradigm shift in software development engineering, this architect
 
 *Articles exploring scaling limits, context-window optimizations, concurrency, access governance, and enterprise architectures.*
 
+- [How to Build a Company Brain That (actually) Runs While You Sleep (Hila Shmuel on X)](https://x.com/HilaShmuel/status/2082198288061944311) - An
+  architectural guide examining the transition from personal LLM wikis to scheduled, multi-agent company brains.
+  Details access governance via scoped directory permissions, read-only external mounts (Google Drive, Notion),
+  background cron maintenance loops, and agent-generated adaptive HTML interfaces using Cabinet.
 - [Karpathy's LLM Wiki v2: What to Keep](https://theaioperator.io/p/karpathys-llm-wiki-v2-what-to-keep) - A critical architectural teardown outlining the evolution of the LLM Wiki design pattern. Details the necessary shift from manual workflows to parallel background agent pipelines, explains how to replace heavy index rewrites with vector mapping arrays, and demonstrates how to implement a targeted JSON pre-routing layer to keep API context costs minimal as local vaults grow past thousands of nodes.
 - [LLM Wiki: The Self-Updating AI Knowledge Base (Tericsoft Blog)](https://www.tericsoft.com/blogs/llm-wiki) - A conceptual primer analyzing the scaling of the LLM Wiki pattern to enterprise teams, detailing the compute cost tradeoffs (compile-time vs. query-time RAG), scheduled linting loops, access governance, version control integration, and agent memory architectures.
 - [Reimagining Karpathy's LLM Knowledge Base for enterprise teams (Christophe Pasquier on X)](https://x.com/Christophepas/status/2049855798226907502) - An architectural essay examining the requirements for adapting Karpathy's personal LLM knowledge base pattern to enterprise organizations, detailing multi-source automated ingestion, factual verification layers, and self-healing staleness detection.
@@ -328,7 +332,9 @@ Inspired by a paradigm shift in software development engineering, this architect
   projections, and native MCP adapters for Claude Code and Codex.
 - [Astucia LLM Wiki](https://astucia.wiki/) ([GitHub](https://github.com/madsrg/astucia-wiki)) - An open-source, flat-file, Git-enabled self-hosted wiki designed for human-agent collaboration. Stores Markdown pages, diagrams, and logs as plain files without a database, featuring automated Git commit tracking, background AI agent cron jobs for page maintenance, interactive knowledge graph visualization, and a built-in Model Context Protocol (MCP) server.
 - [BYO-LLM-WIKI (Lyra-stellAI)](https://github.com/Lyra-stellAI/BYO-LLM-WIKI) ([Live Demo](https://byo-wiki-demo.vercel.app/)) - A local-first Flask web application, JSON API, and CLI utility that implements the Karpathy LLM Wiki pattern using deepagents. Features an 8-layer on-disk knowledge graph (entities, topics, synthesis), contextual HNSW retrieval, cross-session memory, bi-directional MCP server capabilities, and human-gated LangGraph skill synthesis.
-- [Cabinet](https://runcabinet.com/) - A free, open-source, file-based AI knowledge workspace that implements Karpathy's compilation loop, featuring git-backed auto-commits, scheduled agent automation cron-jobs, an integrated browser terminal, and embedded HTML application injection.
+- [Cabinet](https://runcabinet.com/) ([GitHub](https://github.com/cabinetai/cabinet)) - A free, open-source, file-based AI
+  knowledge workspace that implements Karpathy's compilation loop, featuring git-backed auto-commits, scheduled agent
+  automation cron-jobs, an integrated browser terminal, and embedded HTML application injection.
 - [CartaStudio](https://cartastudio.ai/) - A desktop workbench for constructing typed, scoped, and source-grounded decision graphs in portable Markdown. Structures organizational expertise into verifiable knowledge nodes with strict citation tracing, providing deterministic, high-trust context for AI agent workflows.
 - [DeepWiki-Open (Grok-Wiki)](https://github.com/AsyncFuncAI/deepwiki-open) ([Website](https://grok-wiki.com/)) - An open-source documentation engine and desktop client compiling codebases into
   interactive Markdown wikis, generating Mermaid diagrams and Q&amp;A indexes with local/remote LLM support.
