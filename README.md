@@ -326,6 +326,10 @@ Inspired by a paradigm shift in software development engineering, this architect
 
 *Dedicated graphical user interfaces, standalone desktop environments, and visual editor shells.*
 
+- [Ambient Context (dragthelake)](https://github.com/dragthelake/ambient-context) - An open-source, local-first macOS
+  menu bar application that captures on-screen text via the accessibility tree into plain-Markdown daily logs. Drives
+  agent CLIs (Claude Code, Codex) to compile the raw record into a cited 6-topic knowledge base (People, Commitments,
+  Threads, Products, Issues, Reading) and daily summaries, exposing 20 MCP tools and bundled skills for coding agents.
 - [Ars Umbris](https://arsumbris.ai/) ([GitHub](https://github.com/arsumbris/arsumbris/)) ([Companion X Article](https://x.com/arscontexta/status/2099242402259042313)) - An open-source,
   agent-native IDE and malleable workbench for typed knowledge. Built on a local Rust graph engine and an extensible
   Electron shell, it compiles plain Markdown and YAML into a validated knowledge graph with diagnostics, custom
