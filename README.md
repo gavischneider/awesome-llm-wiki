@@ -70,6 +70,10 @@ Inspired by a paradigm shift in software development engineering, this architect
 
 *High-level conceptual breakdowns, foundational ideas, and introductory guides to the LLM Wiki concept.*
 
+- [16 Million Views for a Folder Structure (HR Srinivas)](https://hrsrini.github.io/srinivas-writes/ai/karpathy-llm-wiki.html) - A conceptual primer analyzing
+  Andrej Karpathy's LLM Wiki pattern and 'idea file' paradigm. Details the three-layer architecture, the
+  Ingest-Query-Lint execution cycle with back-filing query answers, and the historical connection to Vannevar Bush's
+  1945 Memex—showing how zero-cost AI maintenance solves the 81-year-old associative trail bottleneck.
 - [Andrej Karpathy Wiki: LLM Wiki Concept Guide](https://andrej-karpathy.com/#/concepts/llm-wiki.md) - A conceptual breakdown embedded inside the live Karpathy encyclopedia detailing the explicit operating models, file structures, and automated compilation loops that define a production-grade LLM Wiki setup.
 - [Andrej Karpathy's LLM Knowledge Bases Explained (Mehul Gupta on Medium)](https://medium.com/data-science-in-your-pocket/andrej-karpathys-llm-knowledge-bases-explained-2d9fd3435707) - A conceptual primer explaining the LLM Wiki pattern. Contrasts standard vector RAG (where the model remains a "tourist") with Karpathy's compiled knowledge approach (where the model acts as a "compiler"), detailing the workflow steps of collection, compilation, maintenance, and querying.
 - [Andrej Karpathy’s LLM Wiki: Full Breakdown and How to Build Your Own (Hari Krishna on Tech in General Substack)](https://nandigamharikrishna.substack.com/p/andrej-karpathys-llm-wiki-full-breakdown) - A comprehensive conceptual primer detailing the limitations of stateless RAG, explaining the three-layer architecture (immutable raw sources, LLM-generated markdown notes, and system schema configuration), outlining the three core operations (Ingest, Query, Lint), and connecting the pattern to Vannevar Bush's Memex.
