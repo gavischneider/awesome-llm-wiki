@@ -473,6 +473,10 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [AI Research OS](https://github.com/iusztinpaul/ai-research-os-workshop) - A file-driven multi-agent research framework and compilation engine. It aggregates local notes, codebase snapshots, and web captures into an immutable raw directory, generating a mirrored, highly interconnected LLM Wiki layer composed of flat markdown concept nodes and a unified YAML schema map to optimize downstream context validation.
 - [ByteRover](https://github.com/campfirein/byterover-cli) ([Website](https://www.byterover.dev/)) - An open-source, file-based local memory engine and interactive CLI tool that compiles codebase interactions into a hierarchical Context Tree, featuring agent-native curation, an adaptive knowledge lifecycle layer, sub-100ms hybrid text retrieval, and multi-IDE MCP portability.
 - [CodeAlmanac](https://www.codealmanac.com/) ([GitHub](https://github.com/AlmanacCode/codealmanac)) - A local codebase wiki CLI for agents. Automatically syncs agent sessions and runs local background gardening passes.
+- [Compass](https://compass.crab.build/) ([GitHub](https://github.com/crabbuild/compass)) - An open-source, local-first
+  Rust knowledge graph engine for codebases and project artifacts, inspired by Graphify. Scans repository ASTs, Git
+  history, and dependencies without external vector databases, compiling architecture maps and exporting directly
+  to interlinked Markdown wikis, Obsidian vaults, and an integrated MCP server for coding agents.
 - [EKOS](https://ekos.dev/) ([GitHub](https://github.com/alexeyban/EKOS)) - An open-source, Rust-based enterprise
   knowledge compiler and CLI. Transforms source code (ASTs across Rust, Python, TypeScript, and binaries), Git
   history, schemas, and documents into an append-only, evidence-backed semantic ledger, compiling structured
