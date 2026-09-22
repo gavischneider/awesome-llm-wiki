@@ -194,6 +194,11 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [Karpathy's LLM Wiki v2: What to Keep](https://theaioperator.io/p/karpathys-llm-wiki-v2-what-to-keep) - A critical architectural teardown outlining the evolution of the LLM Wiki design pattern. Details the necessary shift from manual workflows to parallel background agent pipelines, explains how to replace heavy index rewrites with vector mapping arrays, and demonstrates how to implement a targeted JSON pre-routing layer to keep API context costs minimal as local vaults grow past thousands of nodes.
 - [LLM Wiki: The Self-Updating AI Knowledge Base (Tericsoft Blog)](https://www.tericsoft.com/blogs/llm-wiki) - A conceptual primer analyzing the scaling of the LLM Wiki pattern to enterprise teams, detailing the compute cost tradeoffs (compile-time vs. query-time RAG), scheduled linting loops, access governance, version control integration, and agent memory architectures.
 - [Reimagining Karpathy's LLM Knowledge Base for enterprise teams (Christophe Pasquier on X)](https://x.com/Christophepas/status/2049855798226907502) - An architectural essay examining the requirements for adapting Karpathy's personal LLM knowledge base pattern to enterprise organizations, detailing multi-source automated ingestion, factual verification layers, and self-healing staleness detection.
+- [Scale Karpathy's LLM Wiki with a Lightweight Graph (Zach Blumenfeld on Neo4j Blog)](https://neo4j.com/blog/agentic-ai/scaling-karpathy-llm-wiki-graph/) - An
+  architectural deep-dive exploring how to overcome the file-system and context-window scaling bottlenecks of
+  Karpathy's LLM Wiki pattern using a lightweight property graph. Details how modeling containment, section
+  sequences, and wikilinks in Neo4j enables constant-time progressive retrieval, graph traversal, and GDS community
+  detection across large Markdown vaults without index-time token costs.
 - [Taking Karpathy's Wiki to Work (Knut Melvær on Sanity Blog)](https://www.sanity.io/blog/taking-karpathys-wiki-to-work) - An
   architectural essay analyzing how to scale Karpathy's LLM Wiki pattern into organizational context infrastructure.
   Examines content entropy, drift, and ownership through a ContentOps lens, detailing requirements for non-technical
