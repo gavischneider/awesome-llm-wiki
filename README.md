@@ -369,6 +369,10 @@ Inspired by a paradigm shift in software development engineering, this architect
   interactive Markdown wikis, generating Mermaid diagrams and Q&amp;A indexes with local/remote LLM support.
 - [jp-lorenc1o/Eva-brain](https://github.com/jp-lorenc1o/Eva-brain) ([Website](https://jp-lorenc1o.github.io/Eva-brain/)) - A local-first macOS desktop client and MCP server for building and browsing personal markdown knowledge vaults.
 - [Kompl (tuirk)](https://github.com/tuirk/Kompl) - A self-hosted compounding LLM Wiki application and personal second brain. Uses a local NLP pipeline (spaCy, TF-IDF) paired with Gemini or DeepSeek to ingest web pages, PDFs, and YouTube transcripts, compiling them into an interlinked wiki with entity graph views, page history, and an MCP server.
+- [LLM Wiki (ddsyasas)](https://llmwiki.cc/) ([GitHub](https://github.com/ddsyasas/llm-wiki)) - An open-source,
+  local-first web application and CLI implementing Karpathy's LLM Wiki pattern. Refactors multi-format sources into
+  typed markdown pages (Concepts, Entities, Comparisons, Overviews) with an interactive 3D knowledge graph, two-pass
+  linting, and support for both OpenRouter frontier models and local Ollama instances.
 - [LLM Wiki (Nash Su)](https://github.com/nashsu/llm_wiki) - A cross-platform Tauri desktop application that turns multi-format documents into interlinked markdown vaults, featuring two-step chain-of-thought ingestion, interactive Louvain community graphs, and an async human-in-the-loop review system.
 - [localmd](https://localmd.app/) ([GitHub](https://github.com/whitefoxx/localmd)) - An open-source, local-first web
   application and agentic workbench operating directly on local folders via the File System Access API. Features an
