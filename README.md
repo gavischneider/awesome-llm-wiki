@@ -638,6 +638,10 @@ Inspired by a paradigm shift in software development engineering, this architect
   a structured .memory/ directory with raw storage, a hot context cache (hot.md), append-only changelogs (log.md),
   architecture decision records, and multi-agent root hooks.
 - [obsidian-memory-for-ai (jrcruciani)](https://github.com/jrcruciani/obsidian-memory-for-ai) - An open-source specification and reference vault implementing Transactional Atomic Markdown Memory for Obsidian. Follows a "one fact, one file" architecture, featuring Git-native multi-op transactions with idempotency, a formal proposal/review lifecycle, deterministic lexical/graph indexes, and a schema validation engine.
+- [Omnia Vault (gavishap)](https://github.com/gavishap/omnia-vault) - An open-source, all-in-one project brain and
+  Obsidian vault template for Claude Code and Codex. Combines an agent-maintained LLM wiki with code knowledge graphs
+  (graphify), an evolving roadmap that triages incoming meetings and videos, a 20+ skill toolkit, and a relay baton
+  for seamless multi-agent handoffs.
 - [sturlese/hippocampus](https://github.com/sturlese/hippocampus) - A zero-dependency personal knowledge base template built for Claude Code using the Open Knowledge Format (OKF).
 - [The PM Wiki (AliMahmoud15486)](https://github.com/AliMahmoud15486/pm-llm-wiki) - A system schema and ruleset template that teaches coding agents how to compile and maintain product management wikis.
 - [Verified Memory Vault (secondbrainstarter)](https://github.com/secondbrainstarter/verified-memory-vault) - A self-checking Obsidian vault for AI coding agents. Persistent memory (CLAUDE.md boot file, append-only MEMORY.md, daily notes) with two dependency-free Python tools: `memory_check.py` scores memory health (dated entries, duplicates, dead wikilinks, context-window bloat, inbox pressure) and an optional Git pre-commit hook refuses mass deletions or MEMORY.md history rewrites — protecting the wiki from accidental destruction by the agent itself.
