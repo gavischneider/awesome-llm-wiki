@@ -596,6 +596,11 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [hstack](https://github.com/kamens/hstack) - A suite of Claude Code skills and agents that compile raw medical records and research into a personal disease wiki.
 - [karpathy-llm-wiki (Astro-Han)](https://github.com/Astro-Han/karpathy-llm-wiki) - An installable agent skill packaging the Karpathy LLM Wiki pattern for agentskills.io-compatible clients.
 - [LLM Wiki](https://praneybehl.github.io/llm-wiki-plugin/) ([GitHub](https://github.com/praneybehl/llm-wiki-plugin)) - A second brain plugin and skill suite for Claude Code, Codex, Cursor, Gemini, and Pi. Implements Karpathy's LLM Wiki pattern using a local PEP-723 runtime featuring on-device semantic search (FastEmbed/sqlite-vec), BM25 lexical fallback, RRF hybrid fusion, and incremental changed-section indexing.
+- [LLM Wiki (Oshayr)](https://github.com/Oshayr/LLM-Wiki) - An autonomous Claude Code plugin and skill suite
+  implementing Karpathy's LLM Wiki pattern. Features research-on-miss query routing that automatically explores and
+  ingests missing concepts into `.wiki/`, a multi-agent maintenance engine (backlinks, claim verification,
+  deduplication, 9-tier staleness decay), and a local web UI with Cytoscape knowledge graphs, FSRS spaced repetition,
+  and content gap analysis.
 - [LLM Wiki (TrueHOOHA)](https://github.com/TrueHOOHA/LLM-Wiki-Skilled) - An open-source implementation focused on mitigating agent behavioral drift using rigid workflow skills. Features a triage-first ingest mechanism (`wiki_import` / `wiki_wrapup`), automated cross-page contradiction reports, a single-command `wiki_fix` cleanup loop, and SHA-256 source provenance tracking.
 - [LLM Wiki Agent (SamurAIGPT)](https://github.com/SamurAIGPT/llm-wiki-agent) - An open-source agent skill suite that automates raw document ingestion, contradiction detection, and graph generation.
 - [LLM Wiki Knowledge Base (adamziel)](https://mcpmarket.com/tools/skills/llm-wiki-knowledge-base-1) ([GitHub](https://github.com/adamziel/Skills/blob/trunk/skills/llm-wiki/SKILL.md)) - An installable agent skill conforming to the agent-skills standard that configures LLM client workflows (Ingest, Query, Lint) for managing personal vaults, specifying raw/wiki boundaries, bi-directional linking rules, contradiction handling, and logs.
