@@ -590,6 +590,11 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [Stigmergy (sturlese)](https://github.com/sturlese/stigmergy) - A team-scale, Git-backed LLM Wiki infrastructure platform that scales Karpathy's pattern to organizations. Combines durable capture queues (Slack/CLI) with eight deterministic pre-commit code validation gates, human-stewarded entity registry minting, strict granular ACLs, and a citation-verified MCP read server with refusal guards.
 - [trip2g](https://github.com/trip2g/trip2g) ([Website](https://trip2g.com/)) - An open-source, self-hosted web server and Obsidian plugin that publishes vaults as websites and exposes them via MCP.
 - [vercel-labs/openwiki](https://github.com/vercel-labs/openwiki) ([Website](https://openwiki.sh/)) - A web application and deployment platform that generates, hosts, and schedules updates for source-grounded codebase wikis.
+- [WikiBrain](https://wikibrain.app/) ([GitHub](https://github.com/wikibrain-app/wikibrain)) - A hosted and
+  self-hostable (AGPL-3.0) implementation of Karpathy's LLM Wiki pattern. Organizes knowledge into `raw/`, `wiki/`,
+  and `schema/` directories with automated Ingest, Query, and Lint operations, an integrated Model Context Protocol
+  (MCP) server with optimistic locking for external agents (Cursor, Claude Code, ChatGPT), academic citation tooling
+  (BibTeX, Zotero sync), and a web UI featuring version rollback and Obsidian export.
 - [wikihub.md](https://wikihub.md) - A specialized hosting and collaboration platform designed specifically for flat-file LLM wikis. Features instant markdown publishing via Git or drag-and-drop, a robust per-file access control system using a `.wikihub/acl` (CODEOWNERS-pattern) schema, and an agent-native REST API that allows autonomous systems to dynamically read, query, and modify deployed knowledge vaults securely.
 
 ### Agent Skills and System Rules
