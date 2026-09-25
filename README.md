@@ -187,6 +187,11 @@ Inspired by a paradigm shift in software development engineering, this architect
 
 *Articles exploring scaling limits, context-window optimizations, concurrency, access governance, and enterprise architectures.*
 
+- [From Obsidian Vault to Enterprise Company Brain: Where Agents Write, Branch and Merge (Simon Späti on ssp.sh)](https://www.ssp.sh/blog/from-obsidian-to-enterprise-company-brain/) ([GitHub](https://github.com/ssp-data/company-brain-crm)) - An
+  architectural essay and demo comparing personal Obsidian vaults to enterprise company brains. Details how to adapt
+  Karpathy's LLM Wiki pattern to multi-agent organizations using typed graph schemas as data contracts, open columnar
+  object storage (Lance/DataFusion), and Git-style branch-and-merge workflows that enable concurrent agent writes while
+  blocking conflicting updates for human review.
 - [How to Build a Company Brain That (actually) Runs While You Sleep (Hila Shmuel on X)](https://x.com/HilaShmuel/status/2082198288061944311) - An
   architectural guide examining the transition from personal LLM wikis to scheduled, multi-agent company brains.
   Details access governance via scoped directory permissions, read-only external mounts (Google Drive, Notion),
