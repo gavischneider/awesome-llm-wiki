@@ -684,6 +684,10 @@ Inspired by a paradigm shift in software development engineering, this architect
   AI research knowledge base and Obsidian reference vault developed at the Hon Hai Research Institute. Uses an
   autonomous Claude research agent to ingest arXiv papers into structured, math-enabled Markdown notes with YAML
   frontmatter, featuring an interactive D3 knowledge graph, full-text search, and Semantic Scholar citation tracking.
+- [ICT Knowledge Library (SrsBlack)](https://github.com/SrsBlack/ict-knowledge-library) - An open-source reference
+  vault implementing Karpathy's LLM Wiki pattern across 226 trading concept files in 33 directories. Features
+  machine-readable JSON blocks, cross-linked markdown notes with source citations in `SOURCES.md`, an operating manual
+  in `AGENTS.md` and `CLAUDE.md`, a catalog in `INDEX.md`, and an append-only event log in `log.md`.
 - [Karpathy Wiki](https://karpathy-wiki.lol/en) - A live reference portal explaining and illustrating the Karpathy LLM Wiki pattern, featuring structured documentation directories, RAG-vs-wiki comparison matrices, and detailed tool guides.
 - [LLM Wiki (Ian Forster)](https://blog.imfsoftware.com/llm-wiki/docs/) - A live, self-compiling implementation of the LLM Wiki pattern focused on mapping the agentic AI landscape, containing synthesized concepts, framework comparisons, cost optimization guides, and multi-agent orchestration analyses.
 - [LLM Wiki (Pratiyush)](https://pratiyush.github.io/llm-wiki/) ([GitHub](https://github.com/Pratiyush/llm-wiki)) - A live demo of a local knowledge base compiled from agent sessions, showcasing heatmaps, comparisons, and tool charts.
