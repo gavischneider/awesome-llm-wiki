@@ -606,6 +606,10 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [hstack](https://github.com/kamens/hstack) - A suite of Claude Code skills and agents that compile raw medical records and research into a personal disease wiki.
 - [karpathy-llm-wiki (Astro-Han)](https://github.com/Astro-Han/karpathy-llm-wiki) - An installable agent skill packaging the Karpathy LLM Wiki pattern for agentskills.io-compatible clients.
 - [LLM Wiki](https://praneybehl.github.io/llm-wiki-plugin/) ([GitHub](https://github.com/praneybehl/llm-wiki-plugin)) - A second brain plugin and skill suite for Claude Code, Codex, Cursor, Gemini, and Pi. Implements Karpathy's LLM Wiki pattern using a local PEP-723 runtime featuring on-device semantic search (FastEmbed/sqlite-vec), BM25 lexical fallback, RRF hybrid fusion, and incremental changed-section indexing.
+- [LLM Wiki (6eanut)](https://github.com/6eanut/llm-wiki) - A Claude Code skill and command suite implementing
+  Karpathy's LLM Wiki pattern. Features proactive wiki checking steered by CLAUDE.md, SessionStart hooks for startup
+  stats and cross-session hot-caching, two-phase ingestion with contradiction detection, and seven slash commands
+  (`/wiki-ingest`, `/wiki-query`, `/wiki-lint`, `/wiki-review`, `/wiki-graph`, `/wiki-save`).
 - [LLM Wiki (Oshayr)](https://github.com/Oshayr/LLM-Wiki) - An autonomous Claude Code plugin and skill suite
   implementing Karpathy's LLM Wiki pattern. Features research-on-miss query routing that automatically explores and
   ingests missing concepts into `.wiki/`, a multi-agent maintenance engine (backlinks, claim verification,
