@@ -791,6 +791,11 @@ Inspired by a paradigm shift in software development engineering, this architect
   knowledge catalog and reference bundle for the Crossplane v2 ecosystem using Open Knowledge Format v0.2 (OKF).
   Maps concepts, APIs, providers, and composition functions into source-backed Markdown documents with OKF metadata,
   featuring an interactive Cytoscape knowledge graph, companion agent skills, and a DuckDB-backed HTTP MCP server.
+- [Podcast Wiki (HagaiHen)](https://hagaihen.github.io/podcast-wiki/)
+  ([GitHub](https://github.com/HagaiHen/podcast-wiki)) - A live LLM wiki compiled from the podcast episodes its owner
+  finishes on Spotify. An MCP server lists heard episodes, transcripts come from published sources or local mlx-whisper,
+  and Claude Code merges each episode into cross-episode concept pages with per-claim episode and speaker citations, a
+  disagreements section, and lint and consolidation skills.
 - [Security KB (99helpers)](https://99helpers.com/wiki/security-kb) - A live cybersecurity knowledge wiki compiled from 11 industry security sources (MITRE ATT&CK, MITRE D3FEND, NIST CSF 2.0, CIS Controls v8). Features 33 interlinked topic summaries, deep dives, and entity pages alongside an interactive knowledge graph visualization and grounded Q&A search assistant.
 
 ## Research and Papers
