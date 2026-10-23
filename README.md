@@ -406,6 +406,11 @@ infrastructure.*
   automated self-improvement compilation flywheel that diagnoses expert feedback and lands regression-tested diffs
   without model retraining.
 - [From Self-Updating OKF Wiki to Production Trust System (Udaykiran Estari on Towards AI)](https://pub.towardsai.net/from-self-updating-okf-wiki-to-production-trust-system-b014dbd12149) - A technical analysis on building a production trust system for agent-generated wikis. Explores how to transition from OKF generation to trust boundaries, outlining governance policies (signed bundles, append-only audits, and human review gates) to validate AI-drafted documentation.
+- [How our shape of collaboration is evolving with LLMs (Gurden Batra on Civilizational Optionality)](https://civilizationaloptionality.substack.com/p/how-our-shape-of-collaboration-is) ([Overview](https://dark-matter-labs.github.io/ino-learning-system/)) - A
+  production case study by Dark Matter Labs and xCO detailing a 26-wiki federation (15 personal, 11 team commons)
+  spanning 2,757 pages and 832 sources using Claude Code. Outlines Inquiry-Native Organising (INO) principles:
+  preserving contested claims rather than forcing consensus, keeping confidence separate from peer validation,
+  enforcing consent before pages move between wikis, and establishing strict anti-surveillance boundaries.
 - [We gave our agent a memory: building an LLM Wiki over sources that never sit still (Taktile Blog)](https://engineering.taktile.com/blog/llm-wiki-agent-memory/) - A case study on transitioning an agent from runtime RAG to an LLM Wiki structure to reduce latency and cost.
 
 ### Comparative Audits and Architecture Trials
