@@ -245,6 +245,11 @@ Inspired by a paradigm shift in software development engineering, this architect
   architectural essay exploring the structural requirements of enterprise company brains. Formulates a four-layer
   framework (factual memory, human communication, context graphs, and action coordination) to distinguish passive search
   from living organizational memory that preserves decision rationale, tradeoffs, and intent for autonomous agents.
+- [Designing a Medium, Not a Tool (Gurden Batra on Civilizational Optionality)](https://civilizationaloptionality.substack.com/p/designing-a-medium-not-a-tool) - An
+  architectural essay reframing the LLM Wiki as institutional learning infrastructure. Formulates three layers with
+  distinct mutation rights (`raw/`, `wiki/`, and policy), separates tripartite authority (deterministic instruments,
+  model interpretation, human Git authorization), details deployment gates for public/private visibility tiers, and
+  explores lexical centre-of-mass metrics to detect unresisted conceptual drift.
 - [From Obsidian Vault to Enterprise Company Brain: Where Agents Write, Branch and Merge (Simon Späti on ssp.sh)](https://www.ssp.sh/blog/from-obsidian-to-enterprise-company-brain/) ([GitHub](https://github.com/ssp-data/company-brain-crm)) - An
   architectural essay and demo comparing personal Obsidian vaults to enterprise company brains. Details how to adapt
   Karpathy's LLM Wiki pattern to multi-agent organizations using typed graph schemas as data contracts, open columnar
