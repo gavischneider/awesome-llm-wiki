@@ -579,6 +579,11 @@ graph platforms.*
   FastAPI platform implementing Karpathy's LLM Wiki pattern with a vanilla JS SPA. Synthesizes URLs and multi-format
   documents into structured concept, entity, and analysis pages in an Obsidian-compatible vault, featuring full-text
   search, an asynchronous file queue, and a D3.js knowledge graph powered by Graphify with 3-tier confidence scoring.
+- [LLM Wiki v2 (crow-hq)](https://github.com/crow-hq/llm-wiki-v2) ([PyPI](https://pypi.org/project/llmwiki2/)) ([Paper](https://doi.org/10.5281/zenodo.22898752)) - An
+  open-source, local-first web application, Python library, and CLI implementing the LLM Wiki pattern with CROW
+  (Classifier Routing for Open Wikis) architecture. Replaces vector embeddings and monolithic index prompts by routing
+  multi-format document ingestion (PDF, Office, Markdown) and hierarchical retrieval through a lightweight classifier,
+  reserving the LLM for note synthesis to achieve 89% retrieval precision, 2.1× faster ingest, and 68% token savings.
 - [localmd](https://localmd.app/) ([GitHub](https://github.com/whitefoxx/localmd)) - An open-source, local-first web
   application and agentic workbench operating directly on local folders via the File System Access API. Features an
   integrated agent that compiles and edits Markdown wiki notes with `[[wikilinks]]`, force-directed graph visualization,
