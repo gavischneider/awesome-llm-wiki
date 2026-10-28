@@ -540,6 +540,10 @@ performance, schema rigor, and retrieval accuracy.*
   agent-native IDE and malleable workbench for typed knowledge. Built on a local Rust graph engine and an extensible
   Electron shell, it compiles plain Markdown and YAML into a validated knowledge graph with diagnostics, custom
   projections, and native MCP adapters for Claude Code and Codex.
+- [Brainstead](https://brainstead.davies.co.za/) ([GitHub](https://github.com/waynetd777/brainstead)) - An open-source,
+  local-first desktop application for macOS and Windows implementing Karpathy's LLM Wiki pattern over plain-Markdown
+  vaults. Uses local AI assistants (Claude Code, Codex, Copilot, Antigravity) to compile raw sources into interlinked
+  wiki pages with verified citation quotes, timeline tracking, contradiction checks, and full change reversion.
 - [CartaStudio](https://cartastudio.ai/) - A desktop workbench for constructing typed, scoped, and source-grounded decision graphs in portable Markdown. Structures organizational expertise into verifiable knowledge nodes with strict citation tracing, providing deterministic, high-trust context for AI agent workflows.
 - [Curated Thoughts (equationalapplications)](https://github.com/equationalapplications/curated-thoughts) - A
   local-first desktop second brain built with Tauri, React, and Rust implementing Karpathy's LLM Wiki pattern.
