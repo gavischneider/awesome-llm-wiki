@@ -151,6 +151,11 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [What Is Andrej Karpathy's LLM Knowledge Base Architecture? The Compiler Analogy Explained (MindStudio Blog)](https://www.mindstudio.ai/blog/karpathy-llm-knowledge-base-architecture-compiler-analogy) - An architectural breakdown explaining the compiler analogy for LLM Wikis, comparing raw sources to source code.
 - [What is LLM Wiki Pattern? Persistent Knowledge with LLM Wikis](https://medium.com/@tahirbalarabe2/what-is-llm-wiki-pattern-persistent-knowledge-with-llm-wikis-3227f561abc1) - A structural guide defining the core filesystem architecture and ingestion loops of the LLM Wiki pattern. Outlines the read/write boundaries between raw source directories and compiled wiki spaces, detailing a 5-step compilation pipeline and contrasting the pre-compiled text routing method against traditional single-pass vector RAG pipelines.
 - [What Is the LLM Knowledge Base Index File? How Agents Navigate Without Vector Search (MindStudio Blog)](https://www.mindstudio.ai/blog/llm-knowledge-base-index-file-no-vector-search) - An article explaining the design, formatting, and structural benefits of using an index.md navigation map in LLM Wikis.
+- [Your Agent's Memory Isn't the Problem. What It Does With a Dead Fact Is. (Christopher Mullins on DEV Community)](https://dev.to/zerokool1986/your-agents-memory-isnt-the-problem-what-it-does-with-a-dead-fact-is-35b3) - An
+  architectural essay examining the epistemic lifecycle of agent memory and the challenge of handling dead premises.
+  Details a three-stage Markdown memory model (Remember, Trust, Act) grounded in Karpathy's LLM Wiki pattern,
+  incorporating bi-temporal tracking, dependency-driven invalidation cascades, negative knowledge preservation, and the
+  compilation of replicated wiki procedures into executable SKILL.md agent skills.
 - [Your Personal Brain: A Practical Guide for Leaders, Practitioners, and Enthusiasts (Nufar Gaspar LinkedIn)](https://www.linkedin.com/pulse/your-personal-brain-practical-guide-leaders-nufar-gaspar-8oajf/) - A management playbook exploring how to establish a "dump-and-housekeep" maintenance cycle for agent memory.
 
 ### Comparative Analyses (Wiki vs. RAG)
