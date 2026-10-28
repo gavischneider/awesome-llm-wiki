@@ -91,6 +91,11 @@ Inspired by a paradigm shift in software development engineering, this architect
   primer exploring how OpenWiki manages memory staleness and drift for evolving codebases. Details the use of a
   "claims runtime" that connects wiki assertions to versioned code evidence, allowing agents to detect, track, and
   correct stale knowledge without rebuilding vaults from scratch.
+- [Buried, not deleted: why your agent's memory needs negative knowledge (Christopher Mullins on DEV Community)](https://dev.to/zerokool1986/buried-not-deleted-why-your-agents-memory-needs-negative-knowledge-49l7) - An
+  architectural essay examining the retention of disproven hypotheses and superseded premises in agent memory vaults.
+  Explains why deleting invalidated facts causes agents to re-derive failed approaches, detailing a non-destructive
+  burial pattern with bi-temporal validity bounds, bidirectional supersession links, and consolidation loops that keep
+  the active context core compact.
 - [Commonplace](https://zby.github.io/commonplace/) - A technical framework establishing the theory of deploy-time learning for bounded AI observers, detailing semantic distillation operations, and providing automated CLI workspace management skills.
 - [Compounding Knowledge with LLMs: Karpathy's Wiki Pattern in Action](https://pub.towardsai.net/compounding-knowledge-with-llms-karpathys-wiki-pattern-in-action-d01db84d5b8b) - An architectural analysis connecting Andrej Karpathy's LLM Wiki pattern to Vannevar Bush's historical vision of the Memex. Discusses how LLMs resolve the bottleneck of active knowledge maintenance, detailing layout models, indexing processes, and scalable retrieval strategies for multi-agent environments.
 - [Create Your AI Brain Today](https://saranfn.substack.com/p/create-your-ai-brain-today) - The final part of a structural context trilogy pinpointing why knowledge management setups fail at the content layer. Focuses on content architecture optimization, detailing how to engineer high-signal markdown nodes, construct type-safe frontmatter blocks for explicit entity tracking, and implement strict data compression filters to protect agent context windows from token bloat.
