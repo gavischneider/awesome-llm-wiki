@@ -131,6 +131,11 @@ Inspired by a paradigm shift in software development engineering, this architect
   between machine compilation and human curation in LLM Wikis. Argues that a knowledge vault should serve as a
   "biography of understanding" rather than a database, suggesting that humans must retain responsibility for weighing
   ideas and tracking perspective changes.
+- [The invalidation sweep: what happens to conclusions when a premise dies (Christopher Mullins on DEV Community)](https://dev.to/zerokool1986/the-invalidation-sweep-what-happens-to-conclusions-when-a-premise-dies-13cg) - An
+  architectural essay detailing dependency tracking and invalidation cascades within Markdown-based agent memory
+  vaults. Explains how frontmatter `depends_on:` declarations enable automated sweeps that flag downstream conclusions
+  as `needs_review` when a foundational premise is superseded, contrasting human-in-the-loop review gates against
+  silent automatic overwrites.
 - [The LLM Wiki: Stop Retrieving, Start Compounding (Rohit Ghumare)](https://aiengineeringfromscratch.com/blog/the-llm-wiki) - A
   conceptual primer contrasting stateless vector retrieval with compounding compiled markdown wikis. Explains the
   three-layer architecture (sources, wiki, schema), the Ingest-Query-Lint execution cycle with query back-filing, the
