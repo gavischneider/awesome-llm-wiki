@@ -1056,6 +1056,11 @@ LLM Wiki and agent memory architectures.*
   suite testing 12 agent memory architectures (including Karpathy Wiki, GBrain, Cognee, and Mem0) across 56 working
   sessions. Evaluates direct recall, cross-conversation synthesis, temporal reasoning, conflicting facts, and erasure,
   measuring the accuracy, answer speed, and token cost trade-offs of compiled markdown vaults against vector memory.
+- [Building Evidence-Grounded Agent Memory with OpenWiki and Graphs (LangChain Blog)](https://www.langchain.com/blog/building-agent-memory-openwiki-graphs) - An
+  empirical benchmark evaluating OpenWiki as a persistent memory layer across a 111-document synthetic corpus.
+  Demonstrates that a compiled wiki yields a ~5x accuracy gain over search alone on multi-source reasoning, while
+  materializing citations into a typed evidence graph increases accuracy by a further 27%, doubles citation
+  consistency, and cuts cost per correct answer by 58%.
 - [Evaluating OpenWiki with WikiBench (LangChain Blog)](https://www.langchain.com/blog/evaluating-openwiki-with-wikibench) - An
   evaluation overview introducing WikiBench, a benchmark running inside the Harbor framework to measure wiki usefulness
   for agents. Demonstrates that pairing a generated wiki with codebase access yields higher task correctness and lower
