@@ -334,6 +334,11 @@ Inspired by a paradigm shift in software development engineering, this architect
   Code and Cursor, and executing automated ingestion, cross-linking synthesis, and continuous vault linting passes.
 - [Building an LLM Wiki, Part 1 (Erik Evenson Blog)](https://www.erikevenson.net/building-an-llm-wiki-part-1.html) - A guide explaining how to implement the basic Karpathy pattern using Obsidian, its Local REST API, and Claude Code.
 - [Building an LLM Wiki, Part 2 (Erik Evenson Blog)](https://www.erikevenson.net/building-an-llm-wiki-part-2.html) - An article detailing schema linting, staleness detection, contradiction handling, and search testing for LLM Wikis.
+- [Building an LLM Wiki: From Karpathy's Gist to a Working CLI (Dik Rana)](https://dikrana.dev/blog/building-an-llm-wiki/) - An
+  implementation guide detailing how to build a standalone TypeScript CLI (`wiki-cli`) using Bun and the Claude Code
+  Agent SDK. Explains how to synthesize knowledge on write over plain Markdown and JSONL logs, hook into agent sessions
+  for silent two-phase auto-capture, configure schema-based quality bars, and automate self-healing health checks with
+  `wiki lint --fix`.
 - [Compiling knowledge, not retrieving it (Roan Brasil Monteiro)](https://medium.com/@roanmonteiro/compiling-knowledge-not-retrieving-it-a-hands-on-deep-dive-into-llm-wiki-compiler-a495523a8085) - A code-level implementation guide detailing the software architecture of the `llm-wiki-compiler` engine. Walks through the step-by-step orchestration of a multi-model text compilation loop, local workspace linting rules, and inline source-provenance tracking without vector databases.
 - [Hermes LLM Wiki: How to Set Up Karpathy's LLM Wiki in Hermes Agent (Julian Goldie on Goldie Agency)](https://goldie.agency/hermes-llm-wiki/) - A
   practical setup walkthrough for running Karpathy's LLM Wiki pattern using Hermes Agent and its bundled `llm-wiki`
