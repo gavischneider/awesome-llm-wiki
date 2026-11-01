@@ -366,6 +366,10 @@ Inspired by a paradigm shift in software development engineering, this architect
   (Claude Code, Hermes Agent, Obsidian plugins), and tailoring graph view filters for knowledge auditing.
 - [LLM Wiki Local (Local LLM) (Part 2 of 3)](https://medium.com/artificial-intel-ligence-playground/llm-wiki-local-locall-llm-part-2-88ecfa2cf6c2) - A tutorial on configuring a fully local-first LLM Wiki using llama.cpp and Opencode on Windows. Demonstrates manual environment wiring, setting up AGENTS.md instructions as standard operating procedures, and deploying custom scripting gates to manage local data compilations.
 - [LLM Wiki Local: The Hybrid Engine and the PDF Bridge (Part 3 of 3)](https://medium.com/artificial-intel-ligence-playground/llm-wiki-part-3-the-hybrid-engine-and-the-pdf-bridge-2ece8d831b5f) - A tutorial on constructing a hybrid ingestion engine for local LLM Wikis on Windows. Focuses on resolving formatting issues with large PDF documents using a custom Python script (the PDF Bridge) and routing local traffic via the Bifrost gateway.
+- [LLM Wiki: Your Self-Building Personal Knowledge Base (Mohamed-Amine Romdhane)](https://romdhane.fr/blog/llm-wiki) - A
+  comprehensive setup guide and technical walkthrough for the cross-platform Nash Su LLM Wiki desktop application.
+  Details its two-step chain-of-thought ingestion pipeline (analysis pass and file generation), Obsidian-compatible
+  vault layout, Louvain community knowledge graph, optional LanceDB vector hybrid retrieval, and local HTTP API.
 - [Readers Asked for My LLM Wiki Skill. Here's a Template You Can Make Your Own (Mark Chen on Medium)](https://medium.com/@markchen69/readers-asked-for-my-llm-wiki-skill-heres-a-template-you-can-make-your-own-8b685cdfd77e) - A
   practical tutorial and customizable template for building an LLM Wiki using Claude Code. Outlines a
   beginner-friendly three-layer architecture (immutable sources in `raw/`, model-maintained markdown in `wiki/`, and
