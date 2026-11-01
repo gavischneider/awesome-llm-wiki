@@ -302,6 +302,11 @@ Inspired by a paradigm shift in software development engineering, this architect
   enterprise search, and Karpathy's LLM wiki pattern to multi-agent organizational context layers. Contrasts personal
   memory vaults against company brains across access permissions, conflicting source resolution, and automated
   maintenance, providing an operational decision framework for teams deploying autonomous agents.
+- [What Is an LLM Wiki and How to Build One for Your Team (Roop Reddy on Documentation.AI)](https://documentation.ai/blog/what-is-an-llm-wiki) - An
+  architectural guide examining how to scale Karpathy's LLM Wiki pattern from individual vaults to collaborative team
+  environments. Details managing context-window saturation past the 100-page threshold using integrated page search,
+  establishing Git branch-and-merge review workflows for agent-drafted diffs, splitting human vs. model page ownership,
+  and serving verified context to agents via Authoring and Reader MCP servers.
 - [What Karpathy's LLM Wiki is Missing (And How to Fix It)](https://dev.to/penfieldlabs/what-karpathys-llm-wiki-is-missing-and-how-to-fix-it-1988) (Penfield Labs) - A deep architectural critique outlining solutions for token scaling limits in file-based context stores, featuring code patterns for semantic deduplication and pre-commit syntax hooks to protect structural integrity.
 
 ### Tutorials and Setup Guides
