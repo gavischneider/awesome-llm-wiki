@@ -967,6 +967,10 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
   Karpathy's LLM Wiki pattern. Enforces strict hard-gates for frontmatter, source citations, cross-links, and logs,
   resolves a central knowledge base path across projects via global configuration, and defines six operational workflows
   including ingestion, querying, linting, enhancement, compilation, and schema evolution.
+- [LLM Wiki (micuintus)](https://github.com/micuintus/llm-wiki) ([npm](https://www.npmjs.com/package/@micuintus/llm-wiki)) - A
+  lightweight, zero-dependency agent skill for Pi, Claude Code, OpenCode, and Gemini CLI implementing Karpathy's
+  LLM Wiki pattern. Establishes a four-part schema layout (SCHEMA.md, index.md, log.md, and raw-sources/) with
+  lazy-loaded recipes for Pi JSONL trees with fork detection, transcript compilation, and code repository citations.
 - [LLM Wiki (Oshayr)](https://github.com/Oshayr/LLM-Wiki) - An autonomous Claude Code plugin and skill suite
   implementing Karpathy's LLM Wiki pattern. Features research-on-miss query routing that automatically explores and
   ingests missing concepts into `.wiki/`, a multi-agent maintenance engine (backlinks, claim verification,
