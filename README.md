@@ -1014,6 +1014,10 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
 
 - [cerebro (andresbuonaiuto)](https://github.com/andresbuonaiuto/cerebro) - An open-source workspace template and installable kit implementing Andrej Karpathy's LLM Wiki pattern. Provides a structured directory layout, a markdown conversion wrapper for books and PDFs, a detailed configuration blueprint (`BLUEPRINT.md`), and pre-configured agent instructions (`AGENTS.md`) for Cursor and Claude Code.
 - [copilot-llm-wiki (SriSatyaLokesh)](https://github.com/SriSatyaLokesh/copilot-llm-wiki) ([Website](https://srisatyalokesh.is-a.dev/copilot-llm-wiki/)) - A forkable template and prompt suite configuring GitHub Copilot Chat in VS Code to build and maintain Karpathy-style markdown wikis. Utilizes dedicated VS Code prompt files (.github/prompts/) and repository instructions to orchestrate batch ingestion, progressive concept linking, and automated vault linting.
+- [karpathy-llm-wiki-second-brain (ddenzu)](https://github.com/ddenzu/karpathy-llm-wiki-second-brain) - An Obsidian and
+  Claude Code starter template implementing Karpathy's LLM Wiki pattern structured across a four-axis second brain
+  (Work, Learning, Thinking, Decisions). Features custom slash commands (/ingest, /query, /lint, /update), global
+  capture and query agent skills, and append-only architecture decision records.
 - [Karpathy-LLM-Wiki-Stack (ScrapingArt)](https://github.com/ScrapingArt/Karpathy-LLM-Wiki-Stack) - A comprehensive technical
   blueprint and build-ready reference for constructing an LLM Wiki with Claude Code and Obsidian. Features a master
   `CLAUDE.md` schema, vault directory specifications, frontmatter contracts, Dataview queries, Obsidian CLI workflows,
