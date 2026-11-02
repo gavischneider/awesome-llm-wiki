@@ -776,6 +776,10 @@ Google Open Knowledge Format (OKF) bundles.*
   implementing the Karpathy LLM Wiki pattern and Google Open Knowledge Format (OKF). Ingests raw sources into
   structured concept pages with strict extraction contracts, featuring LanceDB vector indexing, deliverable
   compilation from templates, citation graph querying via MCP, and an agent-proposals review queue.
+- [llm-wiki (hsuanguo)](https://github.com/hsuanguo/llm-wiki) - An open-source OKF-native knowledge base compiler
+  and Python CLI (lwiki) implementing Karpathy's LLM Wiki pattern under Open Knowledge Format v0.2. Features
+  agent skills for automated ingestion cascades and backlink audits, raw source drift tracking, deterministic
+  OKF conformance validation, legacy vault migration, and a local web viewer.
 - [OKF Harness (pumblus)](https://github.com/pumblus/okf-harness) ([Website](https://okf-harness.dev/)) - An
   agent-first, local-first, terminal-native harness for maintaining OKF-compatible LLM Wikis. Registers raw sources
   under `raw/sources/`, produces ingest plans, and compiles synthesized Markdown pages under `wiki/` with byte-level
