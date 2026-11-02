@@ -958,6 +958,10 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
   Karpathy's LLM Wiki pattern. Features proactive wiki checking steered by CLAUDE.md, SessionStart hooks for startup
   stats and cross-session hot-caching, two-phase ingestion with contradiction detection, and seven slash commands
   (`/wiki-ingest`, `/wiki-query`, `/wiki-lint`, `/wiki-review`, `/wiki-graph`, `/wiki-save`).
+- [LLM Wiki (KaelLim)](https://github.com/KaelLim/llm-wiki) - A Claude Code plugin and agent skill suite implementing
+  Karpathy's LLM Wiki pattern. Enforces strict hard-gates for frontmatter, source citations, cross-links, and logs,
+  resolves a central knowledge base path across projects via global configuration, and defines six operational workflows
+  including ingestion, querying, linting, enhancement, compilation, and schema evolution.
 - [LLM Wiki (Oshayr)](https://github.com/Oshayr/LLM-Wiki) - An autonomous Claude Code plugin and skill suite
   implementing Karpathy's LLM Wiki pattern. Features research-on-miss query routing that automatically explores and
   ingests missing concepts into `.wiki/`, a multi-agent maintenance engine (backlinks, claim verification,
