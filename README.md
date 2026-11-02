@@ -1014,6 +1014,10 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
 
 - [cerebro (andresbuonaiuto)](https://github.com/andresbuonaiuto/cerebro) - An open-source workspace template and installable kit implementing Andrej Karpathy's LLM Wiki pattern. Provides a structured directory layout, a markdown conversion wrapper for books and PDFs, a detailed configuration blueprint (`BLUEPRINT.md`), and pre-configured agent instructions (`AGENTS.md`) for Cursor and Claude Code.
 - [copilot-llm-wiki (SriSatyaLokesh)](https://github.com/SriSatyaLokesh/copilot-llm-wiki) ([Website](https://srisatyalokesh.is-a.dev/copilot-llm-wiki/)) - A forkable template and prompt suite configuring GitHub Copilot Chat in VS Code to build and maintain Karpathy-style markdown wikis. Utilizes dedicated VS Code prompt files (.github/prompts/) and repository instructions to orchestrate batch ingestion, progressive concept linking, and automated vault linting.
+- [Karpathy-LLM-Wiki-Stack (ScrapingArt)](https://github.com/ScrapingArt/Karpathy-LLM-Wiki-Stack) - A comprehensive technical
+  blueprint and build-ready reference for constructing an LLM Wiki with Claude Code and Obsidian. Features a master
+  `CLAUDE.md` schema, vault directory specifications, frontmatter contracts, Dataview queries, Obsidian CLI workflows,
+  and self-evolving ingest, query, and lint loops.
 - [LLM Wiki Template (Bashir Aziz)](https://github.com/bashiraziz/llm-wiki-template) - A structured personal knowledge base workspace template for terminal assistants. Scaffolds a three-layer directory (immutable sources, agent-maintained wiki, local session transcripts), pre-configuring layout guidelines and auto-export session hooks for Claude Code (CLAUDE.md), Codex CLI (AGENTS.md), and Aider.
 - [llm-context-base (asakin)](https://github.com/asakin/llm-context-base) - A Git starter template for constructing personal
   LLM wikis. Features a human-in-the-loop "training phase" to align agent writes, a metadata query standard to prevent
