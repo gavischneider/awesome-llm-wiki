@@ -690,6 +690,11 @@ that compile multi-domain life data (health, finance, calendar, documents) into 
 
 - [Auto LLM Wiki](https://github.com/youzhixiaomutou/auto-llm-wiki) ([Obsidian Plugin](https://community.obsidian.md/plugins/auto-llm-wiki)) - An open-source Obsidian plugin that automates the creation and maintenance of a Karpathy-style LLM Wiki, featuring multi-format text and vision OCR ingestion, an index-first natural language chat panel with conversation history, and local vault linting.
 - [claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) - An open-source Claude Code plugin and knowledge engine that builds compounding Obsidian vaults, featuring hot-cache context persistence, multi-agent batch ingestion, automated 8-category vault linting, and spatial canvas orchestration.
+- [claude-wiki-pages (odere-pro)](https://odere-pro.github.io/claude-wiki-pages-plugin/) ([GitHub](https://github.com/odere-pro/claude-wiki-pages-plugin)) - An
+  open-source Claude Code plugin and hook-enforced knowledge engine that compiles Obsidian vaults following Karpathy's
+  LLM Wiki pattern. Powered by a deterministic Bun runtime, it features 18 tool-use lifecycle hooks for schema
+  enforcement, 8 specialized subagents, Git-checkpointed auto-healing, and optional offline local model execution
+  via Ollama.
 - [Gemma 4 E4B LLM Wiki (yuimorii)](https://github.com/itsyuimorii/obsidian-gemma4-litert-wiki) ([Obsidian Plugin](https://community.obsidian.md/plugins/gemma-litert-wiki)) ([Demo](https://gemma-wiki-demo.vercel.app)) - A native Obsidian community plugin running Gemma 4 E4B locally via LiteRT-LM and WebGPU with zero external servers. Compiles raw notes into a separate markdown wiki layer with note summary cards, concept pages, shared tag vocabularies, provenance spot-checks, and contradiction sweeps.
 - [Graph Explorer Base View (dsebastien)](https://github.com/dsebastien/obsidian-graph-explorer-base-view) ([Companion Article](https://www.linkedin.com/pulse/i-built-graph-explorer-obsidian-bases-heres-why-llm-wikis-dubois-m1pme/)) - An Obsidian
   plugin that visualizes a filtered set of notes as an interactive force-directed graph. Features built-in presets
