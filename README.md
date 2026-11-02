@@ -995,6 +995,10 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
   trusted folder boundaries (raw/, wiki/, AGENTS.md, IDEA.md, log.md), a managed Wiki Maintainer agent, automated
   issue and comment distillation into standup views and index pages, atomic markdown writes with backlink extraction,
   and scheduled maintenance routines for linting and index refreshes.
+- [pi-llm-wiki (Kausik-A)](https://github.com/Kausik-A/pi-llm-wiki) ([npm](https://www.npmjs.com/package/pi-llm-wiki)) - A
+  Pi-native package and bundled skill implementing Karpathy's LLM Wiki pattern. Enforces a four-layer vault topology
+  (raw captures, canonical concept/entity/synthesis pages, machine-owned metadata, and schema rules) with operational
+  guardrails blocking direct edits to raw sources, automatic metadata rebuilds, and mechanical vault linting.
 - [pin-llm-wiki (ndjordjevic)](https://github.com/ndjordjevic/pin-llm-wiki) - A multi-editor agent skill for Claude Code, Cursor, and GitHub Copilot implementing the Karpathy LLM Wiki pattern. Configures an inbox queue (`inbox.md`), immutable raw storage, wikilinked concept nodes, and slash commands for initialization, ingestion, and linting.
 - [project-wiki (giodra96)](https://github.com/giodra96/project-wiki) - An open-source, IDE-neutral agent skill and directory
   schema that provides durable, traceable project memory for AI coding agents. Scaffolds a `.project-wiki/` repository
