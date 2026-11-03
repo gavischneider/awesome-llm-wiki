@@ -1010,6 +1010,10 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
   code links—minimizing loaded token context while maintaining bidirectional traceability across agent sessions.
 - [sametbrr/llm-wiki-manager](https://github.com/sametbrr/llm-wiki-manager) - A production-grade implementation of the Karpathy LLM Wiki pattern packaged as a native Claude Code and agentskills.io skill. Bundles a suite of dependency-free, idempotent Python scripts for automated workspace scaffolding, index catalog synchronization, transaction ledger logging, and semantic linting capable of parsing standard markdown links and Obsidian double-bracket nodes.
 - [Second Brain (NicholasSpisak)](https://github.com/NicholasSpisak/second-brain) - An open-source agent skill suite installable via the agent-skills standard, featuring a guided vault setup wizard, automated raw document compiler, query utility with qmd search integration, and consistency check linter.
+- [Second Brain OS Toolkit (undefined-ui)](https://github.com/undefined-ui/second-brain-os) ([Skills](https://github.com/undefined-ui/second-brain-os/tree/main/skills)) ([Website](https://secondbrainos.dev/)) - A
+  comprehensive Claude Code plugin, agent skill suite, and Obsidian vault engine implementing Karpathy's LLM Wiki
+  pattern. Features 18 skills (ingestion, entity linking, graph export, contradiction logging, health metrics), 72
+  slash commands, 6 subagents, and automated maintenance workflows.
 - [second-brain-skill (ChavesLiu)](https://github.com/ChavesLiu/second-brain-skill) - An installable Claude Code skill
   suite implementing Karpathy's LLM Wiki pattern. Features six slash commands (`/wiki init`, `/wiki ingest`,
   `/wiki query`, `/wiki lint`, `/wiki wipe`, `/wiki test`), natural language intent triggers, a 4-part taxonomy
@@ -1173,6 +1177,10 @@ LLM Wiki and agent memory architectures.*
 *Syllabi, lecture slides, notes, and academic materials from university-level courses exploring generative AI workflows, agent memory, and knowledge organization.*
 
 - [MAE-6291: Generative AI for Engineering Research (Lorena A. Barba at George Washington University)](https://barbagroup.github.io/mae6291-genai/) ([Lecture Video](https://www.youtube.com/watch?v=TC_d_0CR07A)) ([Lecture Notes PDF](https://figshare.com/articles/presentation/Organizing_Knowledge_with_AI_from_the_LLM_Wiki_to_Using_AI_as_a_Tool_for_Thought/32882258/2?file=66260606)) - A graduate-level course teaching engineering PhD students to utilize generative AI as a research accelerator. The final session focuses on the LLM Wiki pattern as compiled semantic memory, comparing it with standard RAG, defining the raw/wiki/schema layers, and discussing how personal wikis scaffold metacognition.
+- [Second Brain OS: The Agents Course & Handbooks](https://secondbrainos.dev/) ([GitHub](https://github.com/undefined-ui/second-brain-os/blob/main/docs/README.md#the-agents-course)) - A
+  free, seven-module course and five-handbook technical curriculum teaching agent architectures from single prompts to
+  production. Covers attention context, agentic loops, decision gates, harnesses, and evaluations, paired with an
+  interactive 3D web knowledge graph and explorable reader.
 
 ## Videos
 
