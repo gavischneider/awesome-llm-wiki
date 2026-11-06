@@ -807,6 +807,7 @@ Google Open Knowledge Format (OKF) bundles.*
   alongside self-contained local HTML graph reports.
 - [Open Knowledge CLI](https://github.com/openknowledge-sh/openknowledge) ([Website](https://openknowledge.sh)) - An open-source CLI, daemon, and isolated Docker runtime
   implementing the OKF v0.1 spec for self-maintaining repositories.
+- [OneMira C1 & OneMira MCP](https://onemira.com/products/c1) ([GitHub](https://github.com/onemira-space/onemira-mcp)) - A local-first spoken-context system and standalone AI voice recorder built on Google's Open Knowledge Format (OKF). Captures meetings independently with automatic Speaker ID and Local AI summaries ($0/mo subscription), compiling structured OKF Markdown wikis (YAML frontmatter, deterministic links, relational schemas) exposed to Claude Code, Cursor, and ChatGPT via an open Model Context Protocol (MCP) server.
 - [quarry-kb](https://pypi.org/project/quarry-kb/) - A configuration-driven knowledge-ingestion harness and compilation tool for Python environments. It enforces rigid structural contracts when translating raw, unstructured documents into organized flat-file notebooks, utilizing declarative schema files to programmatically handle directory sorting, standardize YAML frontmatter metadata layout, and map explicit cross-note link pathways.
 - [serradura/okf-gem](https://github.com/serradura/okf-gem) ([Website](https://okfgem.com/)) - The complete CLI, library, and graph server harness for creating, maintaining, and visualizing OKF bundles.
 
