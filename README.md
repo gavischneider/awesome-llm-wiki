@@ -442,6 +442,10 @@ operational retrospectives.*
   page accumulation) and details engineering remedies: a pre-commit drift linter, scoped per-domain sub-schemas, and a
   companion pgvector index for recall once index context exceeds 100k tokens.
 - [LLM Wiki Setup: Karpathy's Knowledge Base \[2026 Guide\] (Kunal Ganglani Blog)](https://www.kunalganglani.com/blog/llm-wiki-karpathy-local-knowledge-base) - A detailed case study exploring the setup, best tools, incremental updates, and common failure modes of running a local LLM Wiki.
+- [My Obsidian PKM Setup: Karpathy's LLM Wiki + Claude Code + Local Search (Alfonso Fortunato)](https://alfonsofortunato.com/writing/obsidian-pkm-llm-wiki.html) - A
+  personal implementation case study detailing an Obsidian PKM setup maintained by Claude Code as a disciplined
+  librarian. Features hierarchical index navigation (`_master-index.md` to topic indexes), four-verb workflows (clip,
+  compile, query, audit), and integration with `qmd` for local-first hybrid search.
 - [The AI Knowledge Layer: 127 Pages, Zero Vector Databases, and What I Got Wrong (Sebastian Kehle on Webvise)](https://www.webvise.io/blog/ai-knowledge-layer-guide) - A production retrospective and practical guide detailing the operation of a 127-page LLM knowledge layer without vector databases. Outlines real-world operating numbers, architectural lessons across the three-layer setup, common failure modes in agent maintenance, and setup blueprints for business research and project workflows.
 - [The Karpathy/Wyndo Wiki: How I Built a Knowledge Base That Maintains Itself (Lee Shand on Wired Differently Substack)](https://shaggyrs6.substack.com/p/the-karpathywyndo-wiki-how-i-built) - A personal case study detailing the construction of a self-maintaining Obsidian wiki using Claude Code, Readwise sync, and a custom skill toolkit, exploring cold-start sparse connections, import command challenges, and LLM-tagging behaviors.
 - [The Lint Ran Every Week. The Dead-Link Count Never Went Down. (Michael Tuszynski on The Cloud Codex)](https://www.mpt.solutions/lint-ran-every-week-dead-link-count-never-went-down/) - A
