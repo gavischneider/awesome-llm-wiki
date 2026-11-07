@@ -239,6 +239,11 @@ Inspired by a paradigm shift in software development engineering, this architect
   note summarizing the LLM Wiki pattern. Covers the three-layer architecture, core operations (Ingest, Query, Lint),
   and outlines Steven Thompson's critique on compilation versus curation.
 - [LLM Wiki (Kamenik Solutions)](https://kameniksolutions.com/garden/llm-wiki/) - A digital garden note summarizing the LLM Wiki pattern. Explains when to use compiled vaults over dynamic vector RAG, outlines the three core layers (raw sources, structured wiki, instruction schemas), and notes its trial as an organizational technique for agent-curated vaults.
+- [LLM Wiki Pattern (Karpathy) (personal-vault on tomelam.com)](https://tomelam.com/compendium/personal-vault/utilities/theory/llm-wiki-pattern.html) - A
+  public digital garden entry detailing the implementation of Karpathy's LLM Wiki pattern in a personal vault.
+  Explores the three-layer layout, operational loops, keeping operational logs outside the published wiki reference
+  layer, and contrasting traditional human-written Zettelkasten systems against agent-written, human-governed vaults
+  with strict promotion gates.
 
 ### Scaling and Enterprise Systems
 
