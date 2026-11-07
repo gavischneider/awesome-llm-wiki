@@ -1055,6 +1055,10 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
   Markdown knowledge bases. Features the VitaeGraph format to compile hierarchical records (projects, roles, degrees)
   with typed cross-links and rebuildable indexes, enabling progressive context retrieval for coding agents.
 - [Wiki Builder (DAIR.AI)](https://github.com/dair-ai/dair-academy-plugins/tree/main/plugins/wiki-builder) - An open-source Claude Code plugin path that automates directory scaffolding, handles multi-flavor workspace indexing, and leverages localized markdown configuration files to govern agent compilation boundaries.
+- [Wiki LLM Knowledge Base (agentprivacy)](https://guide.agentprivacy.ai/skill/wiki-llm-knowledge-base) - An
+  installable agent skill from the agentprivacy federation implementing the Karpathy LLM Wiki pattern. Directs an LLM
+  librarian across the three-layer layout (immutable sources, compiled wiki, schema) and ingest/query/lint loops,
+  featuring eight governance distribution gates (G0–G7) for classification, attribution, and first-person sign-off.
 - [wiki-builder (Hyperagent Skill)](https://hyperagent.com/marketplace/s/ccs01KXE6517H_XZ5CR1ZSYW20X9WQ) - A reusable agentic skill for the HyperAgent platform designed to initialize, query, and maintain structured research wikis.
 - [wiki-skills (kfchou)](https://github.com/kfchou/wiki-skills) - An open-source Claude Code skill suite implementing Karpathy's LLM Wiki pattern, featuring a bootstrapping tool, automated backlink resolution, validation checkers, and parallel citation auditing (with adversarial verification in strong mode).
 - [XBlueSky/cortexes](https://github.com/XBlueSky/cortexes) ([Website](https://cortexes.pages.dev/)) - A personal knowledge vault plugin for Claude Code featuring session capturing, memory distillation, and hybrid search.
