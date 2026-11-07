@@ -489,6 +489,11 @@ infrastructure.*
   OKF. Combines a 200+ file structured knowledge graph (with YAML dependency tracking) and procedural recipes with an
   automated self-improvement compilation flywheel that diagnoses expert feedback and lands regression-tested diffs
   without model retraining.
+- [Build a small LLM wiki in an AgenticOS project (Kacper Włodarczyk on DEV Community)](https://dev.to/deenuu1/build-a-small-llm-wiki-in-an-agenticos-project-3cmd) - A
+  practical implementation case study demonstrating how to build and maintain a collaborative team LLM Wiki inside
+  AgenticOS. Explores directory layouts (`sources/`, `notes/`, `inbox/`), `index.md` and changelog tracking,
+  maintaining visible conflict trails between revisions, and query routing across fresh chats without conversational
+  context pollution.
 - [From Self-Updating OKF Wiki to Production Trust System (Udaykiran Estari on Towards AI)](https://pub.towardsai.net/from-self-updating-okf-wiki-to-production-trust-system-b014dbd12149) - A technical analysis on building a production trust system for agent-generated wikis. Explores how to transition from OKF generation to trust boundaries, outlining governance policies (signed bundles, append-only audits, and human review gates) to validate AI-drafted documentation.
 - [How our shape of collaboration is evolving with LLMs (Gurden Batra on Civilizational Optionality)](https://civilizationaloptionality.substack.com/p/how-our-shape-of-collaboration-is) ([Overview](https://dark-matter-labs.github.io/ino-learning-system/)) - A
   production case study by Dark Matter Labs and xCO detailing a 26-wiki federation (15 personal, 11 team commons)
