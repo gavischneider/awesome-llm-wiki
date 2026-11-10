@@ -171,6 +171,10 @@ Inspired by a paradigm shift in software development engineering, this architect
   Details a three-stage Markdown memory model (Remember, Trust, Act) grounded in Karpathy's LLM Wiki pattern,
   incorporating bi-temporal tracking, dependency-driven invalidation cascades, negative knowledge preservation, and the
   compilation of replicated wiki procedures into executable SKILL.md agent skills.
+- [Your AI Does Not Need More Tools Yet. It Needs a Small Wiki (Mark Chen on Medium)](https://medium.com/@markchen69/your-ai-does-not-need-more-tools-yet-it-needs-a-small-wiki-2521bc1f2ee2) - An
+  architectural essay arguing that inconsistent agent behavior stems from context deficiency rather than a lack of tool
+  integrations. Outlines why grounding models in a compact, human-maintained Markdown wiki and a repeatable skill
+  produces higher-fidelity outputs than chasing expansive tool ecosystems.
 - [Your Personal Brain: A Practical Guide for Leaders, Practitioners, and Enthusiasts (Nufar Gaspar LinkedIn)](https://www.linkedin.com/pulse/your-personal-brain-practical-guide-leaders-nufar-gaspar-8oajf/) - A management playbook exploring how to establish a "dump-and-housekeep" maintenance cycle for agent memory.
 
 ### Comparative Analyses (Wiki vs. RAG)
