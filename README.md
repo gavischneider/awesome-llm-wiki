@@ -679,6 +679,10 @@ graph platforms.*
   FastAPI platform implementing Karpathy's LLM Wiki pattern with a vanilla JS SPA. Synthesizes URLs and multi-format
   documents into structured concept, entity, and analysis pages in an Obsidian-compatible vault, featuring full-text
   search, an asynchronous file queue, and a D3.js knowledge graph powered by Graphify with 3-tier confidence scoring.
+- [LLM Wiki Tools](https://llmwiki.tools/) - A managed web platform and Model Context Protocol (MCP) service
+  implementing Karpathy's LLM Wiki pattern. Converts uploaded multi-format documents (PDFs with OCR, Office docs,
+  Markdown) into an interlinked wiki layer authored by Claude via remote MCP tools, featuring click-through source
+  citations, compounding query synthesis pages, and automated inconsistency and orphan-node linting.
 - [LLM Wiki v2 (crow-hq)](https://github.com/crow-hq/llm-wiki-v2) ([PyPI](https://pypi.org/project/llmwiki2/)) ([Paper](https://doi.org/10.5281/zenodo.22898752)) - An
   open-source, local-first web application, Python library, and CLI implementing the LLM Wiki pattern with CROW
   (Classifier Routing for Open Wikis) architecture. Replaces vector embeddings and monolithic index prompts by routing
