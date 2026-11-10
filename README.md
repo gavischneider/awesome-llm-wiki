@@ -924,6 +924,11 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
 
 *Model Context Protocol (MCP) servers and integrations designed to expose local knowledge graphs to external AI agents.*
 
+- [AdvWiki (dfalci)](https://github.com/dfalci/mcp-advwiki) - A local-first Model Context Protocol (MCP) server
+  written in Rust that provides persistent project memory for coding agents. Compiles architecture decisions,
+  conventions, and raw evidence into an Obsidian-compatible Markdown wiki with Tantivy-powered BM25 and hybrid
+  semantic search, verifiable claims tracking, reviewable diff proposals, graph navigation tools, and automated
+  Git versioning.
 - [ai-memory (akitaonrails)](https://github.com/akitaonrails/ai-memory) - An open-source, local-first long-term memory Model
   Context Protocol (MCP) server written in Rust. Acts as a context bridge to facilitate seamless handoff and continuity
   between different AI coding agent vendors.
