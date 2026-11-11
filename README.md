@@ -324,6 +324,11 @@ Inspired by a paradigm shift in software development engineering, this architect
   enterprise search, and Karpathy's LLM wiki pattern to multi-agent organizational context layers. Contrasts personal
   memory vaults against company brains across access permissions, conflicting source resolution, and automated
   maintenance, providing an operational decision framework for teams deploying autonomous agents.
+- [What Is a Company Brain? Definition, Examples, How to Build (Ashwin Gopinath on Sentra)](https://www.sentra.app/articles/what-is-a-company-brain) - An
+  architectural guide defining the company brain category across five requirements: write-time comprehension,
+  bi-temporal validity tracking, org-wide scope, commitment tracking, and proactive contradiction detection.
+  Deconstructs four CoALA-derived memory layers (factual, interaction, reasoning, action) and outlines an
+  implementation sequence to unify human and multi-agent context over MCP.
 - [What Is an LLM Wiki and How to Build One for Your Team (Roop Reddy on Documentation.AI)](https://documentation.ai/blog/what-is-an-llm-wiki) - An
   architectural guide examining how to scale Karpathy's LLM Wiki pattern from individual vaults to collaborative team
   environments. Details managing context-window saturation past the 100-page threshold using integrated page search,
