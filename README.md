@@ -491,7 +491,7 @@ operational retrospectives.*
   personal implementation case study detailing an Obsidian PKM setup maintained by Claude Code as a disciplined
   librarian. Features hierarchical index navigation (`_master-index.md` to topic indexes), four-verb workflows (clip,
   compile, query, audit), and integration with `qmd` for local-first hybrid search.
-- [Persistent Agent Memory with an Obsidian Wiki and Claude Code (Mike Clarke on Web of Mike)](https://webofmike.com/agent-memory-obsidian-wiki/) ([GitHub](https://github.com/themsquared/agent-wiki-graph)) - A
+- [Persistent Agent Memory with an Obsidian Wiki and Claude Code (Mike Moore on Web of Mike)](https://webofmike.com/agent-memory-obsidian-wiki/) ([GitHub](https://github.com/themsquared/agent-wiki-graph)) - A
   production case study detailing a two-layer Obsidian knowledge graph (per-account relationship vaults and a root
   concepts layer) maintained by Claude Code. Explores Pocket AI voice memo ingestion into immutable `_raw/` storage,
   provenance steering with `[UNVERIFIED]` flags, 5-15 page fan-out targets per source, and parallel agent Git merging.
