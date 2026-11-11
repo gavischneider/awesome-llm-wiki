@@ -1349,6 +1349,10 @@ LLM Wiki and agent memory architectures.*
 *Community message boards, discussion threads, and collaborative critiques discussing pattern design and tradeoffs.*
 
 - [LLM Wiki – example of an "idea file" (Hacker News Thread)](https://news.ycombinator.com/item?id=47640875) - A viral community discussion thread containing developer critiques, architecture comparisons (RAG vs. compiled markdown files), context limits debate, and links to several open-source community implementations.
+- [Show HN: A Karpathy-style LLM wiki your agents maintain (Markdown and Git) (Hacker News Thread)](https://news.ycombinator.com/item?id=47899844) - A
+  community discussion thread examining a local Markdown- and Git-backed implementation of Karpathy's LLM Wiki pattern.
+  Features developer debate across 110+ comments on draft-to-canonical promotion flows, entity fact logs, unsupervised
+  agent note-taking risks, knowledge drift and debt in team wikis, and BM25 versus vector retrieval trade-offs.
 
 ---
 
