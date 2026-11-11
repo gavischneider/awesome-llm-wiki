@@ -556,6 +556,10 @@ infrastructure.*
 *Empirical head-to-head comparisons, multi-implementation reviews, and architectural audits evaluating wiki
 performance, schema rigor, and retrieval accuracy.*
 
+- [Claude Code Obsidian: 3 Plugins Tested Side by Side (AI Parabellum)](https://aiparabellum.com/claude-code-obsidian-vs-obsidian-wiki-vs-ars-contexta/) - An
+  empirical comparative audit evaluating three Obsidian knowledge base plugins for Claude Code: AgriciDaniel's
+  claude-obsidian, Ar9av's obsidian-wiki, and Ars Contexta. Benchmarks sandbox vault setup, ingestion performance,
+  plan hash pinning, provisional vs. inferred claim marking, and hook safety behaviors like automated Git commits.
 - [Company Brain Solutions: 10 Architectures Compared (Slite)](https://slite.com/learn/company-brain-solutions) - An
   architectural audit and comparative review analyzing 10 company brain implementations across four families:
   self-hosted patterns (Claude Code, GBrain, Sylph), memory SDKs (mem0, Zep, Letta), vertical setups (Pletor,
