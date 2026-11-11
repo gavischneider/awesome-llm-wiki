@@ -491,6 +491,10 @@ operational retrospectives.*
   personal implementation case study detailing an Obsidian PKM setup maintained by Claude Code as a disciplined
   librarian. Features hierarchical index navigation (`_master-index.md` to topic indexes), four-verb workflows (clip,
   compile, query, audit), and integration with `qmd` for local-first hybrid search.
+- [Persistent Agent Memory with an Obsidian Wiki and Claude Code (Mike Clarke on Web of Mike)](https://webofmike.com/agent-memory-obsidian-wiki/) ([GitHub](https://github.com/themsquared/agent-wiki-graph)) - A
+  production case study detailing a two-layer Obsidian knowledge graph (per-account relationship vaults and a root
+  concepts layer) maintained by Claude Code. Explores Pocket AI voice memo ingestion into immutable `_raw/` storage,
+  provenance steering with `[UNVERIFIED]` flags, 5-15 page fan-out targets per source, and parallel agent Git merging.
 - [The AI Knowledge Layer: 127 Pages, Zero Vector Databases, and What I Got Wrong (Sebastian Kehle on Webvise)](https://www.webvise.io/blog/ai-knowledge-layer-guide) - A production retrospective and practical guide detailing the operation of a 127-page LLM knowledge layer without vector databases. Outlines real-world operating numbers, architectural lessons across the three-layer setup, common failure modes in agent maintenance, and setup blueprints for business research and project workflows.
 - [The Karpathy/Wyndo Wiki: How I Built a Knowledge Base That Maintains Itself (Lee Shand on Wired Differently Substack)](https://shaggyrs6.substack.com/p/the-karpathywyndo-wiki-how-i-built) - A personal case study detailing the construction of a self-maintaining Obsidian wiki using Claude Code, Readwise sync, and a custom skill toolkit, exploring cold-start sparse connections, import command challenges, and LLM-tagging behaviors.
 - [The Lint Ran Every Week. The Dead-Link Count Never Went Down. (Michael Tuszynski on The Cloud Codex)](https://www.mpt.solutions/lint-ran-every-week-dead-link-count-never-went-down/) - A
