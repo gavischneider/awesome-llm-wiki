@@ -752,6 +752,11 @@ environments and access controls.*
 *Autonomous personal life assistants, agent-driven memory operating systems, and multi-stream personal knowledge graphs
 that compile multi-domain life data (health, finance, calendar, documents) into compounding, agent-maintained wikis.*
 
+- [MemexOS](https://github.com/liushengyu/memexos) - An open-source personal memory operating system that compiles
+  multi-platform captures (YouTube, Bilibili, X bookmarks, RSS, web pages, and Claude Code/Codex sessions) into an
+  agent-searchable Markdown wiki. Features an automated nightly collection pipeline, a two-gate review architecture in
+  Git worktrees (deterministic code checks and independent model verification), local vector search via qmd, and a
+  local web console dashboard.
 - [Memory OS](https://github.com/ClaudioDrews/memory-os) - A 7-layer local memory operating system built for Hermes
   Agent. It unifies trust-scored SQLite facts, session histories, and local vector retrieval with an automated,
   self-curating LLM Wiki pipeline that compiles system insights directly into flat markdown notes, allowing users to
