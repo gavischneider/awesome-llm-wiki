@@ -705,7 +705,10 @@ graph platforms.*
   and Model Context Protocol (MCP) connector for AI assistants (ChatGPT, Claude, Claude Code, Codex). Compiles
   conversations into chaptered, interlinked Markdown pages paired with spaced-repetition quizzes, featuring a review
   inbox for proposed changesets, interactive 3D galaxy visualization, and rich rendering (LaTeX, Mermaid).
-- [Kompl (tuirk)](https://github.com/tuirk/Kompl) - A self-hosted compounding LLM Wiki application and personal second brain. Uses a local NLP pipeline (spaCy, TF-IDF) paired with Gemini or DeepSeek to ingest web pages, PDFs, and YouTube transcripts, compiling them into an interlinked wiki with entity graph views, page history, and an MCP server.
+- [Kompl (tuirk)](https://github.com/tuirk/Kompl) ([Companion Article](https://medium.com/@tuirkey/kompl-v0-4-whats-new-in-the-open-source-llm-wiki-e4f19c91748d)) - A
+  self-hosted compounding LLM Wiki application and personal second brain. Uses a local NLP pipeline (spaCy, TF-IDF)
+  paired with Gemini or DeepSeek to ingest web pages, PDFs, and YouTube transcripts, compiling them into an interlinked
+  wiki with entity graph views, page history, disagreement tracking, and an 8-tool MCP server.
 - [LLM Wiki (ddsyasas)](https://llmwiki.cc/) ([GitHub](https://github.com/ddsyasas/llm-wiki)) - An open-source,
   local-first web application and CLI implementing Karpathy's LLM Wiki pattern. Refactors multi-format sources into
   typed markdown pages (Concepts, Entities, Comparisons, Overviews) with an interactive 3D knowledge graph, two-pass
