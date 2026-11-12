@@ -1348,6 +1348,11 @@ LLM Wiki and agent memory architectures.*
 - [OpenWiki Brains, general-purpose memory for agents (LangChain)](https://www.youtube.com/watch?v=sBg90v2qfas) - A walkthrough introducing OpenWiki 0.1.0, showing how to configure a personal brain with Notion and Gmail connectors.
 - [This New Google Format Gives Your AI Agent a Second Brain](https://www.youtube.com/watch?v=zwl9Uyw2DjA) (The AI Automators) - A walkthrough of Google's Open Knowledge Format (OKF) standard for organizing information into sovereign, flat-file markdown vaults.
 - [Turn 10,994 Notes Into Memory - AI Research OS Workshop](https://www.youtube.com/watch?v=ZRM_TfEZcIo) (AI Engineer) - A comprehensive technical walkthrough breaking down a file-driven AI memory architecture. The presentation details how to construct an intentional three-layer LLM Wiki using flat markdown directories and a central YAML indexing schema to completely bypass vector database complexity while enforcing an ultra-token-efficient agent retrieval loop.
+- [What Is An Agentic Librarian? Full Hermes & Obsidian Workflow (HITL)](https://www.youtube.com/watch?v=_bieksxg6oY) (Wanderloots) - A
+  video tutorial detailing a human-in-the-loop (HITL) trust architecture for LLM Wikis in Obsidian using Hermes Agent.
+  Adapts the Medallion data lake pattern (Bronze/Raw to Silver/Review to Gold/Wiki) across three implementation paths:
+  Hermes' built-in skill, a Review Companion skill using Markdown proposals, and a full Agentic Librarian with
+  deterministic verification tools.
 - [Why LLM Wiki? Future Of Knowledge For Agentic AI &amp; Humans](https://www.youtube.com/watch?app=desktop&v=n4EVksU_EOs) (Wanderloots) - A visual guide explaining the mechanics of nodes, edges, and triples, the token-efficiency of GraphRAG over standard RAG, and a workflow for sandboxing human vs. agentic Obsidian vaults.
 
 ## Podcasts
