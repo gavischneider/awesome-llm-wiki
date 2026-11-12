@@ -441,6 +441,11 @@ architecture audits.*
 *Personal vault architectures, individual developer routines, voice and mobile capture workflows, and multi-month
 operational retrospectives.*
 
+- [A Self-Maintaining Second Brain Your AI Agent Reads (Tuana Irkey on Medium)](https://medium.com/@tuirkey/a-self-maintaining-second-brain-your-ai-agent-reads-5e2dbe9bdeef) ([GitHub](https://github.com/tuirk/Kompl)) - An
+  engineering case study detailing the architecture of Kompl, an open-source compounding LLM Wiki. Explores
+  replacing query-time vector RAG with a compile-at-ingest pipeline, utilizing local NLP and deterministic rules to
+  constrain LLM writes, tracking conflicting source claims in dedicated Disputed sections, and exposing the compiled
+  wiki to external AI coding agents via an integrated MCP server.
 - [A Voice-First Extension of Karpathy's LLM Wiki (Kieran Adair)](https://medium.com/@kieran_adair/a-voice-first-extension-of-karpathys-llm-wiki-8aa61a38657a) - A case study outlining a voice-first
   ingestion pipeline for the LLM Wiki pattern. Details how to utilize mobile audio recordings, Whisper API
   transcriptions, and local LLM processing to transcribe spoken thoughts and automatically compile them into a
