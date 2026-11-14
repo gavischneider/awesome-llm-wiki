@@ -594,6 +594,11 @@ performance, schema rigor, and retrieval accuracy.*
   empirical comparative review and audit examining 12 open-source implementations of Karpathy's LLM Wiki pattern across
   desktop applications, Obsidian plugins, agent skills, and compilers. Evaluates interfaces, model providers, and
   offline capabilities alongside an empirical study of 46 public LLM wikis on GitHub.
+- [OpenWiki Alternatives: 5 Codebase Wikis Compared (Raghav Chamadiya on repowise)](https://repowise.dev/blog/comparisons/openwiki-alternatives) - An
+  architectural comparative review evaluating five codebase wiki implementations alongside LangChain's OpenWiki:
+  DeepWiki, Google Code Wiki, OpenDeepWiki, deepwiki-open, and repowise. Analyzes tradeoffs across in-repo
+  agent-maintained Markdown vaults, hosted public readers, self-hosted enterprise portals, and AST code-graph
+  extraction without model token spend.
 - [OpenWiki: The LLM Wiki Pattern as Running Code (Rohit Ghumare)](https://aiengineeringfromscratch.com/blog/openwiki) - An
   architectural audit and comparative review contrasting two production implementations of the LLM Wiki pattern:
   LangChain's file-based CLI product (openwiki) and III HQ's decomposed runtime worker. Compares their storage layers
