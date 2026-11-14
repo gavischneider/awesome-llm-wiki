@@ -963,6 +963,10 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
   translations, interactive mind maps, and Graphify visual graphs, exposing repository-scoped MCP endpoints,
   background worker daemons, and multi-user administration.
 - [OpenWiki (LangChain)](https://github.com/langchain-ai/openwiki) ([Introductory Blog Post](https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation)) - An open-source CLI that compiles and maintains flat-file Markdown agent documentation inside the `openwiki/` directory.
+- [repowise](https://repowise.dev/) ([GitHub](https://github.com/repowise-dev/repowise)) - An open-source codebase
+  intelligence CLI and wiki compiler. Parses repositories into dependency and call graphs across 28 languages to
+  auto-generate markdown codebase wikis (subsystems, symbol maps, API contracts, dependency cycles) with zero model
+  token spend, featuring post-commit update hooks, markdown file export, and ten MCP tools for coding agents.
 - [Wenlan](https://github.com/7xuanlu/wenlan) - A local-first Rust CLI and daemon that turns source-backed captures into maintained Markdown wiki pages, with citation-gated refresh, MCP access, agent plugins, and inspectable local Git history.
 - [wiki-from-code-with-llm-wiki-karpathy (balukosuri)](https://github.com/balukosuri/wiki-from-code-with-llm-wiki-karpathy) ([Companion Article](https://medium.com/@k.balu124/how-i-turned-andrej-karpathys-llm-wiki-into-a-tool-that-writes-wiki-s-from-code-cfb7f73afa52)) - A codebase documentation compiler template and Git post-commit hook configuration. Automatically triggers on commit to diff changes, feeding them to Claude Code, Cursor, or Codex to compile and maintain a structured Markdown wiki (architecture, APIs, user guides, decisions) alongside a pre-configured Obsidian vault.
 
