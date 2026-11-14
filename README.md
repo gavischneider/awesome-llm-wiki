@@ -957,6 +957,11 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
   and CLI that compiles codebases into structured Markdown wikis aligned with the Karpathy LLM Wiki pattern. Extracts
   architecture and dependency graphs with Mermaid diagrams, domain module guides, and API docs, featuring
   SHA256-based incremental updates, multi-language documentation mirroring, and an offline interactive graph viewer.
+- [OpenDeepWiki](https://opendeep.wiki/) ([GitHub](https://github.com/AIDotNet/OpenDeepWiki)) - An open-source,
+  full-stack web platform and self-hosted knowledge base compiler for software repositories built with .NET 10 and
+  Next.js 16. Ingests Git repositories to compile structured documentation suites, wiki catalogs, multi-language
+  translations, interactive mind maps, and Graphify visual graphs, exposing repository-scoped MCP endpoints,
+  background worker daemons, and multi-user administration.
 - [OpenWiki (LangChain)](https://github.com/langchain-ai/openwiki) ([Introductory Blog Post](https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation)) - An open-source CLI that compiles and maintains flat-file Markdown agent documentation inside the `openwiki/` directory.
 - [Wenlan](https://github.com/7xuanlu/wenlan) - A local-first Rust CLI and daemon that turns source-backed captures into maintained Markdown wiki pages, with citation-gated refresh, MCP access, agent plugins, and inspectable local Git history.
 - [wiki-from-code-with-llm-wiki-karpathy (balukosuri)](https://github.com/balukosuri/wiki-from-code-with-llm-wiki-karpathy) ([Companion Article](https://medium.com/@k.balu124/how-i-turned-andrej-karpathys-llm-wiki-into-a-tool-that-writes-wiki-s-from-code-cfb7f73afa52)) - A codebase documentation compiler template and Git post-commit hook configuration. Automatically triggers on commit to diff changes, feeding them to Claude Code, Cursor, or Codex to compile and maintain a structured Markdown wiki (architecture, APIs, user guides, decisions) alongside a pre-configured Obsidian vault.
