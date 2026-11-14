@@ -715,6 +715,10 @@ graph platforms.*
   and Model Context Protocol (MCP) connector for AI assistants (ChatGPT, Claude, Claude Code, Codex). Compiles
   conversations into chaptered, interlinked Markdown pages paired with spaced-repetition quizzes, featuring a review
   inbox for proposed changesets, interactive 3D galaxy visualization, and rich rendering (LaTeX, Mermaid).
+- [Knemora](https://knemora.space/) ([GitHub](https://github.com/federicolaterra/knemora)) - An open-source, local-first
+  personal knowledge base and Second Brain engine implementing Karpathy's LLM Wiki pattern on Apple Silicon. Ingests
+  multi-format documents (PDF, DOCX, spreadsheets, markdown) into immutable source stores, compiling them into a
+  connected Markdown wiki with claim-level provenance, native graph views, and on-device inference via llama.cpp.
 - [Kompl (tuirk)](https://github.com/tuirk/Kompl) ([Companion Article](https://medium.com/@tuirkey/kompl-v0-4-whats-new-in-the-open-source-llm-wiki-e4f19c91748d)) - A
   self-hosted compounding LLM Wiki application and personal second brain. Uses a local NLP pipeline (spaCy, TF-IDF)
   paired with Gemini or DeepSeek to ingest web pages, PDFs, and YouTube transcripts, compiling them into an interlinked
