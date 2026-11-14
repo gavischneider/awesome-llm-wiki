@@ -933,6 +933,10 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
 *CLI tools specifically engineered to scan source code, Git history, and AST structures to compile/maintain developer-facing agent docs.*
 
 - [AI Research OS](https://github.com/iusztinpaul/ai-research-os-workshop) - A file-driven multi-agent research framework and compilation engine. It aggregates local notes, codebase snapshots, and web captures into an immutable raw directory, generating a mirrored, highly interconnected LLM Wiki layer composed of flat markdown concept nodes and a unified YAML schema map to optimize downstream context validation.
+- [AutoWiki (Factory)](https://docs.factory.com/automations/wiki/overview) ([News](https://factory.com/news/wiki)) - An
+  automated codebase wiki compilation engine for Droid CLI and CI workflows. Analyzes repositories to generate
+  structured Markdown wikis (architecture overviews, module breakdowns, conventions), featuring auto-sync to GitHub
+  Wikis (`.wiki.git`), a versioned web viewer, and automated regeneration on every Git push.
 - [ByteRover](https://github.com/campfirein/byterover-cli) ([Website](https://www.byterover.dev/)) - An open-source, file-based local memory engine and interactive CLI tool that compiles codebase interactions into a hierarchical Context Tree, featuring agent-native curation, an adaptive knowledge lifecycle layer, sub-100ms hybrid text retrieval, and multi-IDE MCP portability.
 - [Code Wiki (Google)](https://codewiki.google/) - A cloud-hosted developer documentation platform that automatically
   compiles and serves continuously updated codebase wikis from public Git repositories. Synthesizes architecture
@@ -1054,7 +1058,6 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
 *Cloud hosting platforms, remote publishing layers, and managed infrastructure services for deploying and serving file-based knowledge vaults.*
 
 - [Agent Wikis](https://agentwikis.com/) - A production-deployed knowledge platform built around the "Git as a database" flat-file pattern. It hosts public, human-readable wikis that anyone can browse for free to learn from, while serving the underlying raw markdown via MCP for autonomous agent ingestion. Features a closed-loop engine that tracks missed agent queries to fuel automated research and patching workflows behind human-gated commit approvals.
-- [AutoWiki (Factory)](https://factory.ai/news/wiki) - An enterprise-grade codebase wiki compilation platform that automatically generates structured Markdown wikis from repositories and syncs them to Git-backed wikis.
 - [Basic Memory](https://basicmemory.com/) ([GitHub](https://github.com/basicmachines-co/basic-memory)) - A cloud-hosted (SaaS) or local-first (AGPL-3.0) persistent memory platform and MCP server. Syncs Obsidian-compatible Markdown files across web, mobile, and IDEs, utilizing SQLite/Neon PostgreSQL and Milvus backends to provide hybrid semantic search, cross-encoder reranking, and official plugins for Claude Code, Hermes, and OpenClaw.
 - [Dexio](https://dexio.wiki/) ([GitHub](https://github.com/dexio-wiki/dexio)) - A hosted and self-hostable
   (AGPL-3.0) wiki that several agents share over MCP from any machine. Agents search, read, write and edit Markdown
