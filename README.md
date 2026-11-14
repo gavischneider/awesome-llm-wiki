@@ -943,6 +943,10 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
   Rust knowledge graph engine for codebases and project artifacts, inspired by Graphify. Scans repository ASTs, Git
   history, and dependencies without external vector databases, compiling architecture maps and exporting directly
   to interlinked Markdown wikis, Obsidian vaults, and an integrated MCP server for coding agents.
+- [DeepWiki (Cognition)](https://deepwiki.com/) ([Docs](https://docs.devin.ai/work-with-devin/deepwiki)) - An AI
+  documentation platform that auto-generates comprehensive, multi-page codebase wikis with architecture diagrams,
+  source code links, and grounded conversational search. Configurable via `.devin/wiki.json`, it provides a remote
+  Model Context Protocol (MCP) server (`mcp.deepwiki.com`) for agents to inspect repository structure and pages.
 - [EKOS](https://ekos.dev/) ([GitHub](https://github.com/alexeyban/EKOS)) - An open-source, Rust-based enterprise
   knowledge compiler and CLI. Transforms source code (ASTs across Rust, Python, TypeScript, and binaries), Git
   history, schemas, and documents into an append-only, evidence-backed semantic ledger, compiling structured
