@@ -934,6 +934,10 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
 
 - [AI Research OS](https://github.com/iusztinpaul/ai-research-os-workshop) - A file-driven multi-agent research framework and compilation engine. It aggregates local notes, codebase snapshots, and web captures into an immutable raw directory, generating a mirrored, highly interconnected LLM Wiki layer composed of flat markdown concept nodes and a unified YAML schema map to optimize downstream context validation.
 - [ByteRover](https://github.com/campfirein/byterover-cli) ([Website](https://www.byterover.dev/)) - An open-source, file-based local memory engine and interactive CLI tool that compiles codebase interactions into a hierarchical Context Tree, featuring agent-native curation, an adaptive knowledge lifecycle layer, sub-100ms hybrid text retrieval, and multi-IDE MCP portability.
+- [Code Wiki (Google)](https://codewiki.google/) - A cloud-hosted developer documentation platform that automatically
+  compiles and serves continuously updated codebase wikis from public Git repositories. Synthesizes architecture
+  overviews, module deep-dives, API references, and dynamic sequence diagrams hyperlinked directly to source
+  definitions, featuring tight commit tracking against HEAD and a grounded Gemini chat assistant.
 - [CodeAlmanac](https://www.codealmanac.com/) ([GitHub](https://github.com/AlmanacCode/codealmanac)) - A local codebase wiki CLI for agents. Automatically syncs agent sessions and runs local background gardening passes.
 - [Compass](https://compass.crab.build/) ([GitHub](https://github.com/crabbuild/compass)) - An open-source, local-first
   Rust knowledge graph engine for codebases and project artifacts, inspired by Graphify. Scans repository ASTs, Git
