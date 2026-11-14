@@ -684,12 +684,14 @@ performance, schema rigor, and retrieval accuracy.*
   local-first desktop second brain built with Tauri, React, and Rust implementing Karpathy's LLM Wiki pattern.
   Separates immutable sources from a synthesized semantic wiki (`wiki/`) managed by an Active Librarian engine,
   featuring a human-in-the-loop review queue, OKF bundle import/export, a headless CLI (`ct`), and a local MCP server.
-- [DeepWiki-Open (Grok-Wiki)](https://github.com/AsyncFuncAI/deepwiki-open) ([Website](https://grok-wiki.com/)) - An open-source documentation engine and desktop client compiling codebases into
-  interactive Markdown wikis, generating Mermaid diagrams and Q&amp;A indexes with local/remote LLM support.
 - [gknowledge](https://github.com/openapi/gknowledge) - A native GNOME desktop application (GTK 4, Libadwaita,
   Python) implementing Karpathy's LLM Wiki pattern. Ingests documents into an Obsidian-compatible Markdown vault with
   `index.md`, `log.md`, per-page source provenance, and a review queue. Runs offline with a built-in heuristic engine,
   or with Ollama and any OpenAI-compatible endpoint, and ships an MCP server for Claude Code and Codex.
+- [Grok-Wiki](https://grok-wiki.com/) ([GitHub](https://github.com/AsyncFuncAI/grok-wiki)) - A local-first macOS desktop
+  workspace (formerly DeepWiki-Open) compiling codebases into source-grounded Markdown wikis, Mermaid diagrams, and
+  Obsidian-ready vaults. Orchestrates local CLI agents (Claude Code, Codex CLI, Grok CLI, Antigravity) without cloud
+  keys, featuring an integrated terminal, continuous-scroll reader, and public library sharing.
 - [jp-lorenc1o/Eva-brain](https://github.com/jp-lorenc1o/Eva-brain) ([Website](https://jp-lorenc1o.github.io/Eva-brain/)) - A local-first macOS desktop client and MCP server for building and browsing personal markdown knowledge vaults.
 - [LLM Wiki (Nash Su)](https://github.com/nashsu/llm_wiki) - A cross-platform Tauri desktop application that turns multi-format documents into interlinked markdown vaults, featuring two-step chain-of-thought ingestion, interactive Louvain community graphs, and an async human-in-the-loop review system.
 - [Nodus (Drakonis96)](https://drakonis96.github.io/nodus/) ([GitHub](https://github.com/Drakonis96/nodus)) - A local-first desktop workspace and knowledge base application for macOS, Windows, and Linux. Organizes research into five specialized vaults (academic research, genealogy, databases, study, and teaching) with local/remote LLM support, interactive knowledge graphs, gap analysis, argument mapping, and Zotero integration.
