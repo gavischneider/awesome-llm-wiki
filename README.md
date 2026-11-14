@@ -1256,6 +1256,10 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
   and Claude Code merges each episode into cross-episode concept pages with per-claim episode and speaker citations, a
   disagreements section, and lint and consolidation skills.
 - [Security KB (99helpers)](https://99helpers.com/wiki/security-kb) - A live cybersecurity knowledge wiki compiled from 11 industry security sources (MITRE ATT&CK, MITRE D3FEND, NIST CSF 2.0, CIS Controls v8). Features 33 interlinked topic summaries, deep dives, and entity pages alongside an interactive knowledge graph visualization and grounded Q&A search assistant.
+- [Wazoo Wiki](https://wiki.wazoo.dev/LLM_Wiki/) ([GitHub](https://github.com/wazootech/wiki)) - A live knowledge base
+  and open-source wiki engine implementing the LLM Wiki pattern with Wikipedia-style layouts. Powered by a Rust CLI,
+  it features declarative YAML-LD frontmatter, SHACL shape validation, automated graph compilation via SPARQL queries,
+  and hybrid full-text search for AI agents.
 
 ## Evaluations and Benchmarks
 
