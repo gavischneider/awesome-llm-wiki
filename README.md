@@ -980,6 +980,10 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
   Next.js 16. Ingests Git repositories to compile structured documentation suites, wiki catalogs, multi-language
   translations, interactive mind maps, and Graphify visual graphs, exposing repository-scoped MCP endpoints,
   background worker daemons, and multi-user administration.
+- [OpenTrace](https://opentrace.ai/) ([GitHub](https://github.com/opentrace/opentrace)) - An open-source, local-first
+  knowledge graph platform and CLI (`opentraceai`) that maps codebase architecture, call graphs, and documents.
+  Compiles multi-format sources into structured markdown vaults, clusters modules via community detection, exports
+  Obsidian-compatible wiki vaults with wikilinks, and provides MCP tools and Claude Code plugins.
 - [OpenWiki (LangChain)](https://github.com/langchain-ai/openwiki) ([Introductory Blog Post](https://www.langchain.com/blog/introducing-openwiki-an-open-source-agent-for-repo-documentation)) - An open-source CLI that compiles and maintains flat-file Markdown agent documentation inside the `openwiki/` directory.
 - [repowise](https://repowise.dev/) ([GitHub](https://github.com/repowise-dev/repowise)) - An open-source codebase
   intelligence CLI and wiki compiler. Parses repositories into dependency and call graphs across 28 languages to
