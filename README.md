@@ -257,6 +257,10 @@ Inspired by a paradigm shift in software development engineering, this architect
   note summarizing the LLM Wiki pattern. Covers the three-layer architecture, core operations (Ingest, Query, Lint),
   and outlines Steven Thompson's critique on compilation versus curation.
 - [LLM Wiki (Kamenik Solutions)](https://kameniksolutions.com/garden/llm-wiki/) - A digital garden note summarizing the LLM Wiki pattern. Explains when to use compiled vaults over dynamic vector RAG, outlines the three core layers (raw sources, structured wiki, instruction schemas), and notes its trial as an organizational technique for agent-curated vaults.
+- [LLM Wiki (Wazoo Wiki)](https://wiki.wazoo.dev/LLM_Wiki/) - A public wiki entry in a personal knowledge base
+  detailing the implementation of Karpathy's LLM Wiki pattern. Explores the shift from runtime RAG to compiled
+  knowledge codebases, Farzapedia, declarative YAML-LD frontmatter, SHACL validation, SPARQL graph queries, and
+  recursive learning systems.
 - [LLM Wiki Pattern (Karpathy) (personal-vault on tomelam.com)](https://tomelam.com/compendium/personal-vault/utilities/theory/llm-wiki-pattern.html) - A
   public digital garden entry detailing the implementation of Karpathy's LLM Wiki pattern in a personal vault.
   Explores the three-layer layout, operational loops, keeping operational logs outside the published wiki reference
@@ -1256,7 +1260,7 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
   and Claude Code merges each episode into cross-episode concept pages with per-claim episode and speaker citations, a
   disagreements section, and lint and consolidation skills.
 - [Security KB (99helpers)](https://99helpers.com/wiki/security-kb) - A live cybersecurity knowledge wiki compiled from 11 industry security sources (MITRE ATT&CK, MITRE D3FEND, NIST CSF 2.0, CIS Controls v8). Features 33 interlinked topic summaries, deep dives, and entity pages alongside an interactive knowledge graph visualization and grounded Q&A search assistant.
-- [Wazoo Wiki](https://wiki.wazoo.dev/LLM_Wiki/) ([GitHub](https://github.com/wazootech/wiki)) - A live knowledge base
+- [Wazoo Wiki](https://wiki.wazoo.dev/wiki/) ([GitHub](https://github.com/wazootech/wiki)) - A live knowledge base
   and open-source wiki engine implementing the LLM Wiki pattern with Wikipedia-style layouts. Powered by a Rust CLI,
   it features declarative YAML-LD frontmatter, SHACL shape validation, automated graph compilation via SPARQL queries,
   and hybrid full-text search for AI agents.
