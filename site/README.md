@@ -95,8 +95,8 @@ site/
   astro.config.mjs        Site URL, base path, sitemap
   scripts/                validate-readme.mjs, fetch-favicons.mjs
   src/
-    assets/brand/         Original brand artwork (logo, wide artwork, cover)
-    components/           SidebarNav, EntryList, Pager
+    assets/brand/         Brand artwork: vector brain mark, app icons, cover images
+    components/           SidebarNav, EntryList, Pager, BrainMark
     layouts/Base.astro    Head metadata, header, footer
     lib/                  readme-parser.mjs, catalog.ts, favicons.ts, site.ts
     pages/                Home, section and subsection pages, search, contribute, 404,
@@ -106,8 +106,19 @@ site/
   tests/                  Parser, README integration and build-output tests
 ```
 
-Favicons, app icons and the social preview image are generated from the files in `src/assets/brand/` during the
-build. The site has no analytics, ads, cookies or third-party requests; fonts are bundled with the site.
+Favicons, app icons and the social preview image are generated during the build from `logo-square.png` and
+`cover.png` in `src/assets/brand/`. That folder is the home of the brand artwork:
+
+| File | Use |
+| --- | --- |
+| `brain-mark.svg`, `brain-mark-dark.svg` | The mark on a transparent background, for light and dark grounds |
+| `logo-square.png` | Square icon on lavender; source of the site's favicon and header logo |
+| `app-icon-default`, `-dark`, `-tinted` | 1024 px iOS app icon variants (SVG and PNG) |
+| `avatar-circle-safe.png` | Square icon with extra margin, for circular avatars |
+| `cover.png` | 1920 x 1080 cover with the name; shown at the top of the repository README |
+| `social-preview-1280x640.png` | Cover sized for GitHub's social preview setting |
+
+The home page draws the mark inline from `src/components/BrainMark.astro`, so its colours follow the theme. The site has no analytics, ads, cookies or third-party requests; fonts are bundled with the site.
 
 ## Site icons
 
