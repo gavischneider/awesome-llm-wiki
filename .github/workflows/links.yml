@@ -1,0 +1,61 @@
+# Checks every outbound link in README.md once a week and keeps one issue,
+# "Broken links report", up to date with whatever is failing.
+#
+# - Runs every Monday morning (UTC) and can be run by hand from the Actions tab.
+# - If links fail, the report issue is created or its text replaced.
+# - If every link passes, an open report issue is closed.
+# - The job itself does not fail on broken links, so a dead external site never
+#   shows up as a red mark on the repository.
+#
+# Some sites refuse automated requests even when the page is fine. They are
+# excluded below, and "403 Forbidden" / "429 Too Many Requests" count as alive.
+name: Link check
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    name: Check README links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check links
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: false
+          output: lychee-report.md
+          args: >-
+            --no-progress
+            --max-concurrency 8
+            --max-retries 2
+            --timeout 30
+            --accept '100..=103,200..=299,403,429'
+            --exclude '^https://(www\.)?(x|twitter)\.com/'
+            --exclude '^https://(www\.)?linkedin\.com/'
+            --exclude '^https://(www\.)?reddit\.com/'
+            --exclude '^https://img\.shields\.io/'
+            README.md
+      - name: Update the report issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXIT_CODE: ${{ steps.lychee.outputs.exit_code }}
+        run: |
+          title="Broken links report"
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "in:title \"$title\"" --json number --jq '.[0].number // empty')
+          if [ "$EXIT_CODE" != "0" ]; then
+            if [ -n "$existing" ]; then
+              gh issue edit "$existing" --repo "$GITHUB_REPOSITORY" --body-file lychee-report.md
+            else
+              gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body-file lychee-report.md
+            fi
+          elif [ -n "$existing" ]; then
+            gh issue close "$existing" --repo "$GITHUB_REPOSITORY" --comment "All links passed in the latest check."
+          fi

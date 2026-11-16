@@ -1,0 +1,40 @@
+# Runs awesome-lint on README.md (the repository's `npm test`).
+#
+# - Every pull request, so "awesome-lint" can be a required status check on main.
+# - Pushes to main that change the README or the lint setup.
+# - Can also be run by hand from the Actions tab.
+#
+# The checkout fetches full history because awesome-lint inspects the
+# repository's age and git metadata.
+name: README lint
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - package.json
+      - package-lock.json
+      - .github/workflows/lint.yml
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  awesome-lint:
+    name: awesome-lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Lint README.md
+        run: npm test
