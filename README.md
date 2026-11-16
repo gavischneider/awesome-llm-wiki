@@ -1368,6 +1368,11 @@ LLM Wiki and agent memory architectures.*
 *Visual walkthroughs, conceptual code execution guides, and theoretical video essays.*
 
 - [10 Easy Ways to Enhance Your LLM Wiki or Knowledge Base](https://www.youtube.com/watch?v=b6sQIuPSbzE) (Tonbi's AI Garage) - A masterclass tutorial breaking down 10 core enhancements for file-based knowledge stores. Features an architectural breakdown contrasting the embedding mathematics of Vector RAG against the agentic compilation loops of LLM Wikis, alongside live setups for DataView dashboards, native Mermaid flowcharts, and background MCP Vault integration.
+- [Andrej Karpathy Just 10x'd Everyone's Claude Code (Nate Herk)](https://www.youtube.com/watch?v=sboNwYmH3AY) - A
+  step-by-step video guide walking through the setup of Andrej Karpathy's LLM Wiki pattern using Claude Code and
+  Obsidian. Details setting up the vault folder structure, ingesting unstructured sources into interconnected concept
+  notes, querying with cross-project synthesis, and contrasting compiled persistent memory against traditional runtime
+  RAG.
 - [Andrej Karpathy's Wiki Idea Was Just Shipped by Pinecone (The AI Automators)](https://www.youtube.com/watch?v=0TPq43Wpbz0) - A video analysis of how Pinecone Nexus maps to Andrej Karpathy's LLM Wiki pattern.
 - [Build An AI Second Brain Knowledge Base (Step-By-Step) (Matt Wolfe)](https://www.youtube.com/watch?v=yke4fLQUsh4) - A step-by-step video walkthrough showing how to build an active, compounding personal second brain using Obsidian, the Obsidian Web Clipper, and AI coding agents. Demonstrates clipping web articles and YouTube transcripts into raw storage, guiding autonomous agents to synthesize cross-referenced wiki notes, and navigating the resulting knowledge graph.
 - [Build an LLM Wiki for Agent Long-Term Memory (DataTalksClub)](https://www.youtube.com/watch?v=f5xRFWRdyKA) ([GitHub](https://github.com/decodingai-magazine/llm-wiki-workshop)) - A
