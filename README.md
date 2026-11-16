@@ -697,6 +697,10 @@ performance, schema rigor, and retrieval accuracy.*
   Python) implementing Karpathy's LLM Wiki pattern. Ingests documents into an Obsidian-compatible Markdown vault with
   `index.md`, `log.md`, per-page source provenance, and a review queue. Runs offline with a built-in heuristic engine,
   or with Ollama and any OpenAI-compatible endpoint, and ships an MCP server for Claude Code and Codex.
+- [Graphium](https://kumagallium.github.io/Graphium/) ([GitHub](https://github.com/kumagallium/Graphium)) - An open-source,
+  local-first desktop notebook and personal knowledge base that pairs atomic notes with W3C PROV-DM provenance. Features
+  an opt-in AI knowledge layer that automatically ingests notes, extracts claims and insights, cross-updates dependent
+  pages, runs linting passes, and exposes a native MCP server for Claude and Codex.
 - [Grok-Wiki](https://grok-wiki.com/) ([GitHub](https://github.com/AsyncFuncAI/grok-wiki)) - A local-first macOS desktop
   workspace (formerly DeepWiki-Open) compiling codebases into source-grounded Markdown wikis, Mermaid diagrams, and
   Obsidian-ready vaults. Orchestrates local CLI agents (Claude Code, Codex CLI, Grok CLI, Antigravity) without cloud
