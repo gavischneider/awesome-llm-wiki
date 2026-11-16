@@ -134,3 +134,15 @@ test('pages load no third-party resources', () => {
     assert.deepEqual(external, [], `${path} references external resources`);
   }
 });
+
+// Covers a formatting slip that is easy to reintroduce: in Astro templates a line
+// break before an inline element can drop the space, gluing a word to a link
+// ("repository'sCONTRIBUTING.md"). Expected: no letter sits directly against the
+// start of a link or button in the pages' prose.
+test('prose is not glued to links or buttons', () => {
+  for (const path of ['index.html', 'contribute/index.html', 'search/index.html', '404.html', pages[0].path]) {
+    const html = read(path).replace(/<(script|style)[^>]*>[\s\S]*?<\/\1>/g, '');
+    const glued = [...html.matchAll(/[A-Za-z,'’]<(?:a|kbd|button)\b[^>]*>[^<]{0,30}/g)].map((match) => match[0].slice(0, 60));
+    assert.deepEqual(glued, [], `${path} has text glued to an inline element`);
+  }
+});
