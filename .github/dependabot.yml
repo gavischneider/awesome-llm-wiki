@@ -15,6 +15,13 @@ updates:
     groups:
       site-minor-and-patch:
         update-types: [minor, patch]
+    ignore:
+      # TypeScript major versions wait until the tools that depend on it
+      # (@astrojs/check, typescript-eslint) support them; before that the
+      # update cannot be resolved and Dependabot's run fails. Remove this
+      # entry to try the next major.
+      - dependency-name: typescript
+        update-types: ['version-update:semver-major']
 
   # The repository root (awesome-lint).
   - package-ecosystem: npm
