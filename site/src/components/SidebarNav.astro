@@ -1,0 +1,71 @@
+---
+/**
+ * Hierarchical category navigation built from the README's sections and
+ * subsections. Subsections are listed for the section being viewed. On small
+ * screens the list collapses behind a "Browse categories" toggle.
+ */
+import { catalog, sectionEntryCount } from '../lib/catalog';
+import { href } from '../lib/site';
+
+interface Props {
+  currentSection?: string;
+  currentSubsection?: string;
+}
+
+const { currentSection, currentSubsection } = Astro.props;
+---
+
+<aside class="sidebar">
+  <details data-sidebar>
+    <summary>Browse categories</summary>
+    <nav aria-label="Categories">
+      <p class="sidebar-title">Categories</p>
+      <ul>
+        {
+          catalog.sections.map((section) => (
+            <li class="level-1">
+              <a
+                href={href(`${section.slug}/`)}
+                aria-current={section.slug === currentSection && !currentSubsection ? 'page' : undefined}
+              >
+                <span>{section.title}</span>
+                <span class="count" aria-label={`${sectionEntryCount(section)} resources`}>
+                  {sectionEntryCount(section)}
+                </span>
+              </a>
+              {section.slug === currentSection && section.subsections.length > 0 && (
+                <ul class="level-2">
+                  {section.subsections.map((sub) => (
+                    <li>
+                      <a
+                        href={href(`${section.slug}/${sub.slug}/`)}
+                        aria-current={sub.slug === currentSubsection ? 'page' : undefined}
+                      >
+                        <span>{sub.title}</span>
+                        <span class="count" aria-label={`${sub.entries.length} resources`}>
+                          {sub.entries.length}
+                        </span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </details>
+</aside>
+
+<script>
+  // The category list is always open on wide screens and a toggle on narrow ones.
+  const details = document.querySelector<HTMLDetailsElement>('[data-sidebar]');
+  const wide = window.matchMedia('(min-width: 60.01rem)');
+  if (details) {
+    details.open = wide.matches;
+    wide.addEventListener('change', (event) => {
+      details.open = event.matches;
+    });
+  }
+</script>

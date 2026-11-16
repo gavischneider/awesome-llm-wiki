@@ -1,0 +1,36 @@
+---
+/**
+ * Previous/next links between catalog pages, in README reading order.
+ */
+import { catalogPages } from '../lib/catalog';
+import { href } from '../lib/site';
+
+interface Props {
+  /** Site-relative path of the current page, e.g. "videos/". */
+  path: string;
+}
+
+const pages = catalogPages();
+const index = pages.findIndex((page) => page.path === Astro.props.path);
+const previous = index > 0 ? pages[index - 1] : null;
+const next = index >= 0 && index < pages.length - 1 ? pages[index + 1] : null;
+---
+
+<nav class="pager" aria-label="Previous and next category">
+  {
+    previous && (
+      <a class="previous" href={href(previous.path)}>
+        <small>Previous</small>
+        <span>{previous.title}</span>
+      </a>
+    )
+  }
+  {
+    next && (
+      <a class="next" href={href(next.path)}>
+        <small>Next</small>
+        <span>{next.title}</span>
+      </a>
+    )
+  }
+</nav>

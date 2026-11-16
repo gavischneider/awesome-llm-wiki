@@ -1,0 +1,91 @@
+# Builds the website in site/ from README.md and deploys it to GitHub Pages.
+#
+# - Pull requests: validate the README against the site parser, run all checks
+#   and build, without deploying. A README change the site cannot render fails here.
+# - Pushes to main that touch the README, CONTRIBUTING.md, the site or this
+#   file: run the same checks, then deploy.
+# - Can also be run by hand from the Actions tab ("Run workflow").
+#
+# First-time setup (repository owner, once): Settings -> Pages -> Build and
+# deployment -> Source: "GitHub Actions". No secrets are required.
+name: Website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - CONTRIBUTING.md
+      - site/**
+      - .github/workflows/site.yml
+  pull_request:
+    paths:
+      - README.md
+      - CONTRIBUTING.md
+      - site/**
+      - .github/workflows/site.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Let a newer deployment replace an older one that is still queued, but never
+# cancel a deployment that is already in progress.
+concurrency:
+  group: website-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Check and build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - name: Install dependencies
+        run: npm ci
+      - name: Validate README structure
+        run: npm run validate
+      - name: Type check
+        run: npm run check
+      - name: Lint
+        run: npm run lint
+      - name: Unit and README integration tests
+        run: npm test
+      # Site icons shown next to entries. A network hiccup here must not block a
+      # deploy: entries without an icon fall back to a letter tile.
+      - name: Download site icons
+        continue-on-error: true
+        run: npm run favicons
+      - name: Build
+        run: npm run build
+      - name: Check the built site against the README
+        run: npm run test:dist
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: site/dist
+
+  deploy:
+    name: Deploy to GitHub Pages
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5
