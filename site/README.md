@@ -116,7 +116,8 @@ GitHub entries the GitHub icon, and so on.
 
 - `npm run favicons` downloads one 32px PNG per linked host into `public/favicons/` (not committed). It asks
   Google's favicon service by default; pass `-- --source "https://…{host}…"` to use another, and `-- --refresh`
-  to re-download everything.
+  to re-download everything. A subdomain with no icon of its own (for example a personal Substack) uses its
+  parent domain's icon.
 - Icons are fetched at build time and served from this site, so a visitor's browser never contacts a
   third-party icon service.
 - The deploy workflow runs the download before every build. If an icon cannot be fetched, or the step fails

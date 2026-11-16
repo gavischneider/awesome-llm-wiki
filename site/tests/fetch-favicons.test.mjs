@@ -13,7 +13,7 @@ import { mkdtemp, readdir, readFile, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import sharp from 'sharp';
-import { fetchMissingIcons, hostsFromReadme, iconHost } from '../scripts/fetch-favicons.mjs';
+import { fetchMissingIcons, hostsFromReadme, iconCandidates, iconHost } from '../scripts/fetch-favicons.mjs';
 
 /**
  * Starts a fake icon service: a 64px PNG for hosts starting with "good",
@@ -103,6 +103,29 @@ test('skips hosts that already have an icon unless refreshing', async () => {
     assert.deepEqual(server.requests, ['good2.example']);
     const second = await fetchMissingIcons({ hosts: ['good.example'], directory, source: server.source, refresh: true });
     assert.deepEqual(second.saved, ['good.example']);
+  } finally {
+    server.close();
+  }
+});
+
+// Covers the parent-domain fallback. Exists because personal subdomains on
+// platforms like Substack or Medium often have no icon of their own. Expected: a
+// subdomain with no icon gets its parent's icon, saved under the subdomain's name;
+// a two-label host is never shortened.
+test('falls back to the parent domain icon for subdomains', async () => {
+  assert.deepEqual(iconCandidates('someone.good.example'), ['someone.good.example', 'good.example']);
+  assert.deepEqual(iconCandidates('example.com'), ['example.com']);
+  const server = await startIconServer();
+  const directory = await mkdtemp(join(tmpdir(), 'favicons-'));
+  try {
+    const result = await fetchMissingIcons({
+      hosts: ['someone.good.example', 'someone.missing.example'],
+      directory,
+      source: server.source,
+    });
+    assert.deepEqual(result.saved, ['someone.good.example']);
+    assert.deepEqual(result.failed.map((failure) => failure.host), ['someone.missing.example']);
+    assert.deepEqual(await readdir(directory), ['someone.good.example.png']);
   } finally {
     server.close();
   }

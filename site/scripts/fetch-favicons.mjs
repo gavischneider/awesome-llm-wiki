@@ -8,7 +8,7 @@
  *
  * Icons are fetched once here, at build time, so visitors' browsers never
  * contact a third-party icon service. Hosts that already have an icon are
- * skipped. A host whose icon cannot be fetched is reported and skipped; the
+ * skipped. A subdomain without its own icon uses its parent domain's icon. A host whose icon cannot be fetched is reported and skipped; the
  * script still exits successfully so a flaky network never blocks a deploy.
  *
  * How to run (from the site/ directory):
@@ -91,6 +91,41 @@ export async function fetchIcon(host, source = DEFAULT_SOURCE) {
 }
 
 /**
+ * Lists the names to ask the icon service about for a host: the host itself,
+ * then its parent domain when it is a subdomain. Personal subdomains such as
+ * "someone.substack.com" or "someone.medium.com" often have no icon of their
+ * own, and the platform's icon is the next best thing.
+ *
+ * @param {string} host Host from an entry URL.
+ * @returns {string[]} Candidates in the order to try them.
+ */
+export function iconCandidates(host) {
+  const labels = host.split('.');
+  return labels.length > 2 ? [host, labels.slice(1).join('.')] : [host];
+}
+
+/**
+ * Downloads a host's icon, falling back to its parent domain's icon.
+ *
+ * @param {string} host Host to fetch the icon for.
+ * @param {string} source URL template containing "{host}".
+ * @returns {Promise<Buffer>} PNG image data.
+ * @throws {Error} The failure for the host itself, when no candidate has an icon.
+ */
+export async function fetchIconWithFallback(host, source = DEFAULT_SOURCE) {
+  /** @type {unknown} */
+  let firstError;
+  for (const candidate of iconCandidates(host)) {
+    try {
+      return await fetchIcon(candidate, source);
+    } catch (error) {
+      firstError ??= error;
+    }
+  }
+  throw firstError;
+}
+
+/**
  * Fetches icons for every host that does not have one yet.
  *
  * @param {object} options
@@ -114,7 +149,7 @@ export async function fetchMissingIcons({ hosts, directory, source = DEFAULT_SOU
   const worker = async () => {
     for (let host = queue.shift(); host !== undefined; host = queue.shift()) {
       try {
-        await writeFile(`${directory}/${host}.png`, await fetchIcon(host, source));
+        await writeFile(`${directory}/${host}.png`, await fetchIconWithFallback(host, source));
         saved.push(host);
       } catch (error) {
         failed.push({ host, reason: error instanceof Error ? error.message : String(error) });
