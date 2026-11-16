@@ -58,8 +58,8 @@ repository root.
 
 - A push to `main` that changes `README.md`, `CONTRIBUTING.md`, `site/` or the workflow runs every check above
   and then deploys. Pushes that touch nothing else do not trigger a build.
-- A pull request touching those files runs the same checks without deploying, so a README change the site
-  cannot render is caught before merge.
+- Every pull request runs the same checks without deploying, so a README change the site cannot render is
+  caught before merge.
 - The workflow can be run by hand from the repository's Actions tab.
 - A failed run shows a red mark on the commit and pull request, and GitHub emails the person who pushed. The
   previous deployment stays live until a later run succeeds.
@@ -69,6 +69,17 @@ No secrets or tokens are needed.
 
 GitHub Pages serves assets over its CDN with its own cache headers. Files under `_astro/` have content hashes
 in their names, so they can be cached indefinitely and never go stale.
+
+## Other automation
+
+| File | When it runs | What it does |
+| --- | --- | --- |
+| `.github/workflows/lint.yml` | Every pull request; pushes to `main` that change the README | Runs awesome-lint on `README.md` (the root `npm test`) |
+| `.github/workflows/links.yml` | Mondays, or by hand | Checks every link in `README.md` and keeps a "Broken links report" issue up to date |
+| `.github/dependabot.yml` | Weekly (site, Actions), monthly (root) | Opens pull requests for dependency updates |
+
+`main` is protected so that pull requests need the "Check and build" and "awesome-lint" checks to pass before
+merging. Repository administrators can still push directly.
 
 ## Using a custom domain later
 

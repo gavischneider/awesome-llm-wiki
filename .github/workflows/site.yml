@@ -1,7 +1,8 @@
 # Builds the website in site/ from README.md and deploys it to GitHub Pages.
 #
-# - Pull requests: validate the README against the site parser, run all checks
-#   and build, without deploying. A README change the site cannot render fails here.
+# - Every pull request: validate the README against the site parser, run all
+#   checks and build, without deploying. A README change the site cannot render
+#   fails here.
 # - Pushes to main that touch the README, CONTRIBUTING.md, the site or this
 #   file: run the same checks, then deploy.
 # - Can also be run by hand from the Actions tab ("Run workflow").
@@ -18,12 +19,9 @@ on:
       - CONTRIBUTING.md
       - site/**
       - .github/workflows/site.yml
+  # Every pull request, whatever it touches, so "Check and build" can be a
+  # required status check on main without blocking unrelated pull requests.
   pull_request:
-    paths:
-      - README.md
-      - CONTRIBUTING.md
-      - site/**
-      - .github/workflows/site.yml
   workflow_dispatch:
 
 permissions:

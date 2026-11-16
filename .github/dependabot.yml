@@ -1,0 +1,33 @@
+# Dependabot opens pull requests when dependencies have updates. Each pull
+# request runs the same checks as any other, so an update that breaks the site
+# or the lint is visible before merging.
+#
+# Minor and patch updates are grouped into one pull request per area to keep
+# the noise down; major versions come separately because they may need changes.
+version: 2
+updates:
+  # The website (Astro, search, image tools, linters).
+  - package-ecosystem: npm
+    directory: /site
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      site-minor-and-patch:
+        update-types: [minor, patch]
+
+  # The repository root (awesome-lint).
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+
+  # Actions used by the workflows in .github/workflows/.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    groups:
+      actions:
+        patterns: ['*']
