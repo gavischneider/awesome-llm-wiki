@@ -319,15 +319,6 @@ img {
   :root:not([data-theme='light']) .theme-toggle .icon-moon {
     display: none;
   }
-
-  /* On the dark band the artwork keeps its own lavender ground as a framed tile. */
-  :root:not([data-theme='light']) .hero-art {
-    margin: 0;
-  }
-
-  :root:not([data-theme='light']) .hero-art img {
-    border-radius: 1.25rem;
-  }
 }
 
 :root[data-theme='dark'] .theme-toggle .icon-sun {
@@ -336,14 +327,6 @@ img {
 
 :root[data-theme='dark'] .theme-toggle .icon-moon {
   display: none;
-}
-
-:root[data-theme='dark'] .hero-art {
-  margin: 0;
-}
-
-:root[data-theme='dark'] .hero-art img {
-  border-radius: 1.25rem;
 }
 
 /* ---------- Search form (shared) ---------- */
@@ -412,7 +395,7 @@ img {
 
 .hero .wrap {
   display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr);
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
   align-items: center;
   gap: 2rem;
   padding-block: clamp(2.5rem, 6vw, 4.5rem);
@@ -475,9 +458,11 @@ img {
   z-index: 1;
 }
 
-/* The artwork has its own lavender background, so it may bleed past the column edge. */
-.hero-art {
-  margin: -2.5rem -7rem -2.5rem -1rem;
+/* The artwork occupies the same box in both themes, so switching theme never
+   resizes it. Its own lavender ground blends into the light band and reads as
+   a rounded tile on the dark one. */
+.hero-art img {
+  border-radius: 1.25rem;
 }
 
 .hero-art img {
