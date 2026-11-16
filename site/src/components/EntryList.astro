@@ -1,0 +1,61 @@
+---
+/**
+ * Renders a list of catalog entries: the linked site's icon, name (linking to
+ * the original resource), host, description, companion links, notes and a
+ * permalink to the entry.
+ */
+import type { Entry } from '../lib/catalog';
+import { iconFor } from '../lib/favicons';
+import { displayHost } from '../lib/site';
+
+interface Props {
+  entries: Entry[];
+}
+
+const { entries } = Astro.props;
+---
+
+<ul class="entries">
+  {
+    entries.map((entry) => {
+      const icon = iconFor(entry.url);
+      return (
+      <li class="entry" id={entry.id}>
+        {icon.src ? (
+          <img class="favicon" src={icon.src} alt="" width="16" height="16" loading="lazy" decoding="async" />
+        ) : (
+          <span class="favicon favicon-letter" aria-hidden="true">
+            {icon.letter}
+          </span>
+        )}
+        <div class="entry-head">
+          <a class="entry-name" href={entry.url} rel="external noopener">
+            {entry.name}
+          </a>
+          <span class="entry-host">{displayHost(entry.url)}</span>
+        </div>
+        <p class="entry-desc" set:html={entry.descriptionHtml} />
+        <div class="entry-meta">
+          {entry.notes.map((note) => (
+            <span>{note}</span>
+          ))}
+          {entry.companions.length > 0 && (
+            <ul aria-label={`More links for ${entry.name}`}>
+              {entry.companions.map((link) => (
+                <li>
+                  <a href={link.url} rel="external noopener">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
+          <a class="permalink" href={`#${entry.id}`} aria-label={`Permalink to ${entry.name}`}>
+            # permalink
+          </a>
+        </div>
+      </li>
+      );
+    })
+  }
+</ul>

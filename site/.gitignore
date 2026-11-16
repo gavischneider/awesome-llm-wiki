@@ -1,0 +1,7 @@
+# Build output and tool caches (generated; never edited by hand)
+dist/
+.astro/
+node_modules/
+
+# Site icons downloaded by `npm run favicons` (fetched again on every deploy)
+public/favicons/

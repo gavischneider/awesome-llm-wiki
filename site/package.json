@@ -1,0 +1,46 @@
+{
+  "name": "awesome-llm-wiki-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website generated from the Awesome LLM Wiki README.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "validate": "node scripts/validate-readme.mjs",
+    "favicons": "node scripts/fetch-favicons.mjs",
+    "check": "astro check",
+    "lint": "eslint .",
+    "test": "node --test tests/readme-parser.test.mjs tests/readme-integration.test.mjs tests/fetch-favicons.test.mjs",
+    "build": "astro build",
+    "test:dist": "node --test tests/dist.test.mjs",
+    "preview": "astro preview",
+    "verify": "npm run validate && npm run check && npm run lint && npm run test && npm run build && npm run test:dist"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.5",
+    "@fontsource-variable/bricolage-grotesque": "^5.3.0",
+    "@fontsource-variable/public-sans": "^5.3.0",
+    "astro": "^7.4.12",
+    "github-slugger": "^2.0.0",
+    "hast-util-to-html": "^9.0.6",
+    "mdast-util-from-markdown": "^2.1.0",
+    "mdast-util-to-hast": "^13.2.2",
+    "mdast-util-to-string": "^4.0.0",
+    "minisearch": "^7.2.0",
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@eslint/js": "^10.0.1",
+    "@types/hast": "^3.0.5",
+    "@types/mdast": "^4.0.4",
+    "eslint": "^10.15.0",
+    "eslint-plugin-astro": "^3.2.1",
+    "globals": "^17.14.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.73.0"
+  }
+}

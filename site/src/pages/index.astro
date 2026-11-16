@@ -1,0 +1,147 @@
+---
+/**
+ * Home page: explains what an LLM Wiki is, offers search, and lists every
+ * section and subsection of the collection with entry counts.
+ */
+import { Picture } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import artwork from '../assets/brand/artwork-wide.png';
+import { catalog, sectionEntryCount } from '../lib/catalog';
+import { CONTRIBUTING_URL, REPO_URL, href } from '../lib/site';
+
+const subsectionCount = catalog.sections.reduce((n, section) => n + section.subsections.length, 0);
+const first = catalog.sections[0];
+---
+
+<Base description={catalog.tagline} headerSearch={false}>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <h1>{catalog.title}</h1>
+        <p class="hero-tagline">{catalog.tagline}</p>
+        <form class="search-form" role="search" action={href('search/')} method="get">
+          <label class="sr-only" for="hero-search">Search the collection</label>
+          <input
+            id="hero-search"
+            type="search"
+            name="q"
+            placeholder="Search tools, guides, papers…"
+            autocomplete="off"
+            data-search-shortcut
+          />
+          <button type="submit">Search</button>
+        </form>
+        <p class="hero-hint">
+          {catalog.entryCount} resources in {catalog.sections.length} sections and {subsectionCount} subcategories. Press{' '}
+          <kbd>/</kbd> to search from any page, or <a href="#browse">browse by category</a>.
+        </p>
+      </div>
+      <div class="hero-art">
+        <Picture
+          src={artwork}
+          formats={['avif', 'webp']}
+          widths={[480, 720, 1317]}
+          sizes="(max-width: 60rem) 0px, 45vw"
+          alt="Line drawing of a brain whose interior is a network of connected pink, yellow and indigo nodes."
+          loading="eager"
+          fetchpriority="high"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="what-title">
+    <div class="wrap">
+      <h2 class="band-title" id="what-title">What is an LLM Wiki?</h2>
+      <p class="band-lede">
+        An LLM Wiki is a knowledge base that an AI agent writes and maintains for you as plain, interlinked Markdown
+        files. The pattern was introduced by Andrej Karpathy as an alternative to retrieving document fragments at
+        question time.
+      </p>
+      <ul class="explain">
+        <li>
+          <h3>Compiled, not retrieved</h3>
+          <p>
+            Instead of searching raw document chunks on every question (RAG), the agent reads each source once and
+            compiles what it learns into lasting wiki pages.
+          </p>
+        </li>
+        <li>
+          <h3>Plain files you own</h3>
+          <p>
+            Raw sources, the generated wiki and a schema of rules live as ordinary files, readable in any editor and
+            versionable with Git.
+          </p>
+        </li>
+        <li>
+          <h3>Kept up by the agent</h3>
+          <p>
+            Ingesting sources, answering queries and linting for stale or contradictory pages are routine jobs the
+            agent runs, so the knowledge compounds over time.
+          </p>
+        </li>
+      </ul>
+      <blockquote class="source-quote">
+        {catalog.introHtml.map((paragraph) => <p set:html={paragraph} />)}
+        <footer>From the <a href={`${REPO_URL}#readme`}>project README</a></footer>
+      </blockquote>
+      <p class="band-lede">
+        New to the idea? Start with <a href={href(`${first.slug}/`)}>{first.title}</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="band" id="browse" aria-labelledby="browse-title">
+    <div class="wrap">
+      <h2 class="band-title" id="browse-title">Browse the collection</h2>
+      <p class="band-lede">
+        Every section and subcategory of the list, in the order the README keeps them.
+      </p>
+      <ul class="toc">
+        {
+          catalog.sections.map((section) => (
+            <li>
+              <div>
+                <h3>
+                  <a href={href(`${section.slug}/`)}>{section.title}</a>
+                </h3>
+                {section.descriptionHtml && <p class="toc-desc" set:html={section.descriptionHtml} />}
+                {section.subsections.length > 0 && (
+                  <ul class="chips" aria-label={`Subcategories of ${section.title}`}>
+                    {section.subsections.map((sub) => (
+                      <li>
+                        <a href={href(`${section.slug}/${sub.slug}/`)}>
+                          {sub.title}
+                          <span class="count">{sub.entries.length}</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+              <span class="toc-count">
+                {sectionEntryCount(section)} {sectionEntryCount(section) === 1 ? 'resource' : 'resources'}
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="band cta" aria-labelledby="cta-title">
+    <div class="wrap">
+      <div>
+        <h2 class="band-title" id="cta-title">Know something that belongs here?</h2>
+        <p>
+          The list is curated on GitHub. Read the short contribution rules, then open a pull request against the
+          README.
+        </p>
+      </div>
+      <div class="button-row">
+        <a class="button" href={href('contribute/')}>How to contribute</a>
+        <a class="button secondary" href={CONTRIBUTING_URL}>CONTRIBUTING.md on GitHub</a>
+      </div>
+    </div>
+  </section>
+</Base>
