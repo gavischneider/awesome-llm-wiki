@@ -3,9 +3,8 @@
  * Home page: explains what an LLM Wiki is, offers search, and lists every
  * section and subsection of the collection with entry counts.
  */
-import { Picture } from 'astro:assets';
 import Base from '../layouts/Base.astro';
-import artwork from '../assets/brand/artwork-wide.png';
+import BrainMark from '../components/BrainMark.astro';
 import { catalog, sectionEntryCount } from '../lib/catalog';
 import { CONTRIBUTING_URL, REPO_URL, href } from '../lib/site';
 
@@ -37,15 +36,7 @@ const first = catalog.sections[0];
         </p>
       </div>
       <div class="hero-art">
-        <Picture
-          src={artwork}
-          formats={['avif', 'webp']}
-          widths={[480, 720, 1317]}
-          sizes="(max-width: 60rem) 0px, 45vw"
-          alt="Line drawing of a brain whose interior is a network of connected pink, yellow and indigo nodes."
-          loading="eager"
-          fetchpriority="high"
-        />
+        <BrainMark label="A brain drawn as a network of connected pink, yellow and indigo nodes." />
       </div>
     </div>
   </section>

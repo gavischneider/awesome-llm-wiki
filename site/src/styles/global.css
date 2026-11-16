@@ -40,6 +40,10 @@
   --mark: #ffe066;
   --mark-ink: #1e1640;
   --target: #f1edff;
+  /* Brain mark: outline and centre network, then the two accent colours. */
+  --mark-line: #3d24b9;
+  --mark-yellow: #f7d64a;
+  --mark-pink: #f0427f;
 
   --font-display: 'Bricolage Grotesque Variable', 'Avenir Next', 'Segoe UI', system-ui, sans-serif;
   --font-body: 'Public Sans Variable', 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -76,6 +80,9 @@
     --mark: #ffe066;
     --mark-ink: #1e1640;
     --target: #261d52;
+    --mark-line: #a99dff;
+    --mark-yellow: #f7d64a;
+    --mark-pink: #ff5c95;
   }
 }
 
@@ -99,6 +106,9 @@
   --mark: #ffe066;
   --mark-ink: #1e1640;
   --target: #261d52;
+  --mark-line: #a99dff;
+  --mark-yellow: #f7d64a;
+  --mark-pink: #ff5c95;
 }
 
 *,
@@ -458,17 +468,16 @@ img {
   z-index: 1;
 }
 
-/* The artwork occupies the same box in both themes, so switching theme never
-   resizes it. Its own lavender ground blends into the light band and reads as
-   a rounded tile on the dark one. */
-.hero-art img {
-  border-radius: 1.25rem;
-}
-
-.hero-art img {
+/* The mark is one inline drawing recoloured per theme, so it is the same
+   size in light and dark. */
+.hero-art .brain-mark {
   display: block;
   width: 100%;
+  max-width: 30rem;
+  height: auto;
+  margin-inline: auto;
 }
+
 
 /* ---------- Home sections ---------- */
 

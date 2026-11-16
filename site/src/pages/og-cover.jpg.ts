@@ -6,11 +6,11 @@ import type { APIRoute } from 'astro';
 import { readFile } from 'node:fs/promises';
 import sharp from 'sharp';
 
-const COVER_PATH = new URL('src/assets/brand/cover.jpg', `file://${process.cwd()}/`);
+const COVER_PATH = new URL('src/assets/brand/cover.png', `file://${process.cwd()}/`);
 
 /**
  * Crops the 16:9 cover to the 1.91:1 ratio social networks expect. The crop is
- * centred, which keeps both the brain artwork and the title fully in frame.
+ * centred, which keeps both the brain mark and the title fully in frame.
  * @returns JPEG image response.
  */
 export const GET: APIRoute = async () => {
