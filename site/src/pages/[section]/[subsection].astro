@@ -1,0 +1,62 @@
+---
+/**
+ * Subsection page: one per level-3 README heading, listing its entries.
+ */
+import Base from '../../layouts/Base.astro';
+import EntryList from '../../components/EntryList.astro';
+import Pager from '../../components/Pager.astro';
+import { catalog } from '../../lib/catalog';
+import type { Section, Subsection } from '../../lib/catalog';
+import { EDIT_README_URL, href } from '../../lib/site';
+
+/**
+ * Tells Astro to generate one page per catalog subsection.
+ * @returns One route per subsection, nested under its section's slug.
+ */
+export function getStaticPaths() {
+  return catalog.sections.flatMap((section) =>
+    section.subsections.map((subsection) => ({
+      params: { section: section.slug, subsection: subsection.slug },
+      props: { section, subsection },
+    })),
+  );
+}
+
+interface Props {
+  section: Section;
+  subsection: Subsection;
+}
+
+const { section, subsection } = Astro.props;
+const total = subsection.entries.length;
+const description =
+  subsection.descriptionText ??
+  `${total} curated resources on ${subsection.title} in the ${section.title} section of Awesome LLM Wiki.`;
+---
+
+<Base
+  title={`${subsection.title} · ${section.title}`}
+  description={description}
+  sidebar
+  currentSection={section.slug}
+  currentSubsection={subsection.slug}
+>
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href={href()}>Home</a></li>
+      <li><a href={href(`${section.slug}/`)}>{section.title}</a></li>
+      <li aria-current="page">{subsection.title}</li>
+    </ol>
+  </nav>
+  <h1 class="page-title">{subsection.title}</h1>
+  {subsection.descriptionHtml && <p class="page-desc" set:html={subsection.descriptionHtml} />}
+  <p class="page-meta">
+    <span class="count">{total} {total === 1 ? 'resource' : 'resources'}</span>
+    <a href={href(`search/?in=${section.slug}/${subsection.slug}`)}>Search this category</a>
+    <a href={EDIT_README_URL}>Suggest an addition</a>
+  </p>
+
+  <EntryList entries={subsection.entries} />
+
+  <Pager path={`${section.slug}/${subsection.slug}/`} />
+</Base>

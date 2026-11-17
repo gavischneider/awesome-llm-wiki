@@ -1,0 +1,211 @@
+---
+/**
+ * Base page layout: document head (SEO, Open Graph, icons), header with
+ * search, optional category sidebar, and footer. Every page uses it.
+ */
+import '../styles/global.css';
+import { Image } from 'astro:assets';
+import logo from '../assets/brand/logo-square.png';
+import SidebarNav from '../components/SidebarNav.astro';
+import { catalog } from '../lib/catalog';
+import { BRAND_LAVENDER, BRAND_NIGHT, CONTRIBUTING_URL, REDDIT_URL, REPO_URL, SITE_NAME, href } from '../lib/site';
+
+interface Props {
+  /** Page title, without the site name. Omit on the home page. */
+  title?: string;
+  /** Meta description, also used for social previews. */
+  description: string;
+  /** Show the category sidebar (catalog and search pages). */
+  sidebar?: boolean;
+  /** Slugs of the section/subsection being viewed, to highlight in the sidebar. */
+  currentSection?: string;
+  currentSubsection?: string;
+  /** Hide the header search box on pages that have their own search field. */
+  headerSearch?: boolean;
+  /** Keep the page out of search engines (404 page). */
+  noindex?: boolean;
+  /** Which primary navigation item is current, if any. */
+  nav?: 'browse' | 'search' | 'contribute';
+}
+
+const {
+  title,
+  description,
+  sidebar = false,
+  currentSection,
+  currentSubsection,
+  headerSearch = true,
+  noindex = false,
+  nav,
+} = Astro.props;
+
+const fullTitle = title ? `${title} · ${SITE_NAME}` : `${SITE_NAME}: a curated guide to AI-compiled knowledge bases`;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const ogImage = new URL(href('og-cover.jpg'), Astro.site).href;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta name="theme-color" content={BRAND_LAVENDER} media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content={BRAND_NIGHT} media="(prefers-color-scheme: dark)" />
+    <script is:inline>
+      // Apply a saved theme choice before first paint so the page never flashes the other theme.
+      try {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
+      } catch {
+        // Storage can be unavailable (private mode); the system preference still applies.
+      }
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href={href('icons/icon-32.png')} />
+    <link rel="icon" type="image/png" sizes="192x192" href={href('icons/icon-192.png')} />
+    <link rel="apple-touch-icon" sizes="180x180" href={href('icons/icon-180.png')} />
+    <link rel="manifest" href={href('manifest.webmanifest')} />
+    <link rel="sitemap" href={href('sitemap-index.xml')} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Awesome LLM Wiki: a line-drawn brain filled with a network of pink, yellow and indigo nodes on a lavender background."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href={href()}>
+          <Image src={logo} alt="" width={96} height={96} quality={90} loading="eager" />
+          <span>{SITE_NAME}</span>
+        </a>
+        {
+          headerSearch && (
+            <form class="search-form" role="search" action={href('search/')} method="get">
+              <label class="sr-only" for="header-search">
+                Search the collection
+              </label>
+              <input
+                id="header-search"
+                type="search"
+                name="q"
+                placeholder={`Search ${catalog.entryCount} resources`}
+                autocomplete="off"
+                data-search-shortcut
+              />
+              <button type="submit">Search</button>
+            </form>
+          )
+        }
+        <nav class="primary-nav" aria-label="Primary">
+          <ul>
+            <li><a href={href('#browse')} aria-current={nav === 'browse' ? 'page' : undefined}>Browse</a></li>
+            <li><a href={href('search/')} aria-current={nav === 'search' ? 'page' : undefined}>Search</a></li>
+            <li>
+              <a href={href('contribute/')} aria-current={nav === 'contribute' ? 'page' : undefined}>Contribute</a>
+            </li>
+            <li><a href={REPO_URL}>GitHub</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to dark theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"></path>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    {
+      sidebar ? (
+        <div class="wrap layout">
+          <SidebarNav currentSection={currentSection} currentSubsection={currentSubsection} />
+          <main id="main">
+            <slot />
+          </main>
+        </div>
+      ) : (
+        <main id="main">
+          <slot />
+        </main>
+      )
+    }
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          Generated from the <a href={`${REPO_URL}#readme`}>README</a> of the Awesome LLM Wiki repository, which remains
+          the source of truth. No ads, analytics, cookies or tracking.
+        </p>
+        <ul>
+          <li><a href={REPO_URL}>GitHub repository</a></li>
+          <li><a href={CONTRIBUTING_URL}>Contributing guidelines</a></li>
+          <li><a href={REDDIT_URL}>r/LLM_Wiki</a></li>
+          <li><a href={`${REPO_URL}/blob/main/LICENSE`}>CC0 1.0 license</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      /**
+       * Reports which theme is showing: the visitor's saved choice if any,
+       * otherwise the operating system preference.
+       */
+      function activeTheme(): 'light' | 'dark' {
+        const chosen = document.documentElement.dataset.theme;
+        if (chosen === 'light' || chosen === 'dark') return chosen;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      /** Keeps the toggle's accessible name in step with what pressing it will do. */
+      function labelToggle(button: HTMLButtonElement): void {
+        button.setAttribute('aria-label', activeTheme() === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+      }
+
+      const toggle = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
+      if (toggle) {
+        labelToggle(toggle);
+        toggle.addEventListener('click', () => {
+          const next = activeTheme() === 'dark' ? 'light' : 'dark';
+          document.documentElement.dataset.theme = next;
+          try {
+            localStorage.setItem('theme', next);
+          } catch {
+            // Without storage the choice simply lasts for this page view.
+          }
+          labelToggle(toggle);
+        });
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => labelToggle(toggle));
+      }
+
+      // Pressing "/" focuses the page's search field, unless the user is already typing somewhere.
+      document.addEventListener('keydown', (event) => {
+        if (event.key !== '/' || event.ctrlKey || event.metaKey || event.altKey) return;
+        const active = document.activeElement;
+        if (active instanceof HTMLInputElement || active instanceof HTMLTextAreaElement || active instanceof HTMLSelectElement) return;
+        const field = document.querySelector<HTMLInputElement>('[data-search-shortcut]');
+        if (!field) return;
+        event.preventDefault();
+        field.focus();
+      });
+    </script>
+  </body>
+</html>

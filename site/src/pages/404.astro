@@ -1,0 +1,33 @@
+---
+/**
+ * Custom "page not found" page with search and a route back to the catalog.
+ */
+import Base from '../layouts/Base.astro';
+import { href } from '../lib/site';
+---
+
+<Base
+  title="Page not found"
+  description="This page does not exist. Search Awesome LLM Wiki or browse the categories."
+  headerSearch={false}
+  noindex
+>
+  <div class="wrap layout single">
+    <div>
+      <h1 class="page-title">Page not found</h1>
+      <p class="page-desc">
+        The address may be mistyped, or a category was renamed in the README. Try a search, or go back to the full
+        list of categories.
+      </p>
+      <form class="search-form" role="search" action={href('search/')} method="get" style="margin-top: 1.5rem; max-width: 32rem;">
+        <label class="sr-only" for="notfound-search">Search the collection</label>
+        <input id="notfound-search" type="search" name="q" placeholder="Search the collection" data-search-shortcut />
+        <button type="submit">Search</button>
+      </form>
+      <p class="button-row" style="margin-top: 1.5rem;">
+        <a class="button" href={href('#browse')}>Browse categories</a>
+        <a class="button secondary" href={href()}>Go to the home page</a>
+      </p>
+    </div>
+  </div>
+</Base>

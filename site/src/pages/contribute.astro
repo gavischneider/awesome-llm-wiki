@@ -1,0 +1,38 @@
+---
+/**
+ * Contribute page: renders the repository's CONTRIBUTING.md (the source of
+ * truth for submission rules) and links to GitHub to open a pull request.
+ */
+import { fromMarkdown } from 'mdast-util-from-markdown';
+import { toHast } from 'mdast-util-to-hast';
+import { toHtml } from 'hast-util-to-html';
+import Base from '../layouts/Base.astro';
+import { contributingMarkdown } from '../lib/catalog';
+import { CONTRIBUTING_URL, EDIT_README_URL, REPO_URL } from '../lib/site';
+
+// Drop the file's own H1 (the page supplies one) and render the rest.
+const tree = fromMarkdown(contributingMarkdown);
+tree.children = tree.children.filter((node) => !(node.type === 'heading' && node.depth === 1));
+const html = toHtml(toHast(tree));
+---
+
+<Base
+  title="Contribute"
+  description="How to suggest a resource for Awesome LLM Wiki: the curation rules, entry format and pull request steps."
+  nav="contribute"
+>
+  <div class="wrap layout single">
+    <div>
+      <h1 class="page-title">Contribute</h1>
+      <p class="page-desc">
+        Awesome LLM Wiki is curated in the open. The rules below come straight from the repository's{' '}
+        <a href={CONTRIBUTING_URL}>CONTRIBUTING.md</a>.
+      </p>
+      <p class="page-meta button-row">
+        <a class="button" href={EDIT_README_URL}>Propose an entry on GitHub</a>
+        <a class="button secondary" href={`${REPO_URL}/pulls`}>See open pull requests</a>
+      </p>
+      <div class="prose" set:html={html} />
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,99 @@
+---
+/**
+ * Search page: full-text search over entry names and descriptions with a
+ * category filter. Results are rendered in the browser from
+ * search-index.json; the logic lives in src/scripts/search.ts.
+ */
+import Base from '../layouts/Base.astro';
+import { catalog } from '../lib/catalog';
+import { href } from '../lib/site';
+---
+
+<Base
+  title="Search"
+  description={`Search ${catalog.entryCount} curated LLM Wiki resources by name or description, and filter by category.`}
+  sidebar
+  headerSearch={false}
+  nav="search"
+>
+  <h1 class="page-title">Search the collection</h1>
+  <form class="search-controls" role="search" data-search-form data-index-url={href('search-index.json')} data-base={href()}>
+    <div class="search-form">
+      <label class="sr-only" for="search-q">Search by name or description</label>
+      <input
+        id="search-q"
+        type="search"
+        name="q"
+        placeholder="Try “obsidian”, “MCP server” or “benchmark”"
+        autocomplete="off"
+        spellcheck="false"
+        data-search-shortcut
+      />
+      <button type="submit">Search</button>
+    </div>
+    <div>
+      <label class="sr-only" for="search-in">Filter by category</label>
+      <select id="search-in" name="in">
+        <option value="">All categories</option>
+        {
+          catalog.sections.map((section) =>
+            section.subsections.length === 0 ? (
+              <option value={section.slug}>{section.title}</option>
+            ) : (
+              <optgroup label={section.title}>
+                <option value={section.slug}>All of {section.title}</option>
+                {section.subsections.map((sub) => (
+                  <option value={`${section.slug}/${sub.slug}`}>{sub.title}</option>
+                ))}
+              </optgroup>
+            ),
+          )
+        }
+      </select>
+    </div>
+  </form>
+
+  <p class="search-status" role="status" aria-live="polite" data-search-status>Loading the search index…</p>
+
+  <noscript>
+    <div class="state">
+      <h2>Search needs JavaScript</h2>
+      <p>
+        You can still <a href={href('#browse')}>browse every category</a>; all entries are plain HTML pages.
+      </p>
+    </div>
+  </noscript>
+
+  <div class="state" data-search-empty hidden>
+    <h2>Search {catalog.entryCount} resources</h2>
+    <p>Type a word or phrase to match entry names and descriptions, or pick a category to list everything in it.</p>
+  </div>
+
+  <div class="state" data-search-none hidden>
+    <h2>No matches</h2>
+    <p data-search-none-text></p>
+    <ul>
+      <li>Check the spelling or try a shorter, more general term.</li>
+      <li data-search-none-filter hidden>
+        <button type="button" class="button secondary" data-search-clear-filter>Search all categories instead</button>
+      </li>
+      <li><a href={href('#browse')}>Browse the categories</a> to explore by topic.</li>
+    </ul>
+  </div>
+
+  <div class="state" data-search-error hidden>
+    <h2>Search could not load</h2>
+    <p>
+      The search index did not download. Check your connection and{' '}
+      <button type="button" class="button secondary" data-search-retry>try again</button>, or{' '}
+      <a href={href('#browse')}>browse the categories</a>.
+    </p>
+  </div>
+
+  <ol class="results entries" data-search-results></ol>
+  <button type="button" class="button more-button" data-search-more hidden>Show more results</button>
+</Base>
+
+<script>
+  import '../scripts/search.ts';
+</script>

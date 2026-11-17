@@ -1,0 +1,69 @@
+---
+/**
+ * Section page: one per level-2 README heading. Lists the section's own
+ * entries and, when it has subsections, a directory of them.
+ */
+import Base from '../../layouts/Base.astro';
+import EntryList from '../../components/EntryList.astro';
+import Pager from '../../components/Pager.astro';
+import { catalog, sectionEntryCount } from '../../lib/catalog';
+import type { Section } from '../../lib/catalog';
+import { EDIT_README_URL, href } from '../../lib/site';
+
+/**
+ * Tells Astro to generate one page per catalog section.
+ * @returns One route per section, keyed by its heading slug.
+ */
+export function getStaticPaths() {
+  return catalog.sections.map((section) => ({ params: { section: section.slug }, props: { section } }));
+}
+
+interface Props {
+  section: Section;
+}
+
+const { section } = Astro.props;
+const total = sectionEntryCount(section);
+const description =
+  section.descriptionText ??
+  `${total} curated resources in the ${section.title} section of Awesome LLM Wiki.`;
+---
+
+<Base title={section.title} description={description} sidebar currentSection={section.slug}>
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href={href()}>Home</a></li>
+      <li aria-current="page">{section.title}</li>
+    </ol>
+  </nav>
+  <h1 class="page-title">{section.title}</h1>
+  {section.descriptionHtml && <p class="page-desc" set:html={section.descriptionHtml} />}
+  <p class="page-meta">
+    <span class="count">{total} {total === 1 ? 'resource' : 'resources'}</span>
+    {section.subsections.length > 0 && <span class="count">{section.subsections.length} subcategories</span>}
+    <a href={href(`search/?in=${section.slug}`)}>Search this section</a>
+    <a href={EDIT_README_URL}>Suggest an addition</a>
+  </p>
+
+  {section.entries.length > 0 && <EntryList entries={section.entries} />}
+
+  {
+    section.subsections.length > 0 && (
+      <ul class="subsection-list">
+        {section.subsections.map((sub) => (
+          <li id={sub.slug}>
+            <h2>
+              <a href={href(`${section.slug}/${sub.slug}/`)}>{sub.title}</a>
+            </h2>
+            <span class="count">
+              {sub.entries.length} {sub.entries.length === 1 ? 'resource' : 'resources'}
+            </span>
+            {sub.descriptionHtml && <p set:html={sub.descriptionHtml} />}
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
+  <Pager path={`${section.slug}/`} />
+</Base>
