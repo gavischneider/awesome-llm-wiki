@@ -912,6 +912,11 @@ raw documents and compile structured Markdown/JSONL wikis.*
   knowledge compiler implementing Karpathy's LLM Wiki pattern to prevent indirect prompt injection and source
   poisoning. Features a 7-stage pipeline with input sanitization, nonce-delimited extraction, URI trust tiering,
   dual-model adversarial reviews, and quarantined write-gates.
+- [sessionwiki (necroz)](https://github.com/necroz/sessionwiki) ([Demo](https://necroz.github.io/sessionwiki/)) - A
+  local-first Python CLI compiler, background daemon, and MCP server that compiles coding session transcripts across
+  Claude Code, Codex CLI, Cursor, Gemini CLI, Copilot, ZCode, and OpenCode into an interlinked Markdown wiki. Features
+  LLM synthesis, automated sync hooks, cluster consolidation for low-signal runs, an interactive session graph, and an
+  MCP server for historical decision retrieval.
 - [suwonleee/llmwiki](https://github.com/suwonleee/llmwiki) - A local-first compounding engineering logbook and topic compiler featuring automatic capture and memory quizzes.
 
 ### Open Knowledge Format (OKF) Harnesses
