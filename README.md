@@ -95,6 +95,10 @@ Inspired by a paradigm shift in software development engineering, this architect
   knowledge graphs. Details how agent skills ingest source URLs into schema.org ontologies, compile RDF Turtle graphs
   into Virtuoso-backed SPARQL endpoints, and query structured entities using semantic inference pragmas.
 - [Building an 'Agent Only' Obsidian Vault (The Thinkers Club)](https://www.thethinkers.club/p/building-an-agent-only-obsidian-vault) - A technical architectural guide defining a human-agent sandbox paradigm. Details a methodology for isolating autonomous AI writers inside a dedicated secondary vault to compile a self-organizing wiki of consumed data, preventing context contamination and layout drift in human-authored notes.
+- [Building on LLM Wikis: Turn Any Document URL into a Living, Queryable Knowledge Graph (Kingsley Idehen on LinkedIn)](https://www.linkedin.com/pulse/building-llm-wikis-turn-any-document-url-living-queryable-idehen-u4zue/) - An
+  architectural guide exploring how to extend Karpathy LLM Wikis into Semantic Web knowledge graphs. Details how an AI
+  agent skill ingests any document URL into schema.org ontologies and compiles queryable RDF graphs into
+  Virtuoso-backed SPARQL endpoints.
 - [Building Self-Correcting Memory in OpenWiki (LangChain Blog)](https://www.langchain.com/blog/self-correcting-memory-openwiki) - A technical
   primer exploring how OpenWiki manages memory staleness and drift for evolving codebases. Details the use of a
   "claims runtime" that connects wiki assertions to versioned code evidence, allowing agents to detect, track, and
