@@ -655,6 +655,11 @@ performance, schema rigor, and retrieval accuracy.*
 *Long-form books, interactive volumes, and published guides exploring compiled agent memory, knowledge architectures, and enterprise context systems.*
 
 - [The Ontology of the Company Brain (Slite)](https://slite.com/ebooks/company-brain/content) - An interactive ebook synthesizing insights from 149 teams on designing, maintaining, and scaling autonomous company-wide knowledge bases for AI agents, covering core components, governance, and build-versus-buy trade-offs.
+- [The Vault Is the Agent (Michael Gannotti)](https://github.com/smfworks/smf-works-books/tree/main/books/the-vault-is-the-agent) ([PDF](https://github.com/smfworks/smf-works-books/blob/main/books/the-vault-is-the-agent/the-vault-is-the-agent.pdf)) - A
+  comprehensive free community book and practical guide exploring how to ground AI agents in persistent Markdown vaults
+  and LLM Wikis. Covers the progression from Memex to Karpathy wikis, vault setup, automatic ingestion, nightly
+  research routines, dream cycles, weekly linting passes, and multi-agent fleet architectures across Hermes Agent,
+  OpenClaw, and Obsidian.
 
 ## Specifications and Standards
 
