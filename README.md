@@ -325,6 +325,10 @@ Inspired by a paradigm shift in software development engineering, this architect
   treating the schema as a contract, converting linting into structured retrieval test scorecards, and establishing
   autonomous handoff routines.
 - [LLM Wiki: The Self-Updating AI Knowledge Base (Tericsoft Blog)](https://www.tericsoft.com/blogs/llm-wiki) - A conceptual primer analyzing the scaling of the LLM Wiki pattern to enterprise teams, detailing the compute cost tradeoffs (compile-time vs. query-time RAG), scheduled linting loops, access governance, version control integration, and agent memory architectures.
+- [Meaning, Traversal, Reasoning, Action: The Graph Stack for Agentic AI (George Anadiotis in The Year of the Graph)](https://yearofthegraph.xyz/newsletter/2026/09/meaning-traversal-reasoning-action-the-graph-stack-for-agentic-ai-the-year-of-the-graph-newsletter-vol-32-autumn-2026/) - An
+  architectural analysis examining the convergence of flat-file LLM wikis, formal ontologies, and context graphs.
+  Explores Vault-LD (Markdown with W3C YAML-LD frontmatter), Google's OKF v0.2 trust signals, bitemporal agent memory
+  properties, and syncing Neo4j graphs deterministically from markdown directories.
 - [Reimagining Karpathy's LLM Knowledge Base for enterprise teams (Christophe Pasquier on X)](https://x.com/Christophepas/status/2049855798226907502) - An architectural essay examining the requirements for adapting Karpathy's personal LLM knowledge base pattern to enterprise organizations, detailing multi-source automated ingestion, factual verification layers, and self-healing staleness detection.
 - [Scale Karpathy's LLM Wiki with a Lightweight Graph (Zach Blumenfeld on Neo4j Blog)](https://neo4j.com/blog/agentic-ai/scaling-karpathy-llm-wiki-graph/) - An
   architectural deep-dive exploring how to overcome the file-system and context-window scaling bottlenecks of
