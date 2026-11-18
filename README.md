@@ -810,6 +810,10 @@ graph platforms.*
 *Multi-tenant knowledge engines, orchestration cockpits, and multi-workspace agent platforms featuring isolated
 environments and access controls.*
 
+- [Jonex](https://jonex.ai/en/) ([GitHub](https://github.com/yuezhiai/jonex)) - An enterprise AI knowledge platform and
+  multi-tenant workspace combining multimodal parsing with an ontology-powered, OKF-compliant LLM Wiki engine (Jonex
+  Wiki). Compiles unstructured documents and video into structured, interlinked wiki pages with graph ontology
+  relationships, verifiable source traceability, and an integrated MCP server for enterprise agents.
 - [llm-wiki-manager (dotdrelle)](https://github.com/dotdrelle/llm-wiki-manager) ([npm](https://www.npmjs.com/package/@dotdrelle/wiki-manager)) - An orchestration
   cockpit and agentic shell for managing isolated LLM-wiki workspaces. Combines a local web console (browsable wiki,
   dependency graphs, and grounded chat) with a terminal UI (donna shell), multi-workspace service isolation,
