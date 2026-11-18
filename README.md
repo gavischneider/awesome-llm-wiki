@@ -139,6 +139,10 @@ Inspired by a paradigm shift in software development engineering, this architect
   the CROW classifier-routed engine (`llmwiki2`), and no-code desktop applications.
 - [LLM Wiki: Karpathy's Idea for AI Knowledge Bases (Denser.ai)](https://denser.ai/blog/llm-wiki-karpathy-knowledge-base/) - An analysis of Karpathy's LLM Wiki pattern, reviewing top implementations, product principles, and RAG integration.
 - [LLM Wiki: The Compounding Knowledge Base, Explained (Mikko Lehtimäki on Softlandia Blog)](https://softlandia.com/articles/llm-wiki-the-compounding-knowledge-base-explained) - A conceptual primer explaining how LLM Wikis function as self-updating knowledge bases for AI agents. Compares link-based traversal against vector RAG models, outlining the minimal operational structure (sources/, wiki/, index.md, and system instructions) needed to enable compounding context.
+- [LLM-Wiki: A Detailed Walkthrough (Harshal Sant on Medium)](https://medium.com/@harshalsant0/llm-wiki-a-detailed-walkthrough-e54244a7c7cc) - An architectural walkthrough
+  analyzing the convergence of LLM-maintained wikis across developer tools (OpenWiki, DeepWiki, AutoWiki). Identifies
+  the critical failure mode of knowledge base poisoning and compression drift—where repeated summarization distorts
+  ground-truth nuances—and advocates for a verification trust layer to benchmark provenance.
 - [Personal Knowledge Management Is Missing a Step (Scribelet Blog)](https://scribelet.app/blog/personal-knowledge-management) - An article analyzing the lifecycle of personal knowledge management systems (Zettelkasten, PARA, digital gardens).
   Argues that standard pipelines neglect knowledge decay and outlines how automated agentic verification loops
   serve as a maintenance layer to keep flat-file notes grounded and accurate.
