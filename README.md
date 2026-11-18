@@ -1432,6 +1432,10 @@ LLM Wiki and agent memory architectures.*
   notes, querying with cross-project synthesis, and contrasting compiled persistent memory against traditional runtime
   RAG.
 - [Andrej Karpathy's Wiki Idea Was Just Shipped by Pinecone (The AI Automators)](https://www.youtube.com/watch?v=0TPq43Wpbz0) - A video analysis of how Pinecone Nexus maps to Andrej Karpathy's LLM Wiki pattern.
+- [Build A Claude Knowledge Base That Self-Improves! (Better Creating)](https://www.youtube.com/watch?v=ib74sLgjIBM) - A video walkthrough showing how to build an active, self-improving personal
+  knowledge base inspired by Andrej Karpathy's LLM Wiki pattern using Claude Projects. Demonstrates establishing
+  a three-tier directory layout (raw sources, compiled wiki nodes, and outputs), structuring a librarian CLAUDE.md
+  instruction file with index tracking, and setting up an automated health check maintenance skill.
 - [Build An AI Second Brain Knowledge Base (Step-By-Step) (Matt Wolfe)](https://www.youtube.com/watch?v=yke4fLQUsh4) - A step-by-step video walkthrough showing how to build an active, compounding personal second brain using Obsidian, the Obsidian Web Clipper, and AI coding agents. Demonstrates clipping web articles and YouTube transcripts into raw storage, guiding autonomous agents to synthesize cross-referenced wiki notes, and navigating the resulting knowledge graph.
 - [Build an LLM Wiki for Agent Long-Term Memory (DataTalksClub)](https://www.youtube.com/watch?v=f5xRFWRdyKA) ([GitHub](https://github.com/decodingai-magazine/llm-wiki-workshop)) - A
   technical workshop presentation by Paul Iusztin exploring how to build file-based Markdown knowledge graphs for agent
