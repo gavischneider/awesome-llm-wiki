@@ -1095,6 +1095,9 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
 - [ai-memory (akitaonrails)](https://github.com/akitaonrails/ai-memory) - An open-source, local-first long-term memory Model
   Context Protocol (MCP) server written in Rust. Acts as a context bridge to facilitate seamless handoff and continuity
   between different AI coding agent vendors.
+- [Alter Ego](https://github.com/SebastiaanBoon/cloud-alter-ego) ([Website](https://cloudalterego.cafeboon.com)) - A remote Model Context Protocol connector
+  that keeps rules, profile and work history as plain Markdown files in your own cloud storage and shares them with
+  Claude, ChatGPT, Gemini and other AI chats.
 - [Beever Atlas](https://github.com/Beever-AI/beever-atlas) ([Website](https://docs.beever.ai/atlas)) - An open-source, self-hostable conversational knowledge compiler and MCP server that transforms Slack, Discord, and Teams chat streams into a structured Neo4j knowledge graph and an auto-generated Markdown wiki with granular permission mirroring.
 - [code-review-graph](https://code-review-graph.com/) ([GitHub](https://github.com/tirth8205/code-review-graph)) - A local-first incremental code review compiler and MCP server. Uses tree-sitter AST parsing to map codebase structure into SQLite relationship graphs, analyzing changed-file blast radiuses and test gaps to feed precise context to review agents.
 - [codebase-memory-mcp](https://deusdata.github.io/codebase-memory-mcp/) ([GitHub](https://github.com/DeusData/codebase-memory-mcp)) - A high-performance code intelligence engine and MCP server written in C. Parses repository AST structures across 158 languages using tree-sitter, offering hybrid type resolution for 11 languages to build a local codebase knowledge graph. Exposes 15 MCP tools (semantic/vector search, call graphs, HTTP routes, dead code detection) and serves a built-in 3D graph visualization UI.
