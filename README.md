@@ -838,6 +838,11 @@ that compile multi-domain life data (health, finance, calendar, documents) into 
   Agent. It unifies trust-scored SQLite facts, session histories, and local vector retrieval with an automated,
   self-curating LLM Wiki pipeline that compiles system insights directly into flat markdown notes, allowing users to
   manually audit and edit their agent's long-term memory structures using desktop markdown editors like Obsidian.
+- [OB1 (Nate B. Jones)](https://github.com/NateBJones-Projects/OB1) - An open-source personal knowledge operating system
+  and agent memory infrastructure layer. Combines a PostgreSQL/Supabase database and remote MCP server with specialized
+  recipes and schemas for entity extraction, typed reasoning edges (supports, contradicts, supersedes),
+  human-in-the-loop review guards, and an on-demand wiki compiler that generates browsable topic and entity wiki pages
+  from structured thoughts.
 - [SelfBrain (WAVEPILLARS)](https://github.com/selfbrain/selfbrain) ([Website](https://wavepillars.com/builds/selfbrain/)) - An
   open-source personal life AI assistant and knowledge operating system for Cursor and Obsidian. Connects 11 personal
   data hubs to a CORE assistant with companion Python routines for frontmatter search, health telemetry analysis,
