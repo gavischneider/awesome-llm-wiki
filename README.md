@@ -1471,6 +1471,10 @@ LLM Wiki and agent memory architectures.*
   details a background cloud runner script using Docker and headless Obsidian sync to dynamically enrich metadata via
   markdown-based master tags, and highlights building custom HTML/JS interactive graph visualizations over native
   wiki-link topologies.
+- [Open Brain Startup Guide (Jonathan Edwards)](https://vimeo.com/1174979042/f883f6489a) - A step-by-step video setup
+  walkthrough for Open Brain (OB1). Demonstrates provisioning the core PostgreSQL/Supabase database with pgvector,
+  configuring the AI gateway, establishing the remote MCP server connection for AI agents (Claude, Cursor, ChatGPT), and
+  preparing the infrastructure for wiki compilation recipes.
 - [OpenWiki 0.2 is adopting the OKF spec (LangChain)](https://www.youtube.com/watch?v=NxJjMvDN6aE) - An update video announcing OpenWiki 0.2's adoption of the Open Knowledge Format (OKF) specification for wiki metadata.
 - [OpenWiki Brains, general-purpose memory for agents (LangChain)](https://www.youtube.com/watch?v=sBg90v2qfas) - A walkthrough introducing OpenWiki 0.1.0, showing how to configure a personal brain with Notion and Gmail connectors.
 - [This New Google Format Gives Your AI Agent a Second Brain](https://www.youtube.com/watch?v=zwl9Uyw2DjA) (The AI Automators) - A walkthrough of Google's Open Knowledge Format (OKF) standard for organizing information into sovereign, flat-file markdown vaults.
