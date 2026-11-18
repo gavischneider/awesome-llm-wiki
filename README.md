@@ -1441,6 +1441,11 @@ LLM Wiki and agent memory architectures.*
 - [Is Karpathy's viral LLM wiki helpful? Kinda yeah. Feedback one month in.](https://www.youtube.com/watch?v=qdHQQUSr5OA) ([Companion Article](https://www.rdworldonline.com/is-karpathys-viral-llm-wiki-helpful-mostly-yes-one-month-in/)) - A deep-dive 30-day technical review tracking a 760-page agent-managed knowledge vault built on top of Quartz. Explores the explicit scaling limits of the pattern, detailing the setup of background monitoring crons, automated append-only ledgers, and strict linting rules that treat uncited text blocks as structural pipeline errors.
 - [Karpathy's LLM Wiki - Full Beginner Setup Guide (Teacher's Tech)](https://www.youtube.com/watch?v=iXd0t60YmMw) - A comprehensive beginner video guide walking through the end-to-end setup of a local Obsidian and Claude Code LLM Wiki. Covers creating the three-layer directory structure (raw/, wiki/, schema), writing CLAUDE.md operating guidelines, automating raw document ingestion, exploring concept connections in graph view, and running periodic health linting routines.
 - [Karpathy's LLM Wiki: What It Means &amp; How to Build One](https://www.youtube.com/watch?v=zVEb19AwkqM) (Tonbi's AI Garage) - A practical video guide on bootstrapping an LLM Wiki from scratch inside Claude Code, demonstrating automated multi-agent ingestion loops, backfill routines for external web research, and visual chart integrations.
+- [Karpathy's Wiki vs. Open Brain. One Fails When You Need It Most (Nate B. Jones)](https://www.youtube.com/watch?v=dxq7WtWxi44) - A
+  technical video analysis comparing write-time synthesis in Karpathy LLM Wikis against query-time synthesis in
+  structured database memory systems like Open Brain. Examines the editorial trap, semantic drift, and concurrency
+  failure modes in multi-agent environments, proposing a hybrid architecture that pairs immutable database sources of
+  truth with dynamic compiled wiki views.
 - [KOMPL: An Open Source LLM-Wiki Your AI Agent Can Read](https://www.youtube.com/watch?v=6zVYz6aHU1k) (Tuana Irkey) ([GitHub](https://github.com/tuirk/Kompl)) - A video
   walkthrough and demo of Kompl, an open-source compounding LLM Wiki. Demonstrates compiling source documents into an
   interlinked wiki with claim-level citations, interactive topic maps, disagreement tracking, and agent retrieval
