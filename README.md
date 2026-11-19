@@ -274,6 +274,10 @@ Inspired by a paradigm shift in software development engineering, this architect
 
 *Notes, digital gardens, and public wiki entries from personal knowledge bases detailing real-world implementations and critiques of the LLM Wiki pattern.*
 
+- [LLM Wiki (Business Data Solutions AI-Wiki)](https://businessdatasolutions.github.io/ai-wiki/concepts/llm-wiki) ([GitHub](https://github.com/businessdatasolutions/ai-wiki)) - A public digital garden concept entry analyzing the
+  architectural spectrum of LLM Wiki implementations (browser-only, KG-augmented, and database-backed). Details
+  the three-layer layout (`raw/`, `wiki/`, `CLAUDE.md`), four operational primitives (Ingest, Query, Lint, Synthesize),
+  lifecycle retention decay curves, and typed knowledge graph relationships.
 - [LLM Wiki (DeveloPassion Digital Garden)](https://notes.dsebastien.net/30+Areas/33+Permanent+notes/33.02+Content/LLM+Wiki) - A digital garden
   note summarizing the LLM Wiki pattern. Covers the three-layer architecture, core operations (Ingest, Query, Lint),
   and outlines Steven Thompson's critique on compilation versus curation.
