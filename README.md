@@ -889,6 +889,11 @@ that compile multi-domain life data (health, finance, calendar, documents) into 
   histories) into a local personal encyclopedia. Uses autonomous agent pipelines to cross-reference unrelated
   metadata timelines into highly detailed, interlinked markdown pages complete with standard Wikipedia-style
   information sidebars, event logs, and relationship networks.
+- [Zenod](https://zenod.dev/) ([GitHub](https://github.com/zenod-ai/zenod)) - An open-source personal AI memory
+  agent and self-organizing vault librarian. Captures voice notes and messages (via WhatsApp and Telegram) and
+  agent sessions (via MCP), filing immutable raw evidence with block-ID citations while updating living meaning
+  pages (Areas, Projects, Notes) in a user-owned GitHub or Google Drive Markdown vault, complete with a deterministic
+  weekly tree sweep and compactor.
 
 ### Editor Extensions and Plugins
 
