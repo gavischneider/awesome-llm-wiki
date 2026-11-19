@@ -816,6 +816,10 @@ graph platforms.*
   integrated agent that compiles and edits Markdown wiki notes with `[[wikilinks]]`, force-directed graph visualization,
   human-in-the-loop diff reviews, block-level PDF/EPUB citation chips, browser-native Git, and MCP server connectivity.
 - [Memento](https://github.com/latentsignal-org/memento) - A self-hosted, local-first engine that compiles decades of local email data into an organized knowledge base across People, Projects, and Concepts. It runs deterministic graph and parsing algorithms to map connection structures, allows text narrative enrichment via local LLMs, and exposes its underlying FTS data directly to terminal agents over structural search tools.
+- [Mempipe](https://www.mempipe.ai/) ([Docs](https://www.mempipe.ai/help/llm-wiki/what-is-an-llm-wiki/)) - A collaborative web platform
+  and shared workspace implementing Karpathy's LLM Wiki pattern across multi-agent setups. Provides a three-part
+  directory layout (`raw/`, `wiki/`, `AGENTS.md`) with click-through passage citations on original PDFs, optimistic
+  version locking to prevent conflicting agent overwrites, full-text search, and remote MCP connectivity.
 - [Myco (cmblir)](https://github.com/cmblir/Myco) - A personal knowledge base tool that compiles unstructured files (PDFs, docs, images, media) into an organized Obsidian-compatible wiki vault. Features a local MCP server integration for Claude Desktop or Claude Code, an offline semantic search index (via BGE-M3 and llama.cpp), and an autonomous researcher agent mode that crawls notes to answer questions with citations.
 - [scrap (gilesknap)](https://github.com/gilesknap/scrap) ([Docs](https://gilesknap.github.io/scrap)) - An open-source personal
   knowledge store and PWA implementing the Karpathy LLM Wiki pattern on SQLite. Keeps human notes and model-generated
