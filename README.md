@@ -423,6 +423,10 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [How to Build an AI Brain That Never Forgets](https://saranfn.substack.com/p/how-to-build-an-ai-brain-that-never) - A practical implementation blueprint detailing how to build an air-gapped, local Obsidian memory vault. Walks through extracting conversational data streams from proprietary web platforms, configuring root-level orchestration instructions (`CLAUDE.md`), and deploying background automation scripts to sync data sources and log daily workflow progress.
 - [How to build an AI second brain that doesn't go stale (Scribelet Blog)](https://scribelet.app/blog/ai-second-brain-setup) - A guide adapting the CODE and PARA frameworks for AI workflows, highlighting knowledge decay, semantic auto-linking, and Model Context Protocol (MCP) integrations.
 - [How to Build an LLM Knowledge Base (DAIR.AI)](https://academy.dair.ai/blog/how-to-build-an-llm-knowledge-base) - A practical workshop guide defining a standard local directory architecture and outlining repeatable agentic compiler patterns.
+- [How to Build an LLM Wiki (Arthur Reimus on Ylang Labs)](https://ylanglabs.com/blogs/llm-wiki) - An architectural guide
+  and implementation blueprint detailing a disciplined operating contract for LLM Wikis. Outlines deterministic
+  intake with source manifests and content hashes, structured page types (`topics/`, `entities/`, `decisions/`,
+  `contradictions/`, `candidates/`), diff-producing ingestion passes, and an answer writeback protocol.
 - [How to Build an LLM Wiki From First Principles (Paul Iusztin on Decoding AI)](https://www.decodingai.com/p/build-llm-wiki-first-principles) ([GitHub](https://github.com/decodingai-magazine/llm-wiki-workshop)) - A
   three-phase implementation blueprint constructing an LLM Wiki as a file-based knowledge graph. Explores 2-source
   recurrence thresholds for entity and concept promotion, Open Knowledge Format (OKF) frontmatter schemas, deterministic
