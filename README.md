@@ -533,6 +533,11 @@ operational retrospectives.*
   structural failure modes (internal drift between changelogs and reference docs, silent entity contradictions, orphan
   page accumulation) and details engineering remedies: a pre-commit drift linter, scoped per-domain sub-schemas, and a
   companion pgvector index for recall once index context exceeds 100k tokens.
+- [LLM Wiki (Filippo Mameli on Mameli.Dev)](https://www.mameli.dev/blog/llm_wiki/) - A practitioner guide and personal
+  workflow detailing a local Markdown LLM Wiki setup based on Karpathy's pattern. Outlines a six-file vault structure
+  (`_Wiki/` with `raw/`, `wiki/`, `outputs/`, `AGENTS.md`, `index.md`, and `log.md`), multi-format ingestion workflows
+  using Obsidian Web Clipper, MarkItDown, and opendataloader-pdf, local search via `qmd`, and a four-stage maintenance
+  loop (collect, synthesize, query, and clean).
 - [LLM Wiki Setup: Karpathy's Knowledge Base \[2026 Guide\] (Kunal Ganglani Blog)](https://www.kunalganglani.com/blog/llm-wiki-karpathy-local-knowledge-base) - A detailed case study exploring the setup, best tools, incremental updates, and common failure modes of running a local LLM Wiki.
 - [My Obsidian PKM Setup: Karpathy's LLM Wiki + Claude Code + Local Search (Alfonso Fortunato)](https://alfonsofortunato.com/writing/obsidian-pkm-llm-wiki.html) - A
   personal implementation case study detailing an Obsidian PKM setup maintained by Claude Code as a disciplined
