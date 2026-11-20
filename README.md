@@ -654,6 +654,11 @@ infrastructure.*
   spanning 2,757 pages and 832 sources using Claude Code. Outlines Inquiry-Native Organising (INO) principles:
   preserving contested claims rather than forcing consensus, keeping confidence separate from peer validation,
   enforcing consent before pages move between wikis, and establishing strict anti-surveillance boundaries.
+- [How We Built an AI Second Brain for 60K Knowledge Workers (Analytics at Meta on Medium)](https://medium.com/@AnalyticsAtMeta/how-we-built-an-ai-second-brain-for-60k-knowledge-workers-78c507dd795b) - A production case study
+  detailing how Meta scaled an internal AI second brain to 60,000 employees. Explores adapting the PARA framework into
+  an agent-legible filesystem, using progressive disclosure to prevent context window saturation, establishing strict
+  boundaries between mutable context and append-only historical records, and federating personal workspaces into
+  team-level shared memory.
 - [We gave our agent a memory: building an LLM Wiki over sources that never sit still (Taktile Blog)](https://engineering.taktile.com/blog/llm-wiki-agent-memory/) - A case study on transitioning an agent from runtime RAG to an LLM Wiki structure to reduce latency and cost.
 
 ### Comparative Audits and Architecture Trials
