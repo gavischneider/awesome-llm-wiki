@@ -532,6 +532,11 @@ operational retrospectives.*
   practical case study detailing a capture pipeline that converts YouTube video streams into structured Markdown
   source evidence. Explores Slack-triggered automation, yt-dlp audio extraction, local speech-to-text transcription,
   and publishing formatted transcripts into an immutable raw/ directory for downstream agent synthesis.
+- [How I Built a Second Brain That Builds Itself (Alex Lockey)](https://www.alexlockey.com/writing/knowledge-base-system/) - A personal case study detailing an
+  operational autopilot (AFCS) built over Karpathy's LLM knowledge base pattern to run four businesses. Highlights
+  the critical compound loop of filing answers back into Markdown context, using strict quality review gates between
+  drafts and permanent memory to prevent compounding noise, and keeping context sovereign so AI tools remain
+  interchangeable.
 - [HUGE update on obsidian-second-brain: The Architect (Eugeniu Ghelbur on The AI Operator)](https://theaioperator.io/p/huge-update-on-obsidian-second-brain) - A case study detailing Ghelbur's Architect update to the obsidian-second-brain CLI tool. Explains how the system was expanded from compiling personal notes to parsing and documenting codebases inside the Markdown vault, detailing pipeline structures and context alignment.
 - [I am building a private synthetic wiki factory. Here is how and why. (Victor Golovin Blog)](https://www.glvn.me/blog#i-am-building-a-private-synthetic-wiki-factory-here-is-how-and-why) - An
   article detailing a multi-model pipeline compiling technical source materials into a SQLite-managed synthetic wiki.
