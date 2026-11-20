@@ -603,6 +603,11 @@ history, philosophy, and multi-agent synthesis teams.*
 infrastructure.*
 
 - [Adding Quality Control to Andrej Karpathy's LLM Wiki (Mick Yates on Yatesweb)](https://www.yatesweb.com/adding-quality-control-to-andrej-karpathys-llm-wiki/) - A case study and methodology guide introducing a quality-control 'immune system' to an Obsidian LLM Wiki. Borrows from the NUSAP epistemic framework to implement a 5-column pedigree matrix (Provenance, Rigour, Coherence, Relevance Anchors, Claim Differentiation) in YAML frontmatter, ensuring agent ingestion loops distinguish rigorous peer-reviewed papers from unverified thought experiments.
+- [An LLM Wiki for the Rest of Us (André Bergholz on AI Advances)](https://aiadvances.org/an-llm-wiki-for-the-rest-of-us-2a2b19fe7dd3) - A practical guide
+  outlining a hybrid personal and team knowledge architecture that pairs human-edited notes with an agent-compiled
+  wiki. Details the "Four Folders, Two Wikis" layout, conflict resolution rules ("When They Disagree, the People Win"),
+  explicit compiler guardrails, and prompt configurations to let Claude Code maintain structured living pages in
+  Obsidian without overwriting human truth.
 - [An Organizational Second Brain: Building an AI That Learns From Experts (Meta Engineering)](https://engineering.fb.com/2026/09/02/ml-applications/organizational-second-brain-ai-learns-from-experts/) - A
   production case study detailing Meta's domain-expert AI agent built on Karpathy's LLM Wiki pattern and Google's
   OKF. Combines a 200+ file structured knowledge graph (with YAML dependency tracking) and procedural recipes with an
