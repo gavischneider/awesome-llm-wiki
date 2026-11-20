@@ -306,6 +306,11 @@ Inspired by a paradigm shift in software development engineering, this architect
 
 *Articles exploring scaling limits, context-window optimizations, concurrency, access governance, and enterprise architectures.*
 
+- [Company Brain (YC RFS 2026): Four Builders, One Architecture (Alex Lockey)](https://www.alexlockey.com/writing/the-company-brain-four-builders-one-architecture/) - An architectural analysis of how four
+  builders (Andrej Karpathy, Garry Tan, Hannah Stulberg, and Ramp) converge on a shared organizational AI memory
+  architecture. Identifies five universal pillars—a structured store, a routing layer, skills as the unit of work,
+  a writeback habit, and separating context from compute—while analyzing practical deployment hurdles, capture
+  friction, and permission boundaries.
 - [Company Brain, Part 2: Factual Memory (Ashwin Gopinath)](https://nanothoughts.substack.com/p/company-brain-part-2-factual-memory) - An
   architectural essay examining factual memory as the foundational layer of enterprise company brains. Argues against
   centralized repositories and naive RAG in favor of a semantic file system that maps artifact relationships, supports
