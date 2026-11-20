@@ -311,6 +311,11 @@ Inspired by a paradigm shift in software development engineering, this architect
   architecture. Identifies five universal pillars—a structured store, a routing layer, skills as the unit of work,
   a writeback habit, and separating context from compute—while analyzing practical deployment hurdles, capture
   friction, and permission boundaries.
+- [Company Brain for Enterprise AI: Why the Data Layer Decides Everything (Mayank Mudgal on Colrows)](https://colrows.com/blogs/company-brain-for-enterprise-ai/) - An architectural
+  essay examining why standard document wikis, vector RAG, and MCP tool registries fail as enterprise company brains.
+  Argues that organizational AI agents require meaning to be a compile-time concern, proposing a governed semantic
+  layer of typed entities, versioned metric definitions, and verifiable policy constraints to eliminate query-time
+  hallucinations and metric disagreements.
 - [Company Brain, Part 2: Factual Memory (Ashwin Gopinath)](https://nanothoughts.substack.com/p/company-brain-part-2-factual-memory) - An
   architectural essay examining factual memory as the foundational layer of enterprise company brains. Argues against
   centralized repositories and naive RAG in favor of a semantic file system that maps artifact relationships, supports
