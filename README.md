@@ -413,6 +413,12 @@ Inspired by a paradigm shift in software development engineering, this architect
   Agent SDK. Explains how to synthesize knowledge on write over plain Markdown and JSONL logs, hook into agent sessions
   for silent two-phase auto-capture, configure schema-based quality bars, and automate self-healing health checks with
   `wiki lint --fix`.
+- [Building an Offline-Local, Multi-Vault LLM Wiki for Obsidian (Paul Hackenberger on Medium)](https://paul-hackenberger.medium.com/building-an-offline-local-multi-vault-llm-engine-for-obsidian-5de473878c4f) - A practical implementation guide
+  for constructing a private, offline multi-vault LLM Wiki in Obsidian. Details an air-gapped local AI stack (Qwen for
+  reasoning and conflict resolution, Gemma for vision, and DeepSeek-OCR-2 for PDFs via oMLX), a two-layer directory
+  layout separating raw inbox drops from living wiki nodes (`concepts/`, `persons/`, `timeline.md`, `index.md`),
+  automated `/wiki-sync` ingestion with source citations, cross-vault synthesis via `/wiki-report`, and a TypeScript
+  lifecycle hooks plugin (`commandHooks.ts`).
 - [Compiling knowledge, not retrieving it (Roan Brasil Monteiro)](https://medium.com/@roanmonteiro/compiling-knowledge-not-retrieving-it-a-hands-on-deep-dive-into-llm-wiki-compiler-a495523a8085) - A code-level implementation guide detailing the software architecture of the `llm-wiki-compiler` engine. Walks through the step-by-step orchestration of a multi-model text compilation loop, local workspace linting rules, and inline source-provenance tracking without vector databases.
 - [Hermes LLM Wiki: How to Set Up Karpathy's LLM Wiki in Hermes Agent (Julian Goldie on Goldie Agency)](https://goldie.agency/hermes-llm-wiki/) - A
   practical setup walkthrough for running Karpathy's LLM Wiki pattern using Hermes Agent and its bundled `llm-wiki`
