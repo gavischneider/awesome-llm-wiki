@@ -438,6 +438,11 @@ Inspired by a paradigm shift in software development engineering, this architect
   layout separating raw inbox drops from living wiki nodes (`concepts/`, `persons/`, `timeline.md`, `index.md`),
   automated `/wiki-sync` ingestion with source citations, cross-vault synthesis via `/wiki-report`, and a TypeScript
   lifecycle hooks plugin (`commandHooks.ts`).
+- [Claude Code + Obsidian: Build Karpathy's LLM Wiki From Your ChatGPT History (Artyom Shimanski on DEV Community)](https://dev.to/ashimanski/claude-code-obsidian-build-karpathys-llm-wiki-from-your-chatgpt-history-2dbn) - A practical walkthrough
+  for converting conversational ChatGPT data exports into a compounding Karpathy LLM Wiki using Claude Code and
+  Obsidian. Outlines parsing non-linear message trees from `conversations.json` into linear Markdown files under
+  `raw/chatgpt/`, structuring vault schemas in `CLAUDE.md`, and running automated ingestion loops that synthesize
+  accumulated insights into atomic, cross-linked concept nodes with provenance citations.
 - [Compiling knowledge, not retrieving it (Roan Brasil Monteiro)](https://medium.com/@roanmonteiro/compiling-knowledge-not-retrieving-it-a-hands-on-deep-dive-into-llm-wiki-compiler-a495523a8085) - A code-level implementation guide detailing the software architecture of the `llm-wiki-compiler` engine. Walks through the step-by-step orchestration of a multi-model text compilation loop, local workspace linting rules, and inline source-provenance tracking without vector databases.
 - [Hermes LLM Wiki: How to Set Up Karpathy's LLM Wiki in Hermes Agent (Julian Goldie on Goldie Agency)](https://goldie.agency/hermes-llm-wiki/) - A
   practical setup walkthrough for running Karpathy's LLM Wiki pattern using Hermes Agent and its bundled `llm-wiki`
