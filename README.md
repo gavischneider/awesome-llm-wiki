@@ -1007,6 +1007,11 @@ Google Open Knowledge Format (OKF) bundles.*
   and Python CLI (lwiki) implementing Karpathy's LLM Wiki pattern under Open Knowledge Format v0.2. Features
   agent skills for automated ingestion cascades and backlink audits, raw source drift tracking, deterministic
   OKF conformance validation, legacy vault migration, and a local web viewer.
+- [mycelium-mind (pkcpkc)](https://github.com/pkcpkc/mycelium-mind) ([Companion Article](https://paul-hackenberger.medium.com/mycelium-mind-loves-open-notebook-10adf1ca7e73)) - An open-source, fully offline,
+  schema-driven multi-vault compiler pipeline and wiki engine for Obsidian and MkDocs conforming to the Open Knowledge
+  Format (OKF). Features multimodal ingestion (Vision OCR for PDFs, Whisper for audio), batched LLM entity card
+  synthesis, automated cross-entity overviews, event webhooks, local Git branching and PR creation on sync, and
+  bidirectional delta synchronization with Open Notebook.
 - [OKF Harness (pumblus)](https://github.com/pumblus/okf-harness) ([Website](https://okf-harness.dev/)) - An
   agent-first, local-first, terminal-native harness for maintaining OKF-compatible LLM Wikis. Registers raw sources
   under `raw/sources/`, produces ingest plans, and compiles synthesized Markdown pages under `wiki/` with byte-level
