@@ -1477,6 +1477,12 @@ LLM Wiki and agent memory architectures.*
   and prevent hazardous clinical behavior (e.g., insulin over-administration) without retraining.
 - [LLM-Compiled Wikis for Cross-Institutional Policy Retrieval: A Benchmark on Chinese University Grant Policies](https://faith.futuretechsci.org/index.php/FAITH/article/view/377) - An empirical study introducing the T3a benchmark to evaluate LLM-compiled wikis on tabular, cross-institutional policy comparisons, demonstrating superior data consistency and completeness (the 4C framework) over standard vector RAG.
 - [Managed Memory Is Still Not Governed State: Production Lessons from LLM Wiki v2 (Peter Bell)](https://zenodo.org/records/19545947) - A research paper analyzing production extensions to Andrej Karpathy's LLM Wiki concept (confidence scoring, supersession, hybrid search, audit trails, and collaboration hooks). Argues that while these extensions create a robust managed memory system, they still fall short of a governed, state-bearing research system with explicit authority and validation representation.
+- [MultiUserWiki: Managing Editorial Divergence in Collaborative LLM-Maintained Knowledge Bases (Bailing Zhang in JAIM)](https://www.americaspg.com/journal/28/article/4496) - A
+  research paper investigating editorial conflict resolution in multi-user LLM-maintained knowledge bases. Evaluates
+  five role-conditioned LLM agents independently updating a 21-page wiki, finding conflicts are strictly editorial
+  (granularity and coverage) rather than factual. Benchmarks direct LLM arbitration (97.5% human agreement), a
+  DPO-derived quality heuristic (DIQS at 81%), and voting, formalizing a fiber split threshold ($\tau^* = 0.5$) to
+  partition divergent user perspectives without discarding compatible viewpoints.
 - [Potential for Enhanced Learning in Machine Learning Classes by Using Wiki LLM Indexing](https://arxiv.org/abs/2609.25303) - An empirical research paper
   presenting a controlled head-to-head comparison between vector RAG and a Karpathy-style LLM-compiled wiki across an
   authentic machine learning course corpus. Demonstrates that while both architectures achieve comparable single-fact
