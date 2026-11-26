@@ -595,6 +595,11 @@ operational retrospectives.*
   personal implementation case study detailing an Obsidian PKM setup maintained by Claude Code as a disciplined
   librarian. Features hierarchical index navigation (`_master-index.md` to topic indexes), four-verb workflows (clip,
   compile, query, audit), and integration with `qmd` for local-first hybrid search.
+- [My Wiki's 154 Broken Links Took 45 Minutes to Fix. The Budget Line Is What Comes Back. (Michael Tuszynski on The Cloud Codex)](https://www.mpt.solutions/wiki-154-broken-links-45-minutes-budget-line-inflow/) - A
+  follow-up case study resolving a 154 dead-link backlog across a 334-page Obsidian LLM Wiki in a 45-minute agent
+  session. Details bracket removal for single-mention terms, title rewrites, entity card creation, and aligning
+  resolution rules between linters and repair scripts. Analyzes four weeks of subsequent growth, establishing a
+  recurring maintenance rate of at least 11 human triage decisions per 100 new pages.
 - [Persistent Agent Memory with an Obsidian Wiki and Claude Code (Mike Moore on Web of Mike)](https://webofmike.com/agent-memory-obsidian-wiki/) ([GitHub](https://github.com/themsquared/agent-wiki-graph)) - A
   production case study detailing a two-layer Obsidian knowledge graph (per-account relationship vaults and a root
   concepts layer) maintained by Claude Code. Explores Pocket AI voice memo ingestion into immutable `_raw/` storage,
