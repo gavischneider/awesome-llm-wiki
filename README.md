@@ -595,6 +595,11 @@ operational retrospectives.*
   personal implementation case study detailing an Obsidian PKM setup maintained by Claude Code as a disciplined
   librarian. Features hierarchical index navigation (`_master-index.md` to topic indexes), four-verb workflows (clip,
   compile, query, audit), and integration with `qmd` for local-first hybrid search.
+- [My Second Brain: How a Personal Encyclopedia Taught Me to Work with AI (Mileipedia 2027)](https://mileipedia2027.netlify.app/en/analyses/second-cerveau) - A
+  case study and operational retrospective detailing Mileipedia, a public Karpathy-style second brain compiled from
+  753 sources into 71 markdown pages and nearly 2,000 links. Details a dual-agent workflow separating ingestion,
+  fact/opinion classification, and scoring from read-only Quartz site compilation, showing how query answers compound
+  back into the vault as permanent wiki pages.
 - [My Wiki's 154 Broken Links Took 45 Minutes to Fix. The Budget Line Is What Comes Back. (Michael Tuszynski on The Cloud Codex)](https://www.mpt.solutions/wiki-154-broken-links-45-minutes-budget-line-inflow/) - A
   follow-up case study resolving a 154 dead-link backlog across a 334-page Obsidian LLM Wiki in a 45-minute agent
   session. Details bracket removal for single-mention terms, title rewrites, entity card creation, and aligning
