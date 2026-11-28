@@ -467,6 +467,10 @@ Inspired by a paradigm shift in software development engineering, this architect
   Python index generation, a 3-step progressive disclosure query ladder, and multi-source ingestion adapters.
 - [How to Build Karpathy's LLM Wiki: The Complete Guide to AI-Maintained Knowledge Bases (Dylan Boudro on Starmorph)](https://blog.starmorph.com/blog/karpathy-llm-wiki-knowledge-base-guide) - A comprehensive setup walkthrough detailing the three-layer LLM Wiki architecture, outlining the ingest/query/lint workflows, and providing a production-ready CLAUDE.md schema template for Obsidian and Claude Code integration.
 - [How to Build Your Agentic Knowledge Base (after 16 months of running my own) (Chris Lettieri on Bits of Chris Substack)](https://bitsofchris.com/p/how-to-build-your-agentic-knowledge) - A practical implementation guide outlining a three-layer folder structure (inbox, notes, map) to let a knowledge vault taxonomy emerge organically, detailing the standard eight components of agentic vaults and the scaling progression path.
+- [Karpathy's LLM Wiki: How a Local Folder Gives Claude a Lasting Memory of Your Work (Finley on FoxAI World)](https://foxaiworld.com/karpathy-llm-wiki-second-brain-claude-folder/) - A
+  practical guide breaking down the three-layer LLM Wiki architecture (raw sources, compiled pages, schema) and core
+  routines (ingest, query, lint). Outlines a setup recipe for bootstrapping a local Claude knowledge base from exported
+  chat history, and examines scaling limits (~100 sources) alongside local storage and cloud privacy trade-offs.
 - [LLM Knowledge Bases (DAIR.AI)](https://academy.dair.ai/blog/llm-knowledge-bases-karpathy) - A detailed breakdown of the four-phase compilation pipeline (Ingest, Compile, Query, Lint) with architecture diagrams and implementation workflows.
 - [LLM Wiki (2026): Karpathy's Pattern and How to Build One (Ashwin Gopinath on Sentra)](https://www.sentra.app/articles/karpathy-llm-wiki) - A
   practical implementation guide and starter template breaking down the three layers (sources, wiki, schema) and core
